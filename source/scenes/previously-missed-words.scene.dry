@@ -1,0 +1,50 @@
+title: Previously Missed Words
+subtitle: Going over words missed in previous national bees.
+new-page: yes
+view-if: age > 7 and spelling > 3 and month < 24 and previous-missed < 2
+on-arrival: month += 1; spelling += 1; previous-missed += 1
+tags: drill, top
+
+= Previously Missed Words
+
+In previous years this would have been harder, but these days you can get lists down from the internet. The cards and their definitions paper your walls, like leaves on a tree. 
+
+- @fust: FUSTANELLA
+- @noisette: NOISETTE
+- @canicular: CANICULAR
+- @tiralee: TIRALEE
+- @whole-list: Do the whole list right now.
+
+
+@whole-list
+choose-if: motivation > 0
+on-arrival: spelling +=1; motivation -= 1
+
+It takes a double study session to get through the entire stack, but you manage to break the words into categories and the categories into subcategories. SHRIEVAL and WICCAN, HOMINY and SUCCOTASH, ECRU and FÊTE.
+
+
+@tiralee
+view-if: spelling < 4
+
+TIRALEE, a succession of musical notes. It's onomatopoetic.
+
+
+@canicular
+view-if: spelling > 4
+
+CANICULAR. To do with dogs. From the Latin *canis*. 
+
+Sometimes it gets into your dreams at night. CANICULAR cake. The Canicular Bakery. Dog-shaped cakes. 
+
+You dream of lopping off an ear full of pastry cream.
+
+
+@noisette
+
+NOISETTE. A hazelnut. Or a cut of meat similar to the size of hazelnuts.
+
+
+@fust
+view-if: spelling < 5
+
+FUSTANELLA. A kilt-like garment of the Balkans. And it's pronounced pretty much the way it's spelled, so how hard will that be?

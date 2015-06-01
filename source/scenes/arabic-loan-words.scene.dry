@@ -1,0 +1,256 @@
+title: Arabic Loan Words
+subtitle: Dominated by the letters AL-
+new-page: yes
+view-if: age > 7 and spelling > 2 and month < 24
+on-arrival: month += 1; spelling += 2
+tags: drill, top
+
+= Arabic Loan Words
+
+The surprising thing about this stack of words is how familiar most of them are. You discard quite a few cards from the collection without needing any drill time at all, words like ALGEBRA and ZERO, TUNA and JAR.
+
+- @alchemy: ALCOHOL, ELIXIR, ALEMBIC.
+- @cosmetics: ATTAR, JASMINE, AMBERGRIS.
+- @materials: CARMINE, DAMASK, LAZURITE.
+- @gerbil: GERBIL, JERBOA, GUNDI and JIRD.
+- @storms: MONSOON, TYPHOON, HABOOB.
+
+
+@alchemy
+
+Alcohol used to mean a kind of very refined powder, it turns out, and then the word was used for any kind of refined thing; and then only for the "essence of wine." 
+
+The other words, too, make you think of a mad sorcerer's cave, a place of sinister experimental magic. In the dictionary and on the internet, there are pictures of twisted glass tubes, bulbous vials, potions of every color.
+
+
+@cosmetics
+on-arrival: cosmetics-studied += 1
+view-if: cosmetics-studied = 0
+
+All these words for scents and scented things. 
+
+The research you do online leads you to alarming discoveries, about how the butts of civets must be scraped periodically to produce civet oil, and how ambergris is found floating in big grey lumps on the surface of the Indian Ocean; and how musk comes from musk deer, and castoreum from the anal glands of beavers.
+
+- @sign: It's enough to put anyone off worldly cosmetics.
+- @neat-if: Perfuming sounds like a very interesting occupation.
+- @share-news: Jerome would appreciate this information.
+- @maybe-sara: Maybe Sara will have more thoughts about whether this is good or bad.
+
+
+@materials
+on-arrival: materials-studied = 1
+view-if: materials-studied = 0
+
+It is a shame that wealthy no longer keep their wealth in the form of treasure rooms full of surprising things. At least, you've never heard of anyone who did have a basement full of gold bars and rubies and figurines carved from lapis lazuli.
+
+- @ask-mother: Ask mother about that.
+- @or-jerome: Or Jerome.
+- @not-that: Not that your family would have any such thing.
+
+
+@not-that
+on-arrival: poverty += 1
+
+If you still lived in the times when there were kings and treasure-houses and swords with jewels in the pommel, then your family would be the kind that lived in a shack and had a bean farm. And maybe one sheep. Probably diseased.
+
+
+@or-jerome
+view-if: jerome > 3
+on-arrival: jerome += 1
+
+"Why do you think no one keeps treasure in a big cave any more?" you ask Jerome. 
+
+Jerome looks blank. "Probably because it's not that useful?" he says. "You can't take a bar of gold to the store to buy groceries." 
+
+After a minute, he adds, "Maybe in Dubai. In Dubai they're so rich that they make artificial islands to live on, and the world's tallest hotel, and lots of things are plated with gold."
+
+
+@ask-mother
+view-if: parents <= 3
+on-arrival: parents -=1
+
+"Where are all the gold bars?" you ask Mother. "Rich people used to have gold bars, but now they have bank accounts."
+
+Mother looks bemused. "In Fort Knox, I suppose," she says.
+
+Father overhears. "Don't ask that question too loudly at church," he says. "Or Chuck Fundt will give you a half-hour pep talk about investing in gold. The Federal Reserve may also get a mention."
+
+
+@gerbil
+view-if: gerbil-studied = 0
+on-arrival: gerbil-studied = 1
+
+The gerbil is such an ordinary little pet, but it seems that it has more surprising relatives. The hopping, nocturnal JERBOA. The fat, ugly GUNDI, which also has to go by the name of "comb rat." The Indian JIRD, described by Wikipedia as "gregarious."
+
+- @lettice-like: Lettice will like those.
+- @wish-pet: Occasionally you wish for a pet, but there's no money.
+
+
+@wish-pet
+on-arrival: poverty += 1
+
+You've tried showing Mother the advertisements for gerbils. "Look, this store has them on sale for $5," you say. "That's not so much. We can save up."
+
+Mother's mouth scrunches sideways. "I know, kiddo, but there's a reason they sell the pets for cheap. If you get a gerbil, you also need a plastic box to keep it in, and food and bedding and other things, and you might need to take it to the veterinarian sometimes. The things you'd need *for* the gerbil will cost a lot more than the gerbil by itself."
+
+"Maybe it won't need to go to the vet."
+
+"I know you wouldn't want to have an animal if we couldn't afford to keep good care of it," she says reprovingly.
+
+- @note-that: Note that she and Father chose to have children.
+- @say-nothing: She's probably right.
+
+
+@note-that
+on-arrival: parents += 1
+
+"You and Father had me," you say. "And also afterward you had Lettice." There's more that you mean to add to that paragraph, but before you can get there, Mother's face becomes so terrifying that you stop.
+
+Instead of replying, she goes out and shuts the door.
+
+- @apologize: Apologize later.
+- @let-go: Let it go.
+
+
+@say-nothing
+
+You agree, and let it go.
+
+
+@lettice-like
+view-if: lettice <= 3
+on-arrival: lettice -= 1
+
+When you tell Lettice what you are working on, she draws a cartoon of a gerbil family reunion. The jird is busy telling jokes in the middle of the room, while the gundi skulks in a corner, not very popular even with other rodents.
+
+"Where's the jerboa?" you ask.
+
+"You said it only came out at night," Lettice says. But she draws in an upstairs and a bedroom, where the snoozing jerboa dreams of growing up to be a kangaroo.
+
+
+@storms
+
+The monsoon and the typhoon are familiar enough, but the HABOOB is a terrifying stranger, a sandstorm that looks like a cloud moving over the ground. And it does not happen only far away, but sometimes even in desert parts of this country.
+
+You imagine what it would be like to stand in the middle of a haboob, your skin scoured by grains of sand, eyes stinging, barely able to breathe; and then, if you lived through it, dust in every crevice. 
+
+If you were not killed, you would be completely sanded down, polished, perfected.
+
+
+@share-news
+view-if: jerome >= 3
+on-arrival: jerome += 1
+
+"biab," Jerome texts when you tell him this. "afk squeezng fluffys butt."
+
+
+@sign
+on-arrival: world -= 1
+
+If people understood they were smearing their wrists and necks with the hindquarters of furry animals, they would refrain from wearing perfumes. 
+
+- @try-on-perry: Mention this theory to Mrs. Perry.
+- @try-on-sara: Mention this theory to Sara.
+
+
+@apologize
+
+Later you try to apologize.
+
+"Don't," Mother says. "I don't want to talk about that ever again."
+
+
+@let-go
+
+A couple of nights later you can hear the sound of Mother crying about something as she talks to Father. It might be unrelated. You lie awake trying to catch the words, but not enough comes through the wall.
+
+
+@maybe-sara
+view-if: sara > 0
+on-arrival: sara += 1
+
+You ask Sara about animals being used for perfume ingredients.
+
+"Hmm," she says, sitting back in the armchair and putting her hands inside the sleeves of her sweater. "Do you think it's wrong to use animal leather for making shoes? Or to eat honey?"
+
+"Of course not."
+
+"Then I don't see what difference it makes to you if people use animal secretions for perfume," she says. "It's still using animals for human purposes, adornment and so on."
+
+- @seems-impure: It just seems... ickier.
+
+
+@seems-impure
+
+"It just seems ickier," you say, though conscious that ICKIER is not an officially recognized word. "Because the animal's BUTT is involved."
+
+She smiles. "Do you like ham?" 
+
+"Sure," you say.
+
+"Let me show you a diagram of how pigs are butchered."
+
+Afterward, Mother is annoyed with Sara for weeks, for "somehow putting the girls off ham."  
+
+
+@try-on-perry
+on-arrival: status += 1
+
+The next time you're at the Co-op, you share with Mrs. Perry your theory of how the disgusting origins of perfumes demonstrate Divine distaste for worldly adornments.
+
+Mrs. Perry is so pleased with this line of argument that she invites you to write up your research as an essay. "I think some of our older teen girls could learn something from that," she says.
+
+But when you actually turn in the essay, she makes an excuse not to put it up anywhere. "It has some words in it that I really don't feel are appropriate," she says.
+
+"Like what?"
+
+"Well, for instance when you're talking about the location from which some of the secretions come..." she says, tapping the page.
+
+"What, ANAL?" you ask.
+
+One of the Co-op fathers turns to stare at you and Mrs. Perry. Hastily, she shoves the essay back into your hands. "I just don't think it's appropriate for us to post at this time."
+
+
+@try-on-sara
+view-if: sara >= 1
+on-arrival: sara += 1
+
+The next time you're in English lessons, you share with Sara your theory of how the disgusting origins of perfumes demonstrate Divine distaste for worldly adornments.
+
+"Hmm," she says. "Really?"
+
+Flummoxed, you don't answer for a minute.
+
+"I could be wrong," Sara says, picking a bit of lint off the front of her sweater, though she's never shown much concern about lintiness before. "But often when I hear someone telling me how disgusting something is, and how that means that something must be evil and wrong, I think the person they're trying to convince is themselves. Do you think that might be happening here?"
+
+- @no: No.
+- @maybe: Maybe.
+
+
+@no
+on-arrival: world -= 1
+
+"No," you say very firmly. "I don't approve of perfume at all. And I don't wear any cosmetics."
+
+Sara scrubs her face with the heel of her hand. "Uh... okay. I'm the last person who's going to try to sell you on needing to make yourself up. There's a lot of creepy, creepy body image stuff out there in the media, and if your parents have managed to protect you from that kind of influence, then I pretty much have to applaud that, I guess."
+
+
+@maybe
+on-arrival: world += 2
+
+"...Maybe," you say. "But wearing cosmetics and trying to make yourself attractive is a thing of the world."
+
+She sighs. "The thing is, you know, you're allowed to take charge of how you present yourself to the world. And just like it's not healthy to hide who you really are in order to make men desire you, it's also not healthy to pretend to be a little Puritan if you're not. Match your outsides to your insides. You know?"
+
+"So do you think I *should* wear perfume?" you ask, confused.
+
+She laughs awkwardly. "I think you've got a few years to figure out what kind of woman you want to be, is all," she says. "You don't have to overplan it right now."
+
+
+@neat-if
+view-if: world > 2
+on-arrival: world += 1
+
+The more you read about the art of the perfumier, the more intriguing it sounds. Steaming ylang-ylang flowers to extract their aphrodisiac essence. Combining tiny droppers of wood oils and spices. Becoming famed around the world as a "nose." Designing scents to match specific skin chemistry, to convey a mood, to enhance the atmosphere of a room.
+
+If something is enough of an *art*, surely it transcends vanity?

@@ -1,0 +1,93 @@
+title: Contributions to Father's Newsletter
+subtitle: You write puzzles and games.
+new-page: yes
+view-if: newslettering > 0 and newslettering < 4 and pedagogue > 0 and month < 24
+on-arrival: newslettering += 1; month += 1;
+tags: chores, top
+
+= Contributions to Father's Newsletter
+
+It's early Saturday morning. Father's decided, recently, that it would be a good idea to go in cycles, and alternate the crossword puzzles and cryptograms and logic puzzles and math stumpers in a predictable cycle. 
+
+- @stupid-cold: Stupid cold fingers.
+- @heater: If only Father believed more in using the heater.
+- @cold-again: It's getting cold in the mornings again.
+- @at-least-warm: At least it's reasonably warm in the mornings now.
+
+
+@cold-again
+view-if: month > 6 and month < 11
+go-to: stupid-cold-2
+
+
+@at-least-warm
+view-if: month < 7 or month > 20
+go-to: cryptogram; logic; math; kenken
+
+
+@heater
+go-to: stupid-cold-2
+view-if: month > 11 and month < 21
+on-arrival: parents += 1
+
+
+@stupid-cold
+go-to: stupid-cold-2
+view-if: month > 11 and month < 21
+
+
+@stupid-cold-2
+go-to: cryptogram; logic; math; kenken
+
+It's not dawn yet. The study is cold, so you are wearing gloves while you sit on the carpeted floor and work out puzzle diagrams for Father's newsletter. 
+
+You blow on your fingers to make them more limber around the pencil.
+
+
+@kenken
+go-to: no-plagiarism
+
+Today you are doing one of those gridded kenken puzzles. You lay out a box with numbers from one to nine in each column and row; then draw the cages around numbers that are meant to go together in a single clue: numbers that subtract to 8, for instance, or that multiply to 105, or that sort of thing. The slow part is checking the kenken after it's finished to be sure that it has a unique solution, and that is frustrating, because sometimes the grids have to be redrawn over again...
+
+There must be thousands of these things online, but of course it would be wrong to use those. 
+
+
+@logic
+
+Thinking up clues for the logic puzzles is the most entertaining of these tasks. You pick seasonal themes for them, too. The Pentecost logic puzzle, about matching up the particular ancient tongue spoken to the apostle who spoke in that tongue, received *four* letters of praise from readers.
+
+- @welcome-chance: The best part is that you have an excuse to do whatever research you like.
+- @really-good: A really good puzzle will show up Mrs. Perry, too.
+
+
+@welcome-chance
+on-arrival: world += 1
+
+Sometimes you pick a foreign setting on purpose just so you'll have a reason to read about it in the Encyclopedia and online. Mother and Father are generally a little cautious of letting you do online research because the web is not to be trusted; but if you are researching *fiction*, the rules are relaxed a bit, and you are permitted to look up maps of foreign countries, and recipes of ancient cuisines, and whatever else your fancy dictates for the current circumstance. 
+
+
+@really-good
+view-if: perry > 0
+on-arrival: status += 1
+
+Mrs. Perry's newsletters are taken by more families, but are they as inventive and thought-provoking? You're pretty sure they aren't. You do a lot of your best work thinking about the happy day when Father's newsletter outpaces hers, and he can begin to make *real* money on advertisements, like he frequently says he's going to, as soon as the subscriber list bulks out a bit.
+
+
+@cryptogram
+
+The cryptogram puzzles are the easiest and least troublesome to construct. You always pick a quotation from a famous author, out of the book of quotations on Father's desk. Shakespeare is usually reliable, as are the Founding Fathers and anything from Proverbs or Ecclesiastes. And you skip any quotes that contain words you're not sure of, and anything from Shakespeare spoken by a servant, since it's more likely to have a rude meaning.
+
+Once your quote is selected, you shuffle a deck of alphabet cards and lay them out to determine a truly random order for the substitution cipher; and then copy over the cryptogram in its new cipher. This is so easy to do that you generally do several weeks' worth of cryptograms on a single morning, to save them up for later.
+
+
+@math
+go-to: no-plagiarism
+
+That means that this week you need to come up with another math stumper, and they're the hardest to think of straight off the top.
+
+
+@no-plagiarism
+
+"Now remember," Father says almost every week. "Don't use any borrowed or found material. That would be *plagiarism* and it could lead to our embarrassment, or even a lawsuit. Anything you submit for the newsletter must be original and your own work, understand?"
+
+You understand, but it's not always easy to arrange.  

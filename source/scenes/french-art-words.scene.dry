@@ -1,0 +1,124 @@
+title: French Art Words
+subtitle: With lots of overlap with the Latin derivatives lists.
+new-page: yes
+view-if: age > 7 and spelling > 1 and month < 24 and art-words < 2
+on-arrival: month += 1; spelling += 2
+tags: drill, top
+frequency: 400
+
+= French Art Words
+
+The influence of French on English is so enormous that most of the words don't feel foreign. And then there are many words that you can throw out because you've already got them on the Latin derivatives list.
+
+- @art: GOUACHE, COLLAGE, GRISAILLE
+- @art-2: SURREALISM, FAUVISM, CUBISM
+
+
+@art
+on-arrival: art-words = 1
+view-if: art-words = 0
+
+The long runs of vowels and the sometimes-almost-silent Ls are a trick, but consistent enough when you have learned them.
+
+- @knew-before: Of course, you've run into collages before, in Sunday school.
+- @tell-lettice: Tell Lettice about the concept of collage.
+- @tell-lettice-2: Tell Lettice about the concept of gouache.
+- @tell-lettice-3: Tell Lettice about the concept of grisaille.
+
+
+@tell-lettice
+on-arrival: collage-ready = 1
+view-if: lettice < 2 and age < 9
+
+She gets the idea without very much explanation, and gets as far as cutting up two back copies of *The Old Schoolhouse* before Mother confiscates the scissors. 
+
+"You might ask," Mother says tartly. "There was an article on humility I wanted to save."
+
+Lettice pouts.
+
+- @rub-in: Give Lettice some big-sisterly advice.
+- @offer-coupons: Offer to let her cut up some of the discarded coupon flyers the next time you clip coupons.
+
+
+@rub-in
+on-arrival: lettice += 1
+
+"Yes, it's best not to cut up other people's magazines," you tell Lettice. "It's not recycling until it's in the recycling bin."
+
+Lettice scowls at you. "It *was* in the recycling bin! Mom just must have forgotten she put it in there."
+
+She stomps off to her room and slams the door.
+
+"Father must have thrown it away," Mother says, a curious expression on her face. "But I did tell him I had an article I wanted to read aloud to him, so..." And she goes off, looking puzzled, with one of Lettice's cut-out magazine children adhering to the heel of her shoe.
+
+
+@offer-coupons
+on-arrival: coupons-offered += 1
+
+"Next time I clip coupons, you can have the rest of the flyers to cut up," you say.
+
+Lettice weighs the offer for a moment, then shrugs and says, "Okay, that's cool. I don't really want this many pictures of schoolbooks anyway."
+
+
+@art-2
+on-arrival: art-words = 2
+view-if: art-words = 1
+
+SURREALISM, FAUVISM, CUBISM. You letter the cards and color their edges, but you don't get very far with the meanings. The dictionary definitions of these words are almost entirely useless, the descriptions unimaginable.
+
+- @wikipedia: Check them out on wikipedia instead.
+- @dont-let: Don't let yourself get distracted from the task at hand.
+
+
+@wikipedia
+
+Afterward you mostly wish you hadn't. The Fauvist paintings are too *pink*, as though the people being painted all got sunburned first. And the Cubist paintings aren't really proper paintings at all. What would sentences be like, if people felt free to break up words and stick them together at all odd angles like that? Noncomp sens icpletely cal.
+
+
+@dont-let
+on-arrival: spelling += 1
+
+If you looked up every single word that comes your way, you'd be here all week. So you stack the cards away with all the other words you haven't gotten to look up yet, animals you'll never see pictures of and foods you'll never have time to taste. Even as an adult you'll probably never get through all of this stuff.
+
+"That's why I am glad of heaven," Mother says, when you mention it to her later. "All eternity to study the things we didn't get to on Earth."
+
+"Do you think that's what it will be like?" you ask.
+
+"If that's what you would find heavenly, why not?"
+
+
+@tell-lettice-3
+view-if: lettice < 2 and age > 9
+on-arrival: lettice -= 1
+
+You show Lettice the pictures of grey-toned paintings, so still and colorless they look like statues. She studies them closely, frowning. 
+
+Three days later on your pillow there is a picture all in different shades of pencil grey. It shows you, sitting and reading your spelling cards, as though you'd been carved in that position.
+
+
+@tell-lettice-2
+view-if: lettice < 2 and age = 9
+on-arrival: lettice -= 1
+
+You tell Lettice about gouache. 
+
+The results of the discovery are not entirely happy. Mother finds her crouching in the bathtub, crushing pieces of white chalk with a rock and mixing the powder with watercolors. 
+
+"Are you making a mess?" Mother asks.
+
+"In the bathtub!" Lettice says. "It's not going anywhere!"
+
+Mother is in a good mood. She shrugs and takes the chalk away. "Don't break any more of these, but you might as well use the... what is that gunk? You might as well use it now you've made it. But when you're done, wash the tub out. Thoroughly! Okay?"
+
+So Lettice does two smeary, chalky pictures of starfish and pins them to a clothesline to dry. 
+
+"It's thicker than watercolors but still not very good," she says. "I need to get oils."
+
+
+@knew-before
+
+You knew about collages before: once in Sunday school you had to cut out pieces from magazines to make an image representing what you imagined God was like. 
+
+Your collage was mostly different words you particularly liked, glued in circles around the Heavenly Throne. 
+
+Your teacher thought you were making fun of the assignment. She preferred Tyler Barron's picture of an old man with lightning coming out of his head. But is it your fault Tyler got to the National Geographic first, and didn't leave any thunderstorms for anyone else?

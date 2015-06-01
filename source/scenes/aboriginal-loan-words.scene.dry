@@ -1,0 +1,64 @@
+title: Aboriginal Loan Words
+subtitle: A short list but strange.
+new-page: yes
+view-if: age > 7 and spelling > 1 and month < 24
+on-arrival: month += 1; spelling += 2
+frequency: 500
+tags: drill, top
+
+= Aboriginal Loan Words
+
+You shuffle through a few cards picked up from a source list online. There aren't too many of these that have made it into English, but you never know.
+
+- @bunyip: BUNYIP
+- @pademelon: PADEMELON
+
+
+@bunyip
+
+The bunyip is some kind of imaginary Australian creature. Also called a KIANPRATY, so there's two words for the price of one. It's something that lives in the streams and the waters, a strange devil creature eight paces long, strong enough to kill a man. But deceptive. You don't notice it until it's right up close.
+
+- @tell-lettice: You should try telling Lettice about this. Freak her out.
+- @or-not: Lettice might like to draw it.
+
+
+@pademelon
+
+The pademelon is like a kangaroo, only on a smaller scale. The online pictures make it look like a pouch-wearing jackrabbit. 
+
+- @pouch-if: It would be nice if people also came with pouches.
+- @or-creepy: Or just creepy.
+
+
+@pouch-if
+
+No one would ever need a backpack or a purse. You could just tuck something in at the stomach and go. And besides that, if anyone suggested you were getting fat, you could just say you had a lot to carry that day.
+
+
+@or-creepy
+
+On second thought... you need to stop doing your spelling words when you're half asleep. Strange and creepy thoughts come into your head when you do that.
+
+
+@tell-lettice
+view-if: lettice > 3
+on-arrival: lettice += 1
+
+At night you tell Lettice the best bunyip stories you were able to find. You embellish by mentioning all the creepy bunyip fossils and skulls and bones that really have been found. You hint that bunyips have a particular taste for biting the heads off of little sisters who show a lack of respect to their older siblings.
+
+"I don't believe you," she says. "You're making that up."
+
+"I'm not," you reply, in your best spooky voice. "You can look it up on the internet."
+
+"I still don't believe you," she says. "La la la."
+
+
+@or-not
+on-arrival: lettice -= 1
+view-if: lettice < 4
+
+You show Lettice the bunyip stories. "It's not really a sea creature but supposedly it lives in watery places," you explain. 
+
+So Lettice gets out the notebook where she draws creatures for her aquarium, and sketches her own bunyip. It has tusks like a walrus and eyes as big as saucers, and a long, crouching body like an alligator's.
+
+"That looks exactly right," you tell her.

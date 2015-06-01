@@ -1,0 +1,66 @@
+title: Return to the House of Mildew
+subtitle: Visiting Jerome and Flauberta's family again.
+new-page: yes
+view-if: age > 8 and month < 24 and jerome > 2 and visiting = 0
+on-arrival: month += 1; visiting += 1; jerome += 1
+tags: plot, top
+
+= Return to the House of Mildew
+
+Your next visit to Jerome and Flauberta's house isn't much like your first. Your parents aren't along, just you, at Flauberta's invitation. They have hamburgers for dinner, and tater tots that they heat up in the oven and that came in a bag. Flauberta's father wears a hat indoors. There are no read-alouds from the encyclopedia and no flute demonstrations.
+ 
+- @ask-about: If they eat normally now, what was up with the garlic soup before?
+- @mildewy: And what about the mildew smell?
+
+
+@mildewy
+go-to: next-choice
+
+"Um so," you say to Flauberta. "Your house smelled a little different last time we were here."
+
+"Oh yeah," she says. "Because my mother tried to hang-dry all of our clothes indoors and it kind of wasn't a good idea. So we're back to using the clothes dryer now."
+
+"Why did she do that?"
+
+Flauberta says, "To impress your family with how thrifty we are, I think. I'm not sure. It didn't work out."
+
+"I had to throw out my jeans," Jerome says. "They grew black spots on the crotch."
+
+
+@ask-about
+ 
+go-to: next-choice
+
+You take Flauberta aside and ask about the garlic soup from your first visit.
+
+"Oh," she says, looking sheepish. "Well -- my parents were pretty nervous to have your parents over. Your family has a big reputation around the Co-op."
+
+You do?
+
+"For, you know, growing all your own food and sewing all your own clothes and everything. Mom thought your mother wasn't going to be very impressed with us."
+
+"But *garlic soup*?" you ask.
+
+Flauberta shrugs, then grins. "Dad farted for three days after that," she says. "So trust me they aren't making it again."
+
+
+@next-choice
+
+- @no-big-deal: Reassure them that your family doesn't keep score like that.
+- @what-about: Ask them about what else they've heard around the Co-op.
+
+
+@what-about
+on-arrival: status += 1
+
+"What else have you heard about other families?" you ask.
+
+"Oh, you know. Mrs. Barron might not be quite well, Mrs. Perry is worried about the next election being thrown if the election machines are demonically possessed. You guys probably hear the same stuff," Flauberta says. "Um... speaking of which, what do they say about us?"
+
+
+@no-big-deal
+on-arrival: status -= 1
+
+"Our family doesn't really keep score on that stuff. It's more the Perrys' department," you say. Which is mostly true, after all.
+
+"Mrs. Perry probably keeps a chart," says Flauberta. "Have you seen her legislative organizing chart? When Mom saw it, she was so scared of getting roped in that she put a Democratic campaign sticker on our car."

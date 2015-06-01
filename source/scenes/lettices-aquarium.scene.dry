@@ -1,0 +1,82 @@
+title: Lettice's Aquarium
+subtitle: Lettice works on a project.
+new-page: yes
+view-if: age > 7 and lettice < 5 and month < 24
+on-arrival: month += 1; lettice -= 1
+frequency: 200
+tags: menace, top
+
+= Lettice's Aquarium
+
+Lettice has a blue sketchbook that she has been working on for years. On the front are silver letters that she cut out of sticky paper, which spell A Q U A R I U M.
+
+The inside of the aquarium is pages and pages of fish, and curious shelled creatures, and things with tentacles. 
+
+- @check-what-1: Check out what she's been working on lately.
+- @check-what-2: Check out what she's been working on lately.
+- @check-what-3: Check out what she's been working on lately.
+- @check-what-4: Check out what she's been working on lately.
+- @make-fun: Correct the spelling on the latest page.
+
+
+@make-fun
+view-if: spelling > 0
+on-arrival: spelling-relief += 1
+
+"You've misspelled urchin," you point out. "There's no E."
+
+"Thanks," says Lettice tonelessly. She erases the word and writes in SEA IRCHIN instead.
+
+
+@check-what-1
+view-if: age < 9
+
+The current drawing is a picture of a red puffer fish. Lettice has drawn it in crayon, and it has many many spikes. Strange objects from under the sea have gotten stuck to the spikes of the puffer, including something donut-shaped.
+
+"What is that?"
+
+"It's a tire," Lettice explains. "Sometimes people throw them into the ocean, remember? In that documentary on pollution?"
+
+"I think tires are much larger than puffer fish," you say.
+
+Lettice looks stumped for a moment, then shrugs. "I guess then it's a doll's tire."
+
+
+@check-what-2
+view-if: age = 9
+
+Lettice has traced a starfish from a picture in a book. It is wrapped partially around a rock. Next to it there is something roughly wedge-shaped.
+
+"What is the wedge-shaped thing?" you ask.
+
+"The starfish's other leg," she replies. "It lost that one but then it grew a new one."
+
+"Oh."
+
+She continues filling in the blue of the water.
+
+"Is starfish edible?" Lettice asks.
+
+You shrug.
+
+"I bet it is," she says. 
+
+Over the water she draws a sign, like the sign at the front of a ranch. STARFISH LEG FARM, she writes. PICK YOUR OWN.
+
+
+@check-what-3
+view-if: age = 10
+
+On this page is a sort of chambered nautilus, shown in cross-section. Someone told Lettice that there was a mathematical proportion to the size of the chambers, and as a result she has drawn each one in carefully with a ruler to make sure that it is the right width in comparison to the one before.
+
+"What do you think?" Lettice asks, turning the page so you can see it. "If you were a shellfish, would you live here?"
+
+
+@check-what-4
+view-if: age > 10
+
+Lettice is drawing with colored pencils now. She copies pictures carefully from the encyclopedia. As a result, the fish look much more realistic, but they are usually shown completely still, as though they'd been stuffed and mounted on the wall.
+
+Currently she is completing a picture of a big-mouth bass. The sheen on the scales is surprisingly persuasive. Along the bottom of the page there is already a collection of notes that she wrote down from the encyclopedia to remind her of what the fish is, where it swims and spawns, and how it behaves.
+
+"I am learning the most populous fish species," she explains, glancing sideways at you. "And in particular which ones are overfished so I can avoid ordering those in restaurants, because it contributes to the depletion of ocean life. Did you know that the Atlantic ocean has run out of cod nearly completely?"

@@ -1,0 +1,65 @@
+title: Halloween
+subtitle: Celebrating Halloween in your household.
+new-page: yes
+view-if: month = 8 and age > 0
+on-arrival: month += 1
+tags: seasonal, top
+priority: 2
+
+= Halloween
+
+There are some families you know which avoid Halloween and treat it as an un-Christian. But Father has always defended it. 
+
+- @pumpkins: Gourd, squash, vine.
+- @cookies: Baked treats.
+- @cookies-2: Baked treats.
+- @cookies-3: Baked treats.
+- @candy: Candy for the trick-or-treaters.
+
+
+@pumpkins
+
+PUMPKIN.
+
+You and Lettice are allowed to carve pumpkins — Lettice's pumpkins take twice as long as yours to carve, because she draws a pattern on before she does any cutting, and she goes slowly and tries to be fancy.
+
+The scooped out seeds from the pumpkins go on cookie trays and Mother bakes them in the oven until they are dried out. Then she sprinkles them with salt and, for Father, a touch of curry powder, and seals them into plastic bags.
+
+
+@cookies
+view-if: age < 9
+
+COOKIES.
+
+There are sugar cookies, rolled flat by Mother. You and Lettice cut them into bat and pumpkin and cat shapes and then decorate them with colored frosting and sprinkles. You paint the frosting on neatly with a spatula, acquiring a clean, even distribution of color. Lettice tries to get fancy with a frosting tube, which mostly makes wormy blots on her cookies.
+
+She gets a bit frustrated, but Mother shows her how to hold the tube and apply a more even pressure, and by the end of the session she is at least able to put eyes on all the bats and cats, and even some of the pumpkins.
+
+
+@cookies-2
+view-if: age > 8 and age < 11
+
+COOKIES
+
+There are sugar cookies, rolled flat by Mother. You and Lettice cut them into bat and pumpkin and cat shapes and then decorate them with colored frosting and sprinkles. 
+
+Lettice is handy with the piping tube and draws stems onto her pumpkins, or shades them with tiny stippling dots of black frosting. Sometimes, just to mess with everyone, she draws a frosting stem on one of the cat cookies, puts whiskers on the bats, and so on.
+
+
+@cookies-3
+view-if: age > 10
+
+COOKIES
+
+There are sugar cookies, rolled flat by Mother. You and Lettice cut them into bat and pumpkin and cat shapes and then decorate them with colored frosting and sprinkles. 
+
+This year, Lettice has gotten clever with the sprinkles. She pours the different colors together in tiny dishes, mixing herself a whole vast palette of different sprinkle shades. "It's like the pixels on a screen," she explains. "The colors close together blend so they look like one thing." 
+
+There's more, about something she's been reading in her art history books, to do with impressionist painters and pointillism; but for you pointillism is only a word that is surprising for having two Ls in it, you do not completely follow this discussion. Father appears to follow, however, and encourages Lettice to continue explaining her method as she dusts the cookies delicately in different colors until they look three-dimensional: the cats furred with black and grey fur, the pumpkins rounded by having a shadowy brown side as well as a vibrant orange one.
+
+
+@candy
+
+CANDY.
+
+For the neighborhood children who come by trick-or-treating, there is even a jar of candy. It is the cheapest sort, boiled peppermints wrapped in clear plastic, rather than candy bars or the little boxes that other families give out; but still, it's perfectly good and not *embarrassing*, like the parents who give out raisins or tiny bags of carrots, or travel-sized tubes of toothpaste.

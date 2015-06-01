@@ -1,0 +1,119 @@
+title: Clipping Coupons
+subtitle: Another common chore.
+new-page: yes
+view-if: age > 7    and month < 24
+tags: chores, top
+frequency: 400
+on-arrival: month += 1;
+
+= Clipping Coupons
+
+One of your chores is maintaining the coupons. There are coupon mailers that come with the newspaper, and coupon mailers that just come in the mail on their own, and a few coupons that Mother prints off the internet. 
+
+Once a week you sit down with a big pair of sharp scissors and cut out all the ones that might be useful to the family. Then you file them by category in a red coupon wallet. The coupon wallet is divided by index cards and has such categories as SOUP, PERSONAL CARE, PRODUCE (there are rarely any produce coupons), PAPER GOODS, and so on.
+
+- @next: Snip!
+- @make-offer: Offer Lettice the mailers, as promised, for collage-making.
+
+
+@next
+go-to: scissor-check; while-at-store
+
+
+@while-at-store
+
+Mother brings in the week's shopping list, and you go through and match it up as well as you can to the coupons you have, so they're all ready-pulled for the store trip. 
+
+It is sometimes a frustrating process, because the kinds of goods that have coupons are usually not the kinds of goods the family needs. There are never coupons for bulk flour, say, or rice in a fifty-pound bag, or store-generic toilet paper.
+
+- @not-much: This is your little contribution to the family finances.
+- @dull-work: Heaven forbid you not have enough chores.
+
+
+@not-much
+on-arrival: poverty += 1;
+
+Mother *has* been more stressed lately than usual.
+
+
+@dull-work
+on-arrival: parents += 1;
+
+"I don't really think we save that much with the coupons," you tell Lettice heretically. "Maybe a couple of dollars."
+
+"That's enough for fast food hamburger!" Lettice says.
+
+Yes. Lettice is obsessed this week with fast food hamburgers, which she is not allowed to eat as a rule. 
+
+"I'm a child laborer for fifteen cents an hour," you grumble, going out. 
+
+
+@scissor-check
+
+Lettice is envious of your use of the scissors. They are not the blunt childproof ones, but have genuine sharp points.
+
+"What would happen," Lettice asks, "if you tried to cut your shirt with the scissors? That wouldn't work, right? Because it would be bad if there were a hole in your shirt. So the scissors probably don't cut shirts."
+
+- @destination-one: This is a compelling argument. It demands experiment.
+- @destination-two: Lettice is a nitwit.
+- @destination-three: Lettice is trying to get you in trouble.
+
+
+@destination-one
+view-if: age < 9
+
+"Here," you say, pinching the fabric of your shirt between thumb and forefinger, roughly over the belly button. You take the scissors and snip.
+
+Now there is a hole in your shirt.
+
+You and Lettice stare at the hole.
+
+"I can see your stomach," Lettice says, in a quiet awed tone.
+
+"Hush," you say, feeling suddenly, terribly stupid. "Get me the sticky tape."
+
+
+@destination-two
+on-arrival: lettice += 1
+
+"Don't be *silly*," you say. "Haven't you seen Mother making shirts? She cuts the fabric with scissors."
+
+Lettice considers this. "They're different scissors," she says. "They're jaggedy."
+
+"That's true. But that doesn't mean these scissors can't cut cloth." You file away the jaggedy point for later investigation. You've never asked Mother why scissors for cloth should have a saw-tooth pattern the way they do. 
+
+
+@destination-three
+on-arrival: lettice += 1
+view-if: age > 9
+
+"You can prank younger kids than you," you say. "It doesn't work quite as well trying to trick your elders."
+
+Lettice gets up from the table with a snort, but no more is heard about snipping clothes that day.
+
+
+@make-offer
+view-if: coupons-offered = 1
+on-arrival: lettice -= 1; coupons-offered += 1
+
+You give Lettice all the parts of the flyers you aren't using. This means her collage options are mostly restricted to food and three-ply toilet paper, but she doesn't mind. She works diligently with the scissors and glue stick.
+
+- @ask-to-see: Ask to see what she's doing.
+- @ignore: Just ignore her and let her get on with it.
+
+
+@ask-to-see
+
+"What are you making?" You lean across the table towards her, but she jerks the paper away and hides it with her body.
+
+"I'm not done," she says.
+
+- @ignore: Fine, you can wait.
+
+
+
+@ignore
+
+When she finishes, she puts the project up on the fridge. It's a rather alarming face made entirely of foodstuffs, with potato eyes, and cherry lips, and a dozen farm-fresh eggs for teeth.
+
+"It's a lot of work," she tells you afterwards. "I think I'd rather just draw."

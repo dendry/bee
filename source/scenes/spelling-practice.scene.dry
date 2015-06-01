@@ -1,0 +1,55 @@
+title: Spelling Practice
+subtitle: Getting started on words for the new year.
+new-page: yes
+view-if: age > 7 and spelling < 2 and age < 9 and month < 24
+priority: 2
+on-arrival: spelling += 1; month += 1
+tags: drill, plot, top
+
+= Spelling Practice
+
+You start with a word list. It's alphabetically ordered, and each word has a number next to it, which is the grade level at which you're expected to know the word. 
+
+The word list involves a lot of pruning to start with. You cross out all the words you know, and identify another set that are just concatenations of familiar terms. For instance, it's not as though you need any review of
+
+- @lectern: LECTERN.
+- @minestrone: MINESTRONE.
+- @photosynthesis: PHOTOSYNTHESIS.
+- @any: Any of the above. You can spend all night pruning this list.
+
+
+@any
+on-arrival: spelling += 1; motivation -= 1
+choose-if: motivation > 0
+unavailable-subtitle: You don't have the motivation for that effort.
+
+It takes hours to prune the list completely, and you miss the nature show about radial symmetry that the rest of the family is watching. But it's worth it, because when you're done, you've got your first spelling binder all filled in and ready to go. And reviewed some biology, physics, and social studies while you were at it, just by going over all those definitions.
+
+
+@minestrone
+view-if: minestrone < 1
+on-arrival: minestrone += 1
+
+  *Minestrone.*
+
+When Mother freezes large amounts of soup, this is one of the standard ones she makes. You get to help pick which beans and pasta are going in. Minestrone means the smell of tomatoes, steam condensing inside the kitchen windows, the middle of an autumn afternoon.
+
+
+@lectern
+view-if: lectern < 1
+on-arrival: lectern += 1
+
+  *Lectern.*
+
+There's one in church; it's the pedestal where the lessons are read. Sometimes the word LECTERN even appears in the Sunday service leaflet.
+
+
+@photosynthesis
+view-if: photosynthesis < 1
+on-arrival: photosynthesis += 1
+
+  *Photosynthesis.*
+
+You've done a botany unit already with Mother. You planned your own field trip for it, even. Two other homeschooling families came along from the co-op. When you read on the website that the paths could be muddy after rain, it was you who had to call the other families and warn them to wear boots. (Mother listened on the phone line to make sure that you didn't make a mistake, but you didn't.) 
+
+You had a picnic, and a supervised tour with the arboretum staff. You noted down a lot of interesting tree names. Lettice came home with a sketchbook full of azaleas and foreign trees from Australia. 

@@ -1,0 +1,49 @@
+title: Italian Loan Words
+subtitle: Food, opera, music, and various other furbelows.
+new-page: yes
+view-if: age > 7 and spelling > 2 and month < 24
+on-arrival: month += 1
+frequency: 100
+tags: drill, top
+
+= Italian Loan Words
+
+You take the cards edged in red and green out of their box and sort through for ones you're still having trouble with.
+
+- @harpsichord: HARPSICHORD and PICCOLO.
+- @linguine: LINGUINE, FARFALLE.
+- @intaglio: INTAGLIO.
+- @fantoccini: FANTOCCINI.
+
+
+@linguine
+on-arrival: spelling += 1
+
+And FAGOTTINI and SACCHETTONI, CAPELLINI, CANNELLONI. You've mostly got the ini-oni business. But it's hard to predict when the letters are going to double or not double, until you've just seen enough of these things that you get a sense about them. 
+
+
+@intaglio
+view-if: spelling > 10
+on-arrival: spelling += 1
+
+  *intaglio, a family of print-making techniques involving cutting or incising images in a flat surface*
+
+This one, for some reason, is slippery, and you always find yourself picturing a cameo instead.
+
+
+@fantoccini
+on-arrival: spelling += 1
+view-if: spelling > 15
+
+Fantoccini sounds like it ought to be some kind of specialty pasta shape, but in fact is a puppet show with stringed puppets. Etymology, a diminutive of *fante* meaning child.
+
+From Latin *infans*. 
+
+Simple really. You find you've sketched Pinocchio on the back of the index card.
+
+
+@harpsichord
+on-arrival: spelling += 1
+
+You go through all the things in the orchestra that apply, from the little flutes to the stringed instruments. Violas and andantes shuffle together with the names of pastas. 
+ 

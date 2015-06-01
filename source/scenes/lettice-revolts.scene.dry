@@ -1,0 +1,117 @@
+title: Lettice Revolts
+subtitle: Lettice tries to escape.
+new-page: yes
+view-if: lettice > 10 and month < 24
+priority: 2
+tags: menace, top
+
+= Lettice Revolts
+
+"I want to go to public school," Lettice says. There is corn on the cob for dinner, and Lettice's announcement startles Mother so that she drops the corn on her plate.
+
+"Why?" asks Mother. "You remember that a lot of public schools don't have any money for art lessons. You wouldn't be able to work on your drawings."
+
+"I just think it would be nicer," Lettice says, giving you a side look. "She could stay here and be schooled at home. But I think home-schooling isn't so good for people who are the *younger* sister."
+
+- @point-out: Point out that Lettice is just lazy.
+
+
+@point-out
+
+"It's not because you're youngest, it's because you're *lazy*," you say indignantly.
+
+Mother looks back and forth between the two of you. "Sweetheart," she says to you, "it's for me and your Father to judge how well Lettice is doing, not for you."
+
+Lettice sets her corn down on the plate and begins picking individual kernels off it with her fingers. Father doesn't even tell her to stop. 
+
+- @manners: Correct Lettice.
+- @your-job: It's practically your job raising her anyway.
+
+
+@manners
+go-to: next
+
+"Lettice, that's rude," you say.
+
+"I bet at public school no one punishes you for eating with your fingers," she says.
+
+"That isn't exactly a good argument for public school, is it?"
+
+
+@your-job
+go-to: next
+
+"It is a little bit my job," you say to Mother. "Because you make me watch her do her work and things, and get her to finish her homework."
+
+
+@next
+
+"You're not my Mom!" Lettice howls at you. And she throws the cob of her corn across the table and it hits you on the forehead just above the right eye. SUPERCILIARY ARCH, you think, touching the spot.
+
+"Lettice!" Father says. He scoops her up from her seat and carries her -- even though she's gotten pretty large for carrying -- away to her own room. Half her food is left behind on her plate. Mother silently begins packing the plate away.
+
+- @probably: Probably they won't even punish Lettice for this.
+
+
+@probably
+
+"I bet you and Father are going to just let Lettice do that," you say darkly.
+
+"I don't condone Lettice throwing things," Mother says. "But you've been provoking her pretty hard recently."
+
+"She gets *away* with everything!" you say. "It's never fair, she's never punished as much as I was for things, you don't expect as much from her, and then you make me be in charge of her so if she's bad I get in trouble too. She does it on purpose."
+
+Mother sighs. "I know you think that, dear. It's not true, and saying it over and over doesn't make things more comfortable for Lettice. If anything, I think we made a mistake with *you*. Maybe you're the one who should be put in public school for a little while. I'd hate to do it, but..."
+
+- @what: What!? How in the world is that fair?
+
+
+@what
+
+"What!? How in the world is that fair?" you shout. "Lettice asks to go to school so you decide to send *me*?"
+
+"Lettice just wants not to be under your thumb all the time, and constantly compared to you. She used to worship you," Mother says. "She'd be just as happy at home if you were sent away. And you I think could maybe stand to learn something about tolerating the foibles of other people."
+
+- @what-about-spelling: What about your spelling?
+- @standards: It was your parents who taught you to have standards in the first place.
+
+
+@what-about-spelling
+go-to: anyway
+on-arrival: spelling-relief += 1
+
+"What about my spelling?" you demand. "What would happen then?"
+
+"Maybe you'd be able to keep it up," Mother says. "And maybe not. But it's more important that you learn to be a kind and loving person than for you to be able to spell every word in the dictionary."
+
+
+@standards
+go-to: anyway
+on-arrival: parents += 1
+
+"It was you who taught me to have standards in the first place," you say.
+
+For a moment Lettice's voice rises in her bedroom and Father is heard making vaguely soothing noises.
+
+"We wanted to teach you to have standards for yourself, to push yourself to fulfill the special potential that God gave you," Mother says. "But Lettice's gifts are not the same as yours, and that's okay."
+
+
+@anyway
+
+You breathe heavily.
+
+- @still: Still not fair.
+
+
+@still
+on-arrival: month = 26
+
+But that's how it ends for you. Just like that. Mother sews you a backpack out of funny shiny material. Father walks you down to the school on the corner. There is a grim, shamed quality as though someone were being escorted to jail. 
+
+"Try not to pick up too much of the secular bearing of your peers," Father says, looking unhappily at an eight-year-old girl in pink mini-shorts. "But at the same time, remember that you are here to learn to love those who are not like you."
+
+"I thought we didn't believe in Purgatory," you mutter, kicking the sidewalk.
+
+"We don't," says Father. 
+
+He goes away, and you're standing alone by a flagpole. The grass is brown. The school is beige stucco. Inside there is not one person who speaks your language as you speak it. The bell is ringing. 

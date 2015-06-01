@@ -1,0 +1,66 @@
+title: Overheard
+subtitle: Difficulties with the bank.
+new-page: yes
+view-if: poverty > 6 and month < 24 
+priority: 2 
+on-arrival: month += 1; poverty += 1
+tags: menace, top
+go-to: curriculum-cost; food
+
+= Overheard
+
+In the kitchen, there are raised voices. 
+
+
+@curriculum-cost
+go-to: continuing
+
+Father is complaining about the cost of curriculum materials and Mother is explaining that not everything can be borrowed or home-made. Sometimes the Co-op doesn't have the right used textbooks. Sometimes materials get used up. Sometimes you need paper.
+
+
+@food
+go-to: continuing
+
+Father has read some blogs about how to live more thriftily and is arguing that it should be possible to cut another five dollars a week from the food budget. 
+
+Mother is yelling back that she's going crazy trying to do all the things she does already, and where precisely is she supposed to find time to can her own beans?
+
+
+@continuing
+
+- @ignore: Ignore it as hard as you can.
+- @distract: Distract yourself with all the words for money you can possibly think of.
+- @mention: Mention the fight to Mrs. Barron next time you see her.
+
+
+@ignore
+on-arrival: poverty += 1
+
+Though you do find that you can *still* hear all that arguing even if you go outside in the back yard and climb the tree. Which means that various neighbors can probably hear it as well. How wonderful.
+
+
+@mention
+view-if: barrons > 2 and barrons-card = 0
+on-arrival: barrons += 1; poverty -= 2; barrons-card = 1
+
+Mrs. Barron listens to the whole story. "I wouldn't worry about it so much," she says, serving you an extra slice of pineapple cake. "Adults fight about money all the time; it's very stressful. But I'm sure your parents will be all right."
+
+A week or two later a gift card comes in the mail. It's $150 for the big box store. 
+
+The fight that happens after that is epic. Father is convinced Mother asked someone for money, and is all for giving it to charity. Mother argues back that that would subvert the charitable intentions of the donor of the card, and that that wouldn't be right. Then there's a second round of arguing about what the money should be spent on and what could reasonably wait for later.
+
+But after all the shouting, the pantry is restocked.
+
+- @stare-at: Stare at all the cans of peaches.
+
+
+@stare-at
+
+There are twelve cans in a shrink-wrapped flat. Underneath those is an entire flat of boxed noodles. The jar of peanut butter is bigger than your head.
+
+
+@distract
+view-if: spelling-relief > 2
+on-arrival: spelling-relief += 1; spelling += 1; poverty -= 1
+
+There are so many different currencies, after all. TAKA and DINAR and LEMPIRA. RUPEE and WON and LILANGENI.

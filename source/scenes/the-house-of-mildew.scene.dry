@@ -1,0 +1,64 @@
+title: The House of Mildew
+subtitle: An introduction to another family.
+new-page: yes
+on-arrival: month += 1; jerome = 1
+view-if: jerome = 0 and age > 7 and month < 24
+tags: plot, top
+
+= The House of Mildew
+
+Your family meets their family at church. Their family takes up an entire row and their father is the only one who speaks during the service. The others are silent, even during hymns. But they're another home-schooling family, and they have a son who's just about your age, Jerome. 
+
+- @previous-crushes: All your previous crushes have had names that started with J.
+
+
+@previous-crushes
+
+Jerome must be meant for you too.
+
+- @Jerome: "Jerome. J. E. R. O M E. Jerome."
+
+
+@Jerome
+on-arrival: spelling-relief += 1
+
+"Jerome. J. E. R. O M E. Jerome." You whisper it to yourself as a bedtime treat after you have run through the day's other exercises: ACCOMMODATE, DESICCATE.
+
+But this dream dies hard. Their dad invites your family over. You all go. Their house smells like mold. Jerome ignores you. 
+
+- @unattractive: He is also not attractive.
+
+
+@unattractive
+
+His sister Flauberta plays the flute, badly, and expects everyone to be very interested. 
+
+- @socks: Flauberta. F L A U. B E R. T A. Example sentence: Flauberta is a disappointing flautist.
+
+
+@socks
+ 
+on-arrival: spelling-relief += 1 
+
+For dinner there is a soup that tastes like socks. "It is garlic soup," the mother explains, smiling like the smile was painted onto a doll's head. "We grow the garlic in the back garden. Flauberta plays the flute to it." 
+ 
+
+After dinner, your mother and their mother talk about patterns for modest clothing, how high above the sock the hemline should appear, and which types of collar are the least likely to display underclothes or bare skin. Flauberta reads aloud an article from the World Book Encyclopedia for the edification of the children. The fathers go out on the patio and have a conversation in the dark, with cigars. 
+
+You can see the lights at the end of the cigars glowing and going away while Flauberta reads about the colonization of Guinea-Bissau and Jerome pays no attention to anyone.
+
+- @probably: Probably they think they are better at social studies than you.
+- @arent-cigars: Aren't cigars for rich people?
+
+
+@probably
+on-arrival: status += 1
+
+Little do they know that you and Lettice memorized all the countries in the world, and all their capitals. But the two of you know better than to show off.
+
+
+@arent-cigars
+on-arrival: poverty += 1
+
+Perhaps the father of the house is richer than his moldy-smelling carpet would let on. 
+

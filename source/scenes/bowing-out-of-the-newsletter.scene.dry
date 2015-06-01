@@ -1,0 +1,89 @@
+title: Bowing Out of the Newsletter
+subtitle: You have plenty of things to do besides helping Father.
+new-page: yes
+view-if: newslettering > 2 and pedagogue > 0 and month < 24
+on-arrival: newslettering = -1; month += 1;
+tags: chores, top
+
+= Bowing Out of the Newsletter
+
+"I don't think I can work on your newsletter any more," you tell Father. You tell him while you are riding together in the car, so there aren't any distractions.
+
+"What? Why not?"
+
+- @spelling-too-much: You really need to concentrate on your spelling.
+- @do-not-want: You just don't want to.
+
+
+@do-not-want
+
+"I don't like doing it very much," you say frankly. "It's boring."
+
+You expect Father to yell at you about chores and family obligation, but instead he looks a bit hurt. "I think the content is often very witty."
+
+- @not-to-me: Yeah, well, not to me.
+- @maybe-for-adults: Maybe it's funny to adults.
+
+
+@not-to-me
+on-arrival: parents -= 1
+
+"Yeah, well, not to me," you say, hunching a shoulder and looking out the window. "I guess I just don't have your same sense of humor."
+
+"Okay," Father says, in a disappointed voice. 
+
+But you harden your heart, like Pharaoh.
+
+
+@maybe-for-adults
+
+"Maybe it's funny for adults," you say.
+
+"Hmm." Father taps his fingers on the steering wheel. "I think you might have an important point. Do you think we'd have more subscribers if we included more content that appealed to the students themselves as well as the parents?"
+
+- @dunno: Shrug.
+- @that-might-work: Sure, that might work.
+
+
+@that-might-work
+
+"Sure, that might work," you say. "It couldn't hurt."
+
+"You should really do some more writing for us," Father says. "Write the sort of things that kids your age would find uplifting and interesting."
+
+- @said-no: Stand your ground about not contributing.
+- @well-okay: Well, okay.
+
+
+@said-no
+
+"I said I don't want to work on it any more," you say.
+
+"Fine." Father doesn't say anything else for the rest of the ride.
+
+
+@well-okay
+on-arrival: newslettering = 3
+
+"In addition to the puzzles?" you ask. "I guess I..."
+
+"Certainly, why not? You could be co-editor of the children's content. Experience like this could go on your college applications later on. This is an exciting idea," Father says. "I'm glad you brought it up."
+
+
+@dunno
+
+You shrug, but since you're in the car and he's not looking at you, he doesn't notice. So you say, "I don't know. It's really not my area."
+
+"Hm. No, I suppose we should really keep the concept of the newsletter as it is now," he says. "Customers get used to a brand."
+
+
+@spelling-too-much
+on-arrival: spelling-relief += 1
+
+"Concentrating on my spelling is going to take all my attention for a while," you say. "I can't spare the extra time."
+
+Father frowns. "It's important to balance your obligations in life," he says.
+
+"Yes, but I really think my spelling is most important now."
+
+He sighs and agrees. After that, Mother is the one who does the newsletter proof-reading, late at night, with a red pen. 

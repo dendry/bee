@@ -1,0 +1,160 @@
+title: Dinner for Tyler Barron
+subtitle: A strange dinner party.
+new-page: yes
+view-if: age > 7 and barrons > 0 and tyler < 1  and month < 24 and william > 0
+on-arrival: month += 1; barrons += 1; tyler += 1
+tags: plot, top
+
+= Dinner for Tyler Barron
+
+Mrs. Barron stops her minivan outside your house and honks. Mother walks you and Lettice down to the curb. 
+
+"Sorry I couldn't come in," says Mrs. Barron, grinning at Mother over her sunglasses. "You can see we've got the car full." 
+
+"Full" means that the van contains both of her sons and her husband. The sons are dressed in identical suits with red ties. The husband is wearing a polo shirt and, from his expression, thinking about something very far away. Life on Mars, possibly.
+
+"Have a nice evening," Mother says to you. "Behave yourselves. Tyler, happy birthday!"
+
+Tyler waves. You are not exactly sure which birthday it is for Tyler, since no one told you and Lettice this.
+
+"Get on in," says Mrs. Barron.
+
+- @easier: Easier said than done; the bench seat is covered with homework.
+
+
+@easier
+
+Tyler follows your glance. "Just put that stuff in a pile," he says. So you and Lettice squeeze into the back bench of the minivan and pile the stuff between you. 
+
+There's a sheaf of crumpled Latin translations beginning (incorrectly) with "He calls me labor"; a snack cake, squashed but still in its plastic wrapper; two pencils; a historical atlas of battlegrounds of the Civil War.
+
+"Where shall we go for dinner?" Mrs. Barron asks, looking into the rear-view mirror.
+ 
+
+- @polite: It's Tyler's birthday, so he should get to pick.
+- @suggest: Suggest Burger Wizard.
+
+
+@polite
+go-to: nothere
+
+"Tyler should get to pick," you volunteer.
+
+Tyler hesitates. After a long while he says, "Maybe Burger Wizard?"
+
+
+@suggest
+go-to: nothere
+
+You suggest Burger Wizard, chiefly because you've heard of it.
+
+
+@nothere
+
+Burger Wizard is a restaurant with an animatronic warlock on the front yard. The end of its wand waves and sparkles. Mrs. Perry picketed it once to protest the encouragement of Satanic beliefs among children, but her picketing didn't accomplish much. It doesn't seem like the Barron family, who collect Harry Potter gizmos and have all of the Lord of the Rings movies, can possibly suffer from an ethical objection to a moving warlock statue.
+
+But... "Oh, no, honey," says Mrs. Barron. "Not Burger Wizard."
+
+"Why not?" says William Barron, his attention returning from the depths of the solar system. "Burger Wizard is fine."
+
+"I know, dear, but I just don't feel like a hamburger," says Mrs. Barron. 
+
+There is no further discussion. Mrs. Barron takes a left, humming to herself, and drives down a long, leafy road you don't remember taking before. Tyler and his brother Kyle get bored and take off their ties. Lettice, who is holding the birthday present for Tyler, picks nervously at the wrapping until the tape tears a little bit.
+
+- @hostage: Nothing for it but to wait.
+
+
+@hostage
+
+You sit still. The long winding road ends at last in a parking lot in the middle of a field, and beside it is a small Victorian house decorated with twinkle lights. Some men are coming out of the house wearing jackets.
+
+William Barron reties Tyler's tie and then Kyle's tie. Everyone troops into the restaurant and is seated. The table is enormous and covered with a very white, very stiff cloth. The napkins are folded into swans. Mrs. Barron orders a clear cocktail with a lemon twist for herself, and ginger beer for you and Lettice, Tyler and Kyle.
+
+"And I'll have a Coke," says Mr. William Barron.
+
+The ginger beer, when it comes, is the color of cat urine, and contains a number of floating chunks. It is extremely spicy. Your nose hurts when you drink it. And then there's the food order.
+
+- @macaroni: Macaroni and cheese is at least a recognizable item.
+- @hamburger: And they do have hamburgers even here.
+
+
+@macaroni
+on-arrival: poverty += 1
+
+"I'll have the macaroni," you say, with all the confidence you can muster. You are trying to ignore the fact that it costs $26. By your calculations, you could eat macaroni and cheese dinners every night for a month for that price, if you weren't counting the price of the margarine to mix it up with. Mother usually barters for the margarine.
+
+"And... er... it has truffle shavings on it," says the waiter to you. "Do you like truffle?"
+
+- @truffle: That would be... a chocolate candy? Why would you have chocolate candy on macaroni?
+- @truffle2: But there's another definition. Some kind of fungus.
+
+
+@truffle2
+view-if: spelling > 4
+go-to: truffle
+
+
+@truffle
+go-to: barron-burger
+
+"Of course she does," says Mrs. Barron for you. "And I'll have the burger."
+
+
+@hamburger
+go-to: barron-burger
+
+"The hamburger, please," you say. "Medium rare."
+
+"I'll have the same," says Mrs. Barron.
+
+
+@barron-burger
+
+"You'll *have the burger*," repeats Mr. William Barron to Mrs. Barron. He sounds deeply, deeply displeased.
+
+"Yes," says Mrs. Barron, folding her menu.
+
+"The burger."
+
+"Yes, you just heard me order it." Mrs. Barron shakes her head at the waiter, who smiles fakely and goes away.
+
+"But you refused to go to Burger Wizard because you couldn't *face* a burger," says William Barron angrily. Both Tyler and Kyle are studying their napkins with extreme attention. 
+
+"Well, darling, a burger *here* is not really the same thing as a burger at Burger Wizard," Mrs. Barron says. "The aioli for one thing, and the beef is grass-fed, it's much better. The girls will love it. You like this place, don't you, Lettice?"
+
+Lettice, startled, takes in too much ginger beer and chokes. "It's really nice," she says, even though the menu flustered her into ordering crab bisque and you know for a fact that she feels too friendly to shellfish to want to eat them under ordinary circumstances. Lettice's eyes water.
+
+"This is ridiculous," says William Barron. "Kids, would you rather be at Burger Wizard?"
+
+Tyler nods. Kyle says nothing. Lettice is wiping her nose with her napkin. 
+
+- @sayyes: Say yes.
+- @sayno: Say no.
+
+
+@sayyes
+
+"Yes," you say. "I like the wand that sparkles."
+
+"Fine," Mrs. Barron says, standing. "I see." She goes to the restaurant's front podium and there is a long discussion. Then she comes back to the table. 
+
+"Get your things," she says.
+
+"But what about our food?" Kyle asks.
+
+"I've paid for it," Mrs. Barron says. "Come on. You wanted Burger Wizard, we're going to Burger Wizard."
+
+At Burger Wizard Tyler orders two burgers which he eats stacked on top of one another, and Kyle has nothing but an extra-grand order of Fries-acadabra.
+
+Mrs. Barron refuses to eat anything herself. William Barron says something about cocktails on empty stomachs and does the driving home. 
+
+
+@sayno
+
+"No," you say. "It's fine here."
+
+"There you have it," Mrs. Barron says. "Tyler, your guests prefer this restaurant, so the gracious thing is to treat them to what they'd like. We can go to Burger Wizard for you later."
+
+Tyler looks less annoyed by this than you expected. "And a nerf gun," he stipulates.
+
+"And you can have a nerf gun for being such a good host," Mrs. Barron agrees.

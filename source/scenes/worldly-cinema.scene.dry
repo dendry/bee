@@ -1,0 +1,74 @@
+title: Worldly Cinema
+subtitle: Comparing movie notes with Jerome.
+new-page: yes
+tags: top
+view-if: age > 8 and world > 0 and month < 24 and jerome > 0 and jerome < 3
+on-arrival: month += 1;
+
+= Worldly Cinema
+
+"What movies do you like?" asks Jerome, around a mouthful of donut. Church has just let out. The adults are conversing.
+
+"I don't know," you say. Because you aren't allowed to watch many movies at home unless they are documentaries or spiritually inspiring, and it seems likely that Jerome will make fun of whatever you say.
+
+"Come on, you have to like something," he says. "Name me something you watched recently."
+
+- @korea: The one about North Korea.
+- @vegetables: The one with the talking vegetables.
+- @bambi: Bambi.
+
+
+@korea
+on-arrival: world += 1
+
+"My father was just watching a documentary about North Korea," you say.
+
+Jerome scratches his head. "Huh."
+
+"It was all about how the people there train together to put on these big exhibitions in a stadium," you say. 
+
+"Like football?"
+
+"No. Like gymnastics. They do kicks and twirls and do mass demonstrations with balls. It's a little bit like synchronized swimming."
+
+"That sounds pretty girly," he says skeptically. But it wasn't girly at all. It was like everyone being in an army. All the time.
+
+
+@bambi
+
+"I like *Bambi*," you say.
+
+He looks at you and you wait for the meanness to come. "Yeah?" he says. "That's the one with the deer, right?"
+
+"Yes."
+
+"It's kind of hardcore when his mom dies," says Jerome. "Like, I don't think they'd put that in a modern animated movie, you know? Because of the trauma."
+
+
+@vegetables
+
+"I -- there was a movie with talking vegetables," you say.
+
+"Sure," says Jerome. "Veggie Tales? Where, like, the carrot tells you to be a better person?"
+
+"No," you say. "It was an educational film about where our food comes from. There was a genetically modified tomato that was the villain. It glowed in the dark."
+
+"That's cool. I wish my tomatoes would glow in the dark. Ketchup, too. That way if it was dark and you were eating a hamburger you could still see where it was." Jerome looks thoughtful. "We grow vegetables in the back garden. I wonder if we could make them bioluminescent."
+
+- @bioluminescent: Boys who say "bioluminescent" are automatically cuter.
+- @show-off: Or else showing off.
+
+
+@bioluminescent
+on-arrival: jerome += 1
+
+"I like that word," you volunteer.
+
+Jerome looks at you funny, then says: "Oh, yeah. The spelling fetish."
+
+
+@show-off
+
+"Bioluminescence occurs chiefly in animals and bacteria rather than plants," you explain.
+
+Jerome looks thoughtful and mad-science-y.

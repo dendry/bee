@@ -1,0 +1,93 @@
+title: Minding Lettice
+subtitle: Someone has to watch her when your parents go out.
+new-page: yes
+view-if: lettice > 4 and lettice < 20 and month < 24
+priority: 2
+on-arrival: month += 1
+tags: menace, top
+
+= Minding Lettice
+
+"I have to go to the church office," Mother says. "Watch Lettice while I am gone, and make sure she is done with her math homework, or there will be no dessert for anyone."
+
+So saying, she goes out.
+
+As soon as the door is closed and the car pulls out of the driveway, Lettice gets up from the table, ostentatiously drops her textbook on the floor, and goes to get her sketching pencils.
+
+- @cajole: Cajole her into working.
+- @bargain: Bargain with her.
+- @moral: Argue that your authority is derived from your parents.
+- @threaten: Threaten her.
+- @punish: Threaten her and carry out the punishment yourself.
+
+
+@cajole
+choose-if: lettice < 6
+on-arrival: lettice += 1
+
+"Come on, Lettice," you say. "If you just work for half an hour now, you can have some cake later."
+
+"Dessert is probably fruit salad," Lettice says. "I'm not doing my math work for some peach chunks in syrup."
+
+
+@bargain
+choose-if: lettice < 7
+on-arrival: lettice += 1
+
+"I'll give you a sticker if you finish your math," you say to Lettice. "It has an octopus on it." You won it for memorizing Bible verses for Sunday School, but you haven't yet stuck it to anything.
+
+"Is it a sparkly sticker?"
+
+Honesty compels you to admit that it is not a sparkly sticker.
+
+"Then I can do better," Lettice says, continuing to color.
+
+
+@moral
+choose-if: parents < 3
+unavailable-subtitle: Lettice would spot the hypocrisy there for sure.
+on-arrival: lettice += 1
+
+"Mother wants you to do your work," you say. "So morally, disobeying me on this is the same as disobeying her."
+
+"That's interesting," says Lettice, continuing to color.
+
+- @parent-duty: And duty to one's parents comes from God.
+- @give-up: Though it's not always easy to believe them when they say that.
+
+
+@parent-duty
+on-arrival: parents -= 1
+
+"And duty to one's parents comes from God," you say.
+
+"I'll say sorry to Him at church on Sunday," she says, still coloring.
+
+
+@give-up
+on-arrival: parents += 1
+
+Unable to carry the argument the rest of the way, you shrug and do some free reading yourself. Might as well. It's not like there's going to be any cake.
+
+
+@threaten
+on-arrival: lettice += 3; threats-useless += 1
+choose-if: threats-useless < 1
+unavailable-subtitle: Threats don't work if you don't carry them out yourself.
+
+"If you don't do your math, I'm going to take away your pencils for a week," you tell Lettice. Her response is to draw pictures of sea cucumbers in the margins of her introductory algebra.
+
+When Mother gets home, you explain the punishment and why Lettice has earned it.
+
+"You and Lettice are already being punished by going without dessert," Mother replies tranquilly. Lettice grins at you and makes a face. The pencils are given back.
+
+
+@punish
+on-arrival: lettice += 2
+view-if: lettice > 6
+
+"If you don't do your math, I'm going to break all your pencils and throw them away," you tell Lettice. "Right now, this afternoon, before Mother and Father get back. So there won't be any part where you get to cry and look sad and get out of it."
+
+Lettice's fingers tighten on her Flamebright Orange pencil. "You wouldn't do that."
+
+But you do. When she hasn't gotten anything done, at the end of the day. You take the pencils and break them one by one into the garbage can while Lettice punches you in the stomach with fists that aren't really strong enough to make a difference. 

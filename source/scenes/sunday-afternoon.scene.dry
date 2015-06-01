@@ -1,0 +1,69 @@
+title: Sunday Afternoon
+subtitle: Sunday afternoon is traditionally time for playing games.
+new-page: yes
+view-if: age > 7 and month < 24
+on-arrival: month += 1
+tags: menace, top
+
+= Sunday Afternoon
+
+"So," says Father. "What about a game of Scrabble with my girls?"
+
+- @agree: Agree. You generally win, but no one minds.
+- @too-much: Say you have too many chores to do.
+- @excuse: Excuse yourself for private spelling drill.
+
+
+@excuse
+choose-if: motivation > 0
+unavailable-subtitle: The motivation just isn't there.
+on-arrival: spelling += 2; parents += 1; motivation -= 1
+
+"Scrabble isn't really directed study," you say, ignoring the tiny hurt look in Father's eyes. "I should do something a bit more focused."
+
+"Okay," he says. "I know it's important to you."
+
+So the others play three-handed Pictionary, which Lettice invented, while you sit on your bed with a stack of notecards until the light fades outside your window.
+
+
+@agree
+go-to: outcome-1; outcome-2
+on-arrival: spelling += 1; parents -= 1
+
+Your family plays with the rule that you're allowed to look up words in the dictionary before playing, which means that you spend most of the time during other people's turns checking out options that might exist in your rack. It's practically study for you, though also more fun than average.
+
+
+@outcome-1
+
+You rack out with TOILETS, which isn't so high-scoring in itself, but the fifty point bonus is something. Plus it disables Lettice for the next turn and a half because of the giggling. At any rate, you come in firmly in the lead.
+
+
+@outcome-2
+
+It's a close-fought round this time. You've got more obscure words than Mother and Father, but you also have worse luck with your rack, and have to spend a lot of time playing off difficult letters in tiny words like QI and JO. Father plays a very conservative game, and since he's immediately before you in the turn rotation, he's quick to lock off any access to double and triple word scores. 
+
+In the end, Lettice, playing after Mother, has almost as many points as you do. She will gloat over coming second for all of next week.
+
+"Caesar fought on uneven ground," Father says to you privately in Latin afterward.
+
+
+@too-much
+view-if: parents > 4
+
+"I'd love to," you say, "but I'm really behind on my chores."
+
+"If you schedule your time better, you could get those done in the early mornings," Mother suggests. Never mind that her work is never done until late at night. Or that it's cold and tiring in the early mornings.
+
+"I can't," you repeat. "I've got some laundry to catch up on, and some outdoor work as well. That really can't be done in the morning."
+
+- @double-dog: Let them disagree. You've got a speech about discipline and duty all ready.
+
+
+@double-dog
+on-arrival: parents -= 3
+
+Father sighs faintly. "Fine," he says. "Go ahead."
+
+So you go virtuously to the laundry room while he, Mother, and Lettice play a three-hander, and by the sound of it make a total mess of the game. You work all day and into the night.
+
+Afterward there is a noticeable slackening in the rate at which you are assigned chores. It doesn't last forever, of course. But it's a rest.

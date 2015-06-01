@@ -1,0 +1,46 @@
+title: Mother's Temporary Work
+subtitle: Difficulties with the bank.
+new-page: yes
+view-if: poverty > 10 and month < 24
+priority: 2
+on-arrival: month = 29; poverty += 1
+tags: menace, top
+
+= Mother's Temporary Work
+
+"We were hoping that your Mother would be able to accomplish enough at home to make up our clothing and food needs," Father says. 
+
+"It's not as easy as all that," Mother mutters. She's got her knitting in her hands right now. The needles are dancing savagely.
+
+"Whatever the reason," Father says, "We must make some changes here. Your Mother is going to take on some temporary work."
+
+"Temporary work like what?" asks Lettice.
+
+"Like answering phones," Mother says. "Or typing things into the computer."
+
+- @what-about: What about school?
+
+
+@what-about
+
+"What are we doing for school?" you ask. 
+
+"You'll have to look after yourself and Lettice more often," Father says. "Your Mother will go over your work with you when she gets home. And we'll arrange for more Co-op hours for you."
+
+- @phones: The phone rings more often in the morning.
+
+
+@phones
+
+What happens in fact is that the phone rings often in the morning, sometimes when only you are awake. When that happens, Mother gets up and puts on a pair of black trousers she made herself, and her church shoes. She takes the bus into the center of town, and usually, despite what Father said, she is gone all day.
+
+- @ask-about: Ask her about the mascara when you catch her putting it on.
+
+
+@ask-about
+
+When you notice her putting on mascara in the morning, she says, "Oh, honey, it's not for vanity. My boss told me I have to wear it on assignments that require professional dress."
+
+She has to do a lot of things like that. One day she comes home from the drug store with a plastic bag full of stockings and lipstick and cheap gold hoops to wear in her ears. 
+
+"I don't understand why you have to spend your whole paycheck on doodads," Father says, picking through them. "I didn't need this much stuff when I did data entry." 

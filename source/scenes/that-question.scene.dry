@@ -1,0 +1,106 @@
+title: That Question
+subtitle: A standard conversation.
+new-page: yes
+view-if: age > 7 and month < 24
+on-arrival: month += 1
+tags: menace, top
+frequency: 500
+go-to: first-possible-chunk; second-possible-chunk; third-possible-chunk
+
+= That Question
+
+
+@first-possible-chunk
+go-to: always 
+
+You meet the girl at a local spelling meet. She's from the public school in the next district, and she has already demonstrated that she doesn't know the difference between Washington State and Washington, D.C. You've made a note to tell Father that one so he can add it to his list of ways in which public education is failing young people. 
+
+"So do you have friends?" the girl asks, perplexed. 
+
+
+@second-possible-chunk
+go-to: always
+
+The girl on the bus is wearing soccer clothes and looks a little older than you, and less shy. You've already explained that you're not in school soccer because you're not in school, in the conventional sense.
+
+"Do you have anyone to hang out with?"
+
+
+@third-possible-chunk
+go-to: always
+
+There's an Asian girl in your neighborhood who wants to know why you're always home at strange hours and why she's never seen you waiting for the school bus. You give a quick outline of what you do, adding that it's perfectly legal and that your parents submit reports to the state yearly. (That's so that she doesn't get the wrong idea and have her parents call child welfare on you.)
+
+"How do you socialize, though?" she asks. "I mean, if you never have a chance to meet friends?"
+
+
+@always
+
+Ah, yes. This.
+
+- @of-course: You meet people at church.
+- @co-ops: And there are the home-schooling co-ops.
+- @rude: On top of which, it's a bit rude to ask.
+- @still: Still, it probably does seem weird to outsiders.
+
+
+@of-course
+
+You start to explain about youth group and getting together with the other youth to do fundraisers. You talk about car washes and bake sales. You explain about the time you sorted the jumble sale and how you and the other kids found a donated incomplete Connect Four game and had an impromptu tournament. 
+
+She doesn't really seem to be taking it in.
+
+"What's impromptu?"
+
+
+@co-ops 
+
+You tell her about the time last month that you went with the rest of the home-schooling co-op to the zoo, taking along notebooks and binoculars and animal guidebooks. Lettice drew a turtle in her sketchbook, and the younger children got to ride the elephant. 
+
+The girl frowns. "So you have to hang out with little kids?"
+
+- @okay: Lettice is okay. Mostly.
+- @notokay: Unfortunately.
+
+
+@rude
+view-if: world < 3
+on-arrival: world += 1
+
+"No," you say sarcastically. "I have no friends. It's an unfortunate condition."
+
+She takes out a small notebook, like the kind that reporters use, and writes something in it.
+
+"What's that?" you ask.
+
+"My idea book," she says. "I use it to write down ideas for how I'm going to get rich. So I just realized, there must be a lot of home-schooled kids that want friends, right? And I could put an ad in the paper. If they wanted to hire me to go to the mall with them."
+
+
+@still
+view-if: world > 2
+on-arrival: world += 1
+
+"It's odd, I know," you say. "But I do meet people." You try to explain how you get to know people of all different ages, not just your own peers, but younger kids who belong to other home-schooling families, and their parents and older siblings, and folks at church you volunteer with. 
+
+It must come out sounding a bit mealy, though, because she says, "Man, sorry," with real sympathy.
+ 
+
+
+@okay
+view-if: lettice < 1
+on-arrival: lettice +=1
+
+"My sister isn't too bad," you say. "Most of the time." Though of course saying it you're reminded of all the less than okay incidents, and how nice it would be to have someone around that you didn't have to be in charge of part of the time. And how Lettice got mad because you got to do the laundry by yourself, as though that were some kind of privilege, you'd be happy to hand that one off.
+
+
+@notokay
+view-if: lettice > 0
+on-arrival: lettice +=2 
+
+"My sister is a social limpet."
+
+"Limpet?" The girl frowns uncertainly. "Maybe you don't know this in 'home school,' but it's not nice to call people lame. It's one of those words like retarded, it hurts people's feelings."
+
+"No, *limpet*, it's a kind of shellfish," you explain. 
+
+"It's okay you didn't know that limpet is rude," the girl interrupts. "I won't tell. You don't have to make something up." 

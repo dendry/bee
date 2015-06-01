@@ -1,0 +1,35 @@
+title: Proofreading
+subtitle: Proof work on Father's newsletter.
+new-page: yes
+view-if: newslettering > 0 and newslettering < 4 and pedagogue > 0 and month < 24
+on-arrival: newslettering += 1; month += 1;
+tags: chores, top
+
+= Proofreading
+
+More and more the newsletter gets written in the small hours of the morning, when Father is not at work and no one else is using the computer. This means, in turn, that it is prone to errors.
+
+- @perhaps: Suggest going to a blog format.
+- @workload: Just go over the proofs as requested.
+
+
+@perhaps
+go-to: workload
+on-arrival: format-change += 1
+
+"I don't see why we don't publish this online," you say. "That way, not only would there be no expense for copying and posting, but you could fix any errors after they went live."
+
+But Father doesn't want to hear this.
+
+"I don't have time to learn how to set that all up," he says. "And there are fees for being online too, you know."
+
+So the paper format survives. 
+
+
+@workload
+
+Father prints the papers off when he's done in the middle of the night and leaves them on the table. When you wake up in the morning you go over the result, marking them with a red pen just as Father and Mother mark your papers. 
+
+Father is a very good sport about this, and always enters your corrections immediately when he gets back home in the evening. 
+
+"We make a good team, our family," he likes to say. 

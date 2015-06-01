@@ -1,0 +1,65 @@
+title: Performance Practice
+subtitle: Spelling bees aren't just about spelling.
+new-page: yes
+view-if: age > 7 and spelling > 2 and month < 24
+on-arrival: month += 1; spelling += 1; perry += 1
+frequency: 40
+tags: drill, top
+
+= Performance Practice
+
+Mother sits at the table with a deck of cards and a bell. Father, Lettice, and the two Perry daughters -- brought over just for the occasion -- sit in the living room in folding chairs. 
+
+Mrs. Perry has brought over the co-op's digital video camera, and she's recording everything you do. 
+
+You stand at the front of the room while all of them stare at you.
+
+- @stand: Stand up straight.
+- @speak-clear: Speak clearly.
+- @visualize: Visualize each word written on a page before trying to spell it.
+
+
+@stand
+go-to: criticism
+
+You stand with your shoulders back and remember to breathe smoothly and evenly.
+
+
+@speak-clear
+go-to: criticism
+
+You avoid any muddledness in your speaking.
+
+
+@visualize
+go-to: criticism
+
+You can picture the shapes of the letters before you read. 
+
+
+@criticism
+go-to: lip-move; what-wearing
+
+You get through three of Mother's words, very calm, every easy, before anyone interrupts you.
+
+
+@what-wearing
+on-arrival: status += 1
+
+"Is that what you're going to be wearing?" Mrs. Perry asks.
+
+"Everyone wears the same thing at the televised Bee," Mother explains, before you have a chance to figure out what is wrong with your button-down shirt and long corduroy skirt. They're modest enough, certainly?
+
+"Good," says Mrs. Perry. "Good."
+
+
+@lip-move
+on-arrival: world += 1
+
+"Don't move your lips while you're thinking," Mrs. Perry advises, from behind the video camera. "It makes your performance less impressive."
+
+You glance at Mother. It doesn't matter if your performance is *impressive*; it's a question of winning or not, right?
+
+"We want you to give the impression of being a very calm, focused, and brilliant young person," Mrs. Perry explains. "So that the main-stream media will have a hard time making fun of your home-schooling background, and will be forced to take you seriously."
+
+When you don't immediately answer, she adds, "Don't worry, dear, you have the best chance of anyone I've seen for a while. You could really be an important ambassador for us."

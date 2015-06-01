@@ -1,0 +1,178 @@
+title: Running Away
+subtitle: You've had enough of your parents.
+new-page: yes
+view-if: parents > 9 and month < 24
+priority: 2
+on-arrival: month = 30; parents += 1
+tags: menace, top
+
+= Running Away
+
+The only question is where, and to whom. You can't just run off onto the streets; you know that much.
+
+- @go-mrs-p: Go to Mrs. Perry.
+- @go-mrs-b: Go to Mrs. Barron.
+- @go-sara: Go to Sara.
+
+
+@go-mrs-p
+
+"As far as I can see," Mrs. Perry says, when you've explained the situation, "your parents haven't done anything wrong, except maybe not to instill enough sense of discipline into you. You've had the opportunity to work hard and serve God through your gift of spelling."
+
+"*Other* kids get to go out more," you say. "*Other* kids don't have to do as many chores."
+
+"And so they don't know whether they can." Mrs. Perry leans forward. "My dear, your parents are *exceptional* people. They are generous, charitable, dutiful. They have chosen a life with many difficulties because they are far too strong to walk on the flat. Do you understand?"
+
+"No."
+
+She sighs. Then she says, "In your life, you'll be much happier if you tally up what you were able to give, rather than what you received."
+
+Mother's car pulls up outside.
+
+"You called her?" you demand.
+
+Mrs. Perry tilts her head. "Of course, dear. She needed to know where you were."
+
+
+@go-mrs-b
+view-if: barrons > 0
+
+"Oh dear," says Mrs. Barron when you turn up. She goes into the kitchen and returns with a wineglass whose contents are clear. "William — that is, my husband was afraid this would happen."
+
+She sits on the sofa. "Would you want to go to private school?" she asks. "We could set that up, me and William. Someone as bright as you could get a scholarship and then we could give your parents the rest of the tuition. Might only be a few thousand a year."
+
+- @boarding: Boarding school?
+- @live-with: Could you live with the Barrons?
+- @mother-would: Mother would never go for that.
+
+
+@go-sara
+view-if: sara > 0
+
+It's 1 in the afternoon when you find Sara's dorm room at college. You knock. 
+
+"Come in!" someone calls.
+
+You open the door and step inside. Sara is sitting at her desk at a computer. Another girl is lying in the twin-sized bed, wearing a baseball shirt that says ICHIRO 51 on it.
+
+Sara jumps out of her chair. "You can't be here," she says to you.
+
+The girl in the bed sits up too. She looks confused.
+
+"Class isn't for another two days," Sara tells you.
+
+"Oh!" says the girl in the bed. "Shit, whoops, right. I was never here." She swings her legs out of the bed — bare, was she sleeping at this hour? "Shitshitshit," she says. Under the bed she finds a very skinny pair of jeans and wiggles into them.
+
+Then she ducks at Sara, weird, like she's trying to kiss her, but Sara dodges. The girl giggles and runs out.
+
+- @who-was: Who was that?
+- @probably: Better not ask. It's probably some feminist friend of Sara's. She looks embarrassed that you saw her.
+
+
+@who-was
+go-to: explaining
+
+"Who was that?"
+
+"My friend Leslie," Sara says. "She sleeps over sometimes. Why are you here?"
+
+
+@probably
+go-to: explaining
+
+You say nothing.
+
+"Why are you here?" Sara asks.
+
+
+@explaining
+
+So you tell her, the whole sobbing story. Halfway through, she gets up.
+
+"Stay here." She goes out, and comes back after a minute with a clutch of paper towels, the rough cheap brown kind from public restrooms. "I don't have any tissues, sorry."
+
+You use up quite a few of the towels.
+
+When you're done, Sara sits back in her seat. "You know I have to tell your parents where you are. Right?"
+
+- @figures: Figures.
+
+
+@figures
+
+"You can't report them for child abuse?"
+
+Sara sighs. "The situation you're in, that's not legally abuse. Your parents don't neglect you, they don't beat you, they don't even shout mean things at you. They're schooling you according to the law. And if I did report something and it worked, you and Lettice would at best be put in foster homes. You might not wind up in the same one. It might be hard for you to see your parents again, or see each other at all. Is that really what you want?"
+
+- @no: No.
+- @what-between: What are you supposed to do instead, then?
+
+
+@no
+
+"No," you mutter.
+
+"It gets better," Sara says, and her expression is wry. "It gets much, much better. You just have to stick it out until you're older, and then you can choose for yourself what you want to do. Go to college, travel the world, change religions, shave your head if you want."
+
+"It's going to be years before I'm that old!"
+
+"I know," Sara says. "I really, really know."
+
+
+@what-between
+
+"So what am I supposed to do now?" you ask.
+
+"Get ready," she says. "The way I used to think of it was, I was in a chrysalis. I read things and I watched movies and looked things up on the internet, and I learned things that made me ready to break out as soon as I had wings."
+
+"Caterpillars are almost completely dissolved in the chrysalis," you say. "The liquids break down their bodies into a nutritional soup. The butterfly is pretty much a different animal."
+
+"Yeah," she says. "That sounds right."
+
+
+@boarding
+go-to: might-not
+
+"Boarding school?" you ask.
+
+"Well, er, I was thinking of a local day school," Mrs. Barron admits. "Boarding school usually costs a lot more. But of course if you... I mean. Hm."
+
+It does seem obviously impossible, when you think about it.
+
+
+@live-with
+go-to: might-not
+
+"Could I live here with you?" you ask.
+
+"You wouldn't like it," Mrs. Barron says. "*I* wouldn't mind, but we're not as neat as you're used to. And don't deny it just to be polite."
+
+
+@mother-would
+go-to: might-not
+
+"Mother would never go for that," you say.
+
+"No," Mrs. Barron says, gulping from the wineglass. "You're probably right."
+
+
+@might-not
+
+"No. And. I mean. I don't think my parents would let you pay for something that expensive," you say.
+
+"No," Mrs. Barron says. "Probably not." She looks sadly into her glass. "I think the reason why I feel there's a kinship between us is because we're both sad, you and me. No one understands us."
+
+A kind of prickly feeling goes down your neck.
+
+"You have your husband," you suggest.
+
+"Yeah." She drinks off the rest of the glass. "Well. That's a tale not to tell to little pitchers."
+
+- @go-home: You should go home. This was a bad idea.
+
+
+@go-home
+
+"I think I'll go home," you say, standing up.
+
+Mrs. Barron raises her empty glass in your direction. "Go on ahead," she says. "I'll catch up later."

@@ -1,0 +1,135 @@
+title: Year-end Competition
+subtitle: A first competition with others your own age.
+new-page: yes
+view-if: month = 24 and age = 8
+priority: 3
+tags: competition, top
+on-arrival: month = 1; age += 1
+
+= Year-end Competition
+
+The year ends with a competition at the local school. You, sitting in the cafeteria with a number. Your mother had to sign you up specially. The other participants are mostly students who go to this school, so they know one another and have jokes together. 
+
+You sit still and are not as unruly as they are. They trade stickers and say dirty words. 
+
+The first round you're in, you have to spell
+
+- @fructiferrous: FRUCTIFERROUS
+- @fructiferous: FRUCTIFEROUS
+- @frooctiferus: FROOCTIFERUS
+- @fruktiferrus: FRUKTIFERRUS
+
+
+@fruktiferrus
+choose-if: spelling < 1
+on-arrival: parents += 1; status += 1; lettice += 1
+unavailable-subtitle: You've too much spelling knowledge to get that wrong. Latin wouldn't use a K that way.
+
+"FRUKTIFERRUS."
+
+The bell rings almost before you're done speaking. You take your seat. Mother is visibly embarrassed. Even Lettice mocks you in the car.
+
+"If you're not going to study and show respect for your family and for the competition," Mother says, "I don't know why we pay what it costs for you to participate. The purpose of this experience is for you to learn to take responsibility for yourself, for you to do something that will glorify your God, and to show the slothful public-schoolers what a child schooled at home can truly accomplish. Turn in a performance like that and you let us all down..."
+
+So it continues most of the way home.
+
+
+@frooctiferus
+choose-if: spelling < 2
+on-arrival: parents += 1; status += 1
+unavailable-subtitle: Double Os would be surprising in a Latinate word like this.
+
+"FROOCTIFERUS."
+
+Ah. No. The bell rings and several of the seated kids snicker. Mother winces in the back row. Not a triumph for home-schooling, really.
+
+On the way home, Mother shares her opinion of people who do not properly study and prepare themselves. Next year you will need to do better.
+
+
+@fructiferrous
+choose-if: spelling < 3
+unavailable-subtitle: If it means fruit-bearing, it should have just one R in ferous, not two.
+
+"FRUCTIFERROUS."
+
+Not quite right. 
+
+"What did you think it meant, fruits made of iron?" asks Mother in the car. "You've got more Latin root study coming your way, I can tell you that, buckerino." Or should that be buccarino?
+
+
+@fructiferous
+go-to: origin
+
+"FRUCTIFEROUS."
+
+Success! The judges nod you on to round two. Mother applauds in the back row, while Lettice sits quietly and continues to draw in her book.
+
+The next word that causes you pause is
+
+
+@origin
+
+- @cacophony: CACOPHONY.
+- @kakophony: KAKOPHONY.
+- @cakofunny: CAKOFUNNY.
+- @cacoughanie: CACOUGHANIE.
+- @ask-for: Ask for the origin of the word.
+
+
+@ask-for
+go-to: origin
+on-arrival: isgreek += 1
+
+"Could I have the language of origin, please?"
+
+The pronouncer is a man in a yellow bow tie. He gives you a mostly friendly smile. "The origin is Greek," he says.
+
+
+@cakofunny
+on-arrival: parents += 2
+choose-if: spelling < 5
+unavailable-subtitle: That doesn't really look right, does it?
+
+"CAKOFUNNY," you say firmly.
+
+You're dinged. Wrong answer. Several of the kids waiting their turn give you looks of frank contempt, which suggests it wasn't even a very good guess.
+
+"I wish you'd make more of an attempt," Mother says on the car ride home. "I know you've put in some time with your lists, but you need to take it more seriously. Otherwise, you're sending a certain message about the whole home-schooling community."
+
+
+@kakophony
+on-arrival: parents += 1;
+choose-if: spelling < 7
+unavailable-subtitle: In a Greek word, those kappas would have been converted to Cs.
+
+"KAKOPHONY."
+
+The bell dings. Mother gets up from her seat a little grimly.
+
+"Well," she says on the ride home. "That was an entry fee wasted, wasn't it?"
+
+Lettice draws a stick figure of a crying person in a blue plaid dress. Possibly to be sympathetic. Possibly not.
+
+
+@cacoughanie
+choose-if: isgreek = 0 or greekletters = 0
+unavailable-subtitle: Greek wouldn't produce that -gh- as an f sound.
+on-arrival: parents += 1; status += 1
+
+You have in mind for it to be an exotic sort of old English or Scottish word. "CACOUGHANIE."
+
+*Ding* goes the bell. And you're out.
+
+"Haven't we said that if you don't know the spelling, you should guess as simply as possible?" Mother demands on the car ride home.
+
+You stare out the window and do not comment.
+
+
+@cacophony
+on-arrival: highest-win = 1
+
+"CACOPHONY."
+
+The judge nods and there is polite applause, some of it from your fellow contestants. And then the two other competitors at this level strike out on CIRRHOSIS and ICOSAHEDRON, leaving you in charge of the field.
+
+The local competition is yours!

@@ -1,0 +1,48 @@
+title: Ash Wednesday
+subtitle: Family attends services for the beginning of Lent.
+new-page: yes
+view-if: month = 16 and age > 7
+priority: 2
+on-arrival: month += 1; 
+tags: seasonal, religious, top
+
+= Ash Wednesday
+
+It is time for the Lenten sermon. The air smells like incense. 
+
+The point of the sermon is the same as it always is. We are all sinners. We must find out our worst characteristics, our most serious fallings away, and address these.
+
+After the service, Mother and Father have you sit down and write down your lists of things you wish to correct in yourselves during the Lenten season, to make way for the coming of the savior. 
+
+- @spelling-diligence: Decide to be more diligent at spelling practice.
+- @nicer-lettice: Be nicer to Lettice.
+- @lettice-face: Be nicer to Lettice.
+- @tease-less: Ask for fewer selfish purchases.
+
+
+@tease-less
+view-if: poverty > 2
+on-arrival: poverty += 1
+
+You resolve to ask for nothing for yourself. You already ask for few gifts or treats, but even those might stretch the tiny budget past handling. It would be better to constrain your needs to the things that Mother and Father are able to give you.
+
+
+@spelling-diligence
+on-arrival: spelling += 1; spelling-relief += 1; motivation = 2
+
+In handwriting smaller and neater than ever, you write down your intentions: to reduplicate your efforts, and win the championship, for the glory of your Maker and the good name of home-schooling children everywhere.
+
+
+@nicer-lettice
+view-if: lettice < 3
+on-arrival: lettice -= 1
+
+You write the resolution down and glance over at Lettice. 
+
+It's unlikely she's making any reciprocal resolution, but that just makes yours the more virtuous.
+
+
+@lettice-face
+view-if: lettice > 2
+
+Lettice makes faces at you and suggests several items for your list. You ignore her. This may prove challenging.

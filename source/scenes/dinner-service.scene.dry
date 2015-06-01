@@ -1,0 +1,88 @@
+title: Dinner Service
+subtitle: Taking over cooking while Mother is out of town.
+new-page: yes
+view-if: age > 7 and dinner = 0 and month < 24
+on-arrival: month += 1; dinner = 1
+tags: chores, plot , top
+
+= Dinner Service
+
+Mother has taken the train to visit your great-aunt near Sacramento. That leaves you and Father and Lettice to fend for yourselves, and it is understood that Father should not be the one to make dinner, because unfortunate things can result.
+
+- @pasta: Improvise something with spaghetti.
+
+
+@pasta
+
+You've watched Mother do this often enough. The spaghetti sauce is stored frozen, made monthly in a batch, so you only need to reheat it and serve it over the noodles. Cheese is nice when it's available, but the can of parmesan gratings is empty and you haven't been given a budget for additional purchases.
+
+It proves a harder thing than you were expecting. First, not all the noodles can be fit into the pot; they're too long, and stick out. Pushing them with the wooden spoon doesn't help, so you have to break most of the noodles to make them fit under water.
+
+Then the pot boils over and gets whitish scum on the stove. Mother's spaghetti never does that.
+
+Then the pot is very heavy and hot and clumsy, and you half drop it when you're trying to pour the noodles into the sieve. A good third of the noodles fall out into the sink, some of them slithering down the drain. They can't be eaten now, can they?
+
+- @call-dad: Call for Father.
+- @run-water: Pour hot water over the noodles to clean them, put them back in the pot, and say nothing.
+
+
+@run-water
+
+You run hot water from the tea kettle over the sinked noodles. This should — should! — render them clean enough to eat. Then you scoop the results up with the noodle spoon and plop them in the pot. No one the wiser.
+
+- @that-was: That was close.
+
+
+@that-was
+
+"I saw that," says Lettice, coming in from the doorway. "You're going to give us all tapeworms."
+
+- @reason: Reason with her.
+- @threaten: Offer to tell Father about the time she buried the dead bird and then didn't wash her hands.
+
+
+@threaten
+on-arrival: lettice += 1
+
+"Remember when you buried the dead bird in the back yard and then came in to lick the brownie batter without washing your hands?" you ask. "That was much, much more likely to make us all sick. Have you ever heard of ORNITHOSIS?"
+
+"No," says Lettice.
+
+"ORNITH means bird and OSIS means disease," you say. "So think about that one." You pile the spaghetti on three plates and hand Lettice hers. 
+
+She pouts at you, but takes it.
+
+
+@reason
+choose-if: lettice < 3
+unavailable-subtitle: As if Lettice can be reasoned with.
+
+"That's not how you get tapeworms. And I sanitized the noodles." You stare at her very hard until she drops her eyes.
+
+"Okay," she says. "But if I get sick later I'm going to pray for you to have the tapeworms also."
+
+
+@call-dad
+on-arrival: parents -= 1
+
+You summon Father to look at the mess. "It's my fault," you admit. Probably he'll just say that it's your own portion of supper you've wasted, so you can go without. Which is fair, but you're really very hungry.
+
+"Hm," says Father, looking into the sink. "Hm," he says again, looking at the goo bubbled over the stove.
+
+Then he turns on the garbage disposal. There's a roar, and the ruined noodles slip away into oblivion. "There are some frozen peas," he says. "Put them in the microwave for a couple of minutes and they'll help fill in the cracks."
+
+- @apologize: Apologize for wasting food.
+- @let-go: Just let it go.
+
+
+@let-go
+
+You make up the peas and say nothing. No one else says anything either.
+
+
+@apologize
+on-arrival: poverty += 1
+
+"I didn't mean to waste food," you say. "I'm sorry."
+
+"It's not wasted," Father says, pouring glasses of water for you and Lettice. "It was an educational supply that has now been used up." He looks at you over his glasses. "After dinner, get your lab notebook and record your spaghetti experiment. Include all the parameters you can think of that might have affected your results. Later, when Mother makes spaghetti, you can also record her control parameters and then report what went wrong." 

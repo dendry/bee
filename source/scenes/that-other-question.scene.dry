@@ -1,0 +1,113 @@
+title: That Other Question
+subtitle: A standard conversation.
+new-page: yes
+view-if: age > 7 and month < 24
+on-arrival: month += 1
+tags: menace, top
+frequency: 100
+
+= That Other Question
+
+"Shouldn't the little darlings be in school?" 
+
+You're on the bus with Lettice and Mother. The speaker is a middle-aged woman in the seat across from yours. She's balancing a grocery bag of cat food on her knees. A can of Ocean Treat With Salmon is peeking out of the plastic. She looks extremely earnest.
+
+Through the arm of your coat, you feel Mother flinch. This could go any of a number of ways, depending on her mood of the moment...
+
+- @see-what: Wait.
+- @see-what-2: Wait.
+
+
+@see-what
+view-if: parents > 4
+on-arrival: parents += 1
+
+"I sometimes think that myself," Mother says, with so much bitter energy that the woman is abashed.
+
+"Sorry," she mumbles. 
+
+The bus stops sharply. Original Style Tuna Flavor Pate bounces out everywhere.
+
+
+@see-what-2
+go-to: explaining; lying
+
+
+@lying
+
+A calculating look crosses Mother's face.
+
+"Sadly, they're not able to attend public school because of their extreme allergies," she says. "There are simply too many allergens in the environment."
+
+The woman looks a little embarrassed.
+
+Mother goes on. "I wish they could have a normal life, but the risk... if they got a tiny fragment of peanut, or came into contact with even one cat hair..." She sighs, and wipes her eye with the sleeve of her coat.
+
+"Uh... yeah. Maybe I'd better..." The woman gathers herself and heads for the other end of the bus; from which she stares at your family frequently during the rest of the ride.
+
+
+@explaining
+view-if: parents < 5
+on-arrival: status += 1
+
+"They're home-schooled," says Mother. And she explains in the usual way. Yes, it's legal. Yes, the state supervises. Yes, there are set topics that you're supposed to cover at some point during the process. Yes, you have activities that allow you to interact with other members of your peer group. 
+
+The explanation lasts three quarters of the route to the library.
+
+"I just don't think it's right," says the woman anyway. 
+
+Her cheeks are red and she's rearranging and rearranging the tins in her bag, but she speaks with the same angry courage as the little Jehovah's Witness boy down the street. "Homeschooling takes all the kids whose parents really care out of the system. Shouldn't you have them in public school, and then work with the schools to make them better?"
+
+- @what-if: What if the kid were being bullied?
+- @what-if-autistic: Or autistic, and the school wasn't well equipped to handle that?
+- @also-opposed: Are you also opposed to private schooling?
+
+
+@what-if
+go-to: giving-up
+
+"What if the kid were being bullied in school?" you say. You know a kid at the co-op who home-schools because one of his classmates broke his arm on the playground. "What if the teachers couldn't stop it?"
+
+
+@what-if-autistic
+go-to: giving-up
+
+"What if the kid were autistic and didn't fit well with a conventional curriculum?" There are a few of those, special-needs kids you know of through the co-op. They rarely come to co-op functions themselves, but sometimes their parents appear for social events or participate in Mrs. Perry's Legislative Calls To Action.
+
+
+@also-opposed
+
+"Are you also opposed to private schooling?" you ask.
+
+The woman seems surprised that you're speaking.
+
+"Yes," she says. "But at least with private school everyone has theoretical access to the same materials and experiences, if they pay for them."
+
+You and Lettice exchange glances.
+
+
+@giving-up
+
+The woman looks redder. "Doesn't that just give up on the other children whose parents can't take them out?"
+
+- @own-kids: Let Mother answer.
+- @world-help: Let Mother answer.
+
+
+@own-kids
+view-if: poverty > 2
+on-arrival: poverty += 1
+
+"My first duty is to my *own* kids," says Mother. She eyes the woman coldly. "I'm going to take a wild guess that you don't have any of your own."
+
+The woman gets a look on her face like she's just been slapped. She gets up and walks to the front of the bus without saying anything else.
+
+Mother turns and looks out the window. It is hard to read the expression in her reflection.
+
+
+@world-help
+view-if: poverty < 3
+
+"We pay taxes," Mother says. "We decrease the load on the public schools. We actively lobby our congresspeople for better educational provisions. Our home-schooling co-op provides classes that are open to anyone, including classes in crafting, music, and programming that are scheduled at a time when public school students can attend. What do *you* do to improve public education?"
+
+The woman embraces her bag of cans more tightly. "Animal charities are more my thing," she says.

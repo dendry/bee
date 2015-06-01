@@ -1,0 +1,41 @@
+title: The Doll
+subtitle: No good deed goes unpunished.
+new-page: yes
+view-if: doll = 0 and lettice < 2 and age > 7 and month < 24
+on-arrival: month += 1; doll = 1
+tags: plot, menace, one-off, top
+
+= The Doll
+
+Father takes the doll away from you one morning. "Is this what you are spending your time on?"
+
+You've been working with Mother's cloth remnants, making calico dresses and white aprons for the doll with tiny stitches. It is hard work. The patterns are not easy to scale to doll size, and whenever you need to use a button or a snap it is comically large in comparison to everything else. Also, ruffles and frills do not scale down. The cloth may be cut shorter, but it is still as thick as ever.
+
+"Sometimes," you say. It's not for you. It's to amuse Lettice.
+
+"You're too old for such things," Father says, frowning at the doll. He seems aware, vaguely, that the outfit it is wearing -- an apron with satin-stitched apples in the corner, and a deep blue gown -- is not the outfit it came with. "We will give it to charity."
+
+- @charity: (Charity. C, H, A--)
+- @grab-back: Grab the doll back.
+
+
+@grab-back
+on-arrival: parents += 1
+
+You seize the doll and pull. "It's not *for* charity," you say.
+
+Father is holding the doll by the hair, and its head pops off. "Well," he says. "Looks like it's not for anyone, now. Let that be a lesson to you to speak civilly rather than trying to grab and pull things."
+
+As if speaking civilly would have gotten the doll back.
+
+
+@charity
+on-arrival: spelling-relief += 1
+
+Father twists the doll's head on its neck experimentally. The head pops off. It hasn't been very secure lately.
+
+"Does this go back on?" Father asks.
+
+"You just pop it back," you say. You're itching to take the doll back and reassemble it yourself, and stop his hands from twisting the apron around.
+
+"We'll do that when we're ready to donate," Father says. "You can't give a headless doll to charity." He puts the doll and the head of the doll side by side on the mantel. 

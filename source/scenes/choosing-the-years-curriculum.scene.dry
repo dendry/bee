@@ -1,0 +1,35 @@
+title: Choosing the Year's Curriculum
+subtitle: A session with Mother and the chart.
+new-page: yes
+tags: top
+view-if:  age > 9 and month = 4
+priority: 2
+on-arrival: month += 1;  
+
+= Choosing the Year's Curriculum
+
+At the end of summer every year, Mother gets out a big block of graph paper and plans what you and Lettice are going to study for the year to come. You are allowed to make suggestions. 
+
+- @consider-books: Consider possible textbooks.
+- @schedule: Schedule more drill time.
+
+
+@schedule
+on-arrival: spelling-relief += 1
+
+You and Mother draw blocks on the graph paper and shade them in to represent how much time each day you should be spending on each subject. It's a rough estimate, and in practice you're allowed to do your day's work in any order; but the graph paper helps keep you from overplanning.
+
+"I'll need more drill time than last year," you remind Mother. So she somberly shades in another quarter-inch box each day.
+
+
+@consider-books
+
+Sometimes Mother will bring home some used textbooks from the Co-op to see if they're any good. She and Father will pick out the ones that are too extremely religious -- the science books where Noah is shown feeding a dinosaur. The social studies books with maps of where the heathens live. One of the history books so upsets Mother that she "accidentally" spills a whole carafe of coffee on the Civil War, and ruins it.
+
+"I won't *burn* a book," she says to Father. "But there are some ideas I don't plan to encourage either."
+
+"No," Father agrees.
+
+"And that's just the sort of thing people stereotype us for," she goes on. "They think we're all reactionaries! Because of a few hardcore parents who just happen to be the ones that stand out the most."
+
+Father leans back in his chair. It's what he does when he knows Mother is going to be talking on for a while.

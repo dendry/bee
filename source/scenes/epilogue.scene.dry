@@ -1,0 +1,25 @@
+title: Epilogue
+subtitle: Down the corridor of years.
+new-page: yes
+tags: top
+view-if: month = 26
+on-arrival: epilogued = 1
+
+= Epilogue
+
+So you go to public school, and you don't go to Nationals.
+
+Language arts classes are never up to your level. Listening to other kids read aloud badly is a special kind of pain. 
+
+Science class is more interesting than you expected, and you get to cut up a frog.
+
+Lettice stays home and works with Mother. She gets her own art tutor. She does illustrations for different story books she reads. Suddenly she's the talented one. She hardly remembers to hate you at all.
+
+It hurts for a while, and then it stops hurting. And one day Mother and Father say you've come a long way and you don't have to stay in public school if you don't want to.
+
+- @and-choose: And you're allowed to choose for yourself.
+
+
+@and-choose
+
+So you decide for yourself.

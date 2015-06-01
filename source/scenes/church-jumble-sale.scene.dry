@@ -1,0 +1,159 @@
+title: Church Jumble Sale
+subtitle: Helping sort goods for the annual fundraiser.
+new-page: yes
+view-if: status > 1 and status < 6 and month = 14
+on-arrival: month += 1
+tags: menace, plot, top
+
+= Church Jumble Sale
+
+It's jumble sale at the Church, and the children have been gotten together to help sort and price the easy things. Lettice is doing the DVDs, and Lisa Perry is mending donated clothing with a little frowning crease between her eyebrows. Your job is to find the books in the collection and sort them into $1, $2, $5, and $10 boxes, and put special labels on box sets.   
+
+- @fountainhead: Flip through *The Fountainhead*.
+- @erase: Carefully erase pencil marks from *The Boys' and Girls' Cookbook*.
+- @eavesdrop: Eavesdrop on Jerome and Flauberta.
+- @chat-with: Chat with Jerome.
+- @chat-with-2: Chat with Jerome and Flauberta.
+
+
+@eavesdrop
+view-if: jerome > 1 and jerome < 4 and child-led < 1 
+on-arrival: jerome += 1
+
+"We'd get a better price if we were selling this stuff online," Jerome is saying to Flauberta. "Selling locally is for suckers."
+
+Flauberta is taking inventory of board games to make sure they have all their pieces. She tapes a sign to the top of a Scrabble box that says, "Missing P."
+
+"We could be filling out Social Studies Workbook 23A: Societies of Subsaharan Africa," she says to Jerome.
+
+"Good point," he says.
+
+
+@chat-with
+view-if: jerome > 1 and child-led < 1
+choose-if: jerome > 3
+unavailable-subtitle: Jerome is ignoring you.
+on-arrival: jerome += 1
+
+"Having a good time?" you ask Jerome. 
+
+He looks up from sorting a deck of cards. "Riveting," he says. "I call it The Heroic Quest for the Missing Three of Spades. Though, hey, better than homework."
+
+- @disagree: Which it isn't, really.
+- @joker: Suggest drawing a three of spades over the joker of the pack.
+
+
+@disagree
+
+"My homework reading is a lot better than this," you say.
+
+He looks up at you. "Yeah? Lucky you. We just get workbooks. Lots and lots and lots of workbooks. But we're way ahead of grade level!" He gives a fakey thumbs-up.
+
+
+@joker
+on-arrival: jerome += 1
+
+"You could draw a fresh three of spades over the joker in the pack," you say. "Then it would be usable again, if the person didn't need wild cards."
+
+"Oh, I *need* wild cards," says Jerome. Somehow it sounds like innuendo. But he gets out a price-marking pen and starts modifying the joker.
+
+
+@chat-with-2
+view-if: jerome > 1 and child-led > 0
+choose-if: jerome > 3
+unavailable-subtitle: Jerome is ignoring you.
+on-arrival: jerome += 1
+
+"So I'm doing a little secret econ project," Jerome says. He shows you the camera on his phone. "I'm photographing everything I tag, and I'm going to work out how much it sells for at church compared with how much similar objects sell for online. My hypothesis is that we're underselling valuable objects and could be making a lot more money with these donations."
+
+- @mrs-perry: He's still not going to get Mrs. Perry to change the jumble sale.
+- @cool: It's cool his parents are letting him do better projects.
+
+
+@cool
+
+"It's cool your parents are letting you do better projects," you say.
+
+"Yeah, I should make debating speeches to them more often. Flauberta and I are working on a speech so they'll let us go to Space Camp."
+
+
+@mrs-perry
+
+"I don't think you're going to get Mrs. Perry to change the jumble sale," you say. "It's a tradition. She thinks it brings people together."
+
+He shrugs. "Still worth it to find out whether I'm right. Mrs. Perry is kind of a jer—"
+
+Lisa Perry stares over at Jerome from the mending she's doing. It's strangely easy to forget she even exists. "I can hear you," she says quietly.
+
+Jerome purples. "Sorry."
+
+
+@erase
+
+*The Boys' and Girls' Cookbook* looks like it belongs to when Mother was a child, or possibly even her mother. There are recipes for Ants On A Log (raisins on celery) and Pigs In A Bun (hot dogs in wrappers). Each recipe is accompanied by a picture of a smiling, freckled boy or a smiling, aproned girl. 
+
+Alas, the cookbook has also been heavily and irreverently annotated. But since the marks are in pencil, you can make it almost new again with a lot of patient erasing, and that would allow you to put it in the $2 rather than the $1 box.
+
+- @let-mrs: Let Mrs. Perry see what you're doing when she comes around to inspect.
+- @then-again: Then again, Mrs. Perry is sometimes unpredictably disapproving.
+
+
+@then-again
+on-arrival: status -= 1
+
+You keep your head down and your work diligent when Mrs. Perry comes around, so she doesn't ask you anything. Being generally busy is just a safer bet. 
+
+
+@let-mrs
+on-arrival: status += 1; perry += 1
+
+Mrs. Perry takes a tour round the tables to see how everything is going.
+
+"I'm renovating this cookbook," you say, when she gets to you. "It was hard to read."
+
+She laughs. "My! That certainly is a bit vintage. I doubt most mothers would care for the nutrition in it, but maybe someone will want it for a souvenir."
+
+
+@fountainhead
+
+You open the paperback of *The Fountainhead* to the point where the spine creases from much previous reading. It falls open to a bit where someone is... yes, that must be meant to be a description of sex. Or a prelude to it.
+
+Your skin heats, even though no one can see what you're reading. There's something about the way the characters are acting that seems like a grown-up secret. Cruel and also fascinating. Is that how it really is?
+
+"You should read that from the beginning," says Mr. Scott from the other side of the table. You startle and stick the book into its box. "Ayn Rand ought to be required reading for all teenagers." 
+
+Mr. Scott is a tall, lanky church member who always wears sharp suits. 
+
+- @suggest: Suggest you didn't care for the bit you read.
+- @blank: Look blankly curious.
+- @point-out: Point out that you're not a teenager yet.
+
+
+@point-out
+view-if: age < 13
+
+"I'm not actually a teenager yet."
+
+"Mm. You look older." Mr. Scott gives you an appraising look that makes you uncomfortable. Then he puts some books on the pile and walks away. 
+
+"What did he leave?" asks Lettice. 
+
+You look. There's a life of Jefferson Davis and a book on tank warfare.
+
+
+@blank
+on-arrival: poverty += 1
+
+"Oh, yeah?"
+
+"It has a lot to say about allowing yourself to be successful," says Mr. Scott. "Your parents lead a humble lifestyle, but that's not an example that you morally have to follow when you're older, you know." 
+
+He gives you a meaningful look you don't know how to interpret. Does it have to do with the sexy bit, or something else entirely?
+
+
+@suggest
+on-arrival: status += 1
+
+"I don't know," you say. "It looked like it might be above my reading level."
+
+"Don't sell yourself short," says Mr. Scott. "You're an extraordinary student. You shouldn't hold yourself back to be more like other people." Then he puts some history books into the unsorted pile and wanders off.

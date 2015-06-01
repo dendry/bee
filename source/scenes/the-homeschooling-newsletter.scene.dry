@@ -1,0 +1,104 @@
+title: The Homeschooling Newsletter
+subtitle: Father begins a new project, and other members of the family are invited to help out.
+new-page: yes
+view-if: age > 7 and newslettering = 0  and month < 24
+tags: plot, top
+on-arrival: month += 1; newslettering += 1;
+
+= The Homeschooling Newsletter
+
+"Listen to this little tidbit," says Father. And he reads off a limerick about the apostle Paul and the province of Gaul. 
+
+Mother looks at Father over the top of the sewing machine. "Limericks are an unclean form."
+
+Father looks crushed. "What do you think about double dactyls?"
+
+- @your-choice: Discourage the poetry.
+- @mom-choice: Leave it to Mother to field this.
+
+
+@your-choice
+go-to: next
+
+"I don't think people are expecting poetry at all," you say. "Some of the readers might not like it, unless you used a psalm."
+
+"Hm."
+
+A moment of moody silence follows.
+
+
+@mom-choice
+go-to: next
+
+Mother runs another stretch of cloth under the foot of the sewing machine, and its aggressive chunk-a-chunk-a-chunk makes her answer for her. She is putting a brown calico frill at the bottom of a mud-colored day dress, and now is not a good time to interrupt her.
+
+
+@next
+
+"I want this newsletter to stand out," Father explains. "Both for the quality of its content and for its playful appeal." 
+
+- @destination-one: Volunteer to provide some puzzle content.
+- @destination-two: Suggest including some drawings by Lettice.
+- @enough-already: Say they already have plenty of content.
+
+
+@enough-already
+go-to: conclusion
+
+"I think there's a lot of good stuff in there already," you say. 
+
+(Sycophantic. S Y C... No, that's not fair. Father is genuinely concerned to do the best possible job on the newsletter.)
+
+Father looks pleased. He and Mother have each already written several serious articles: about materials for the math curriculum, about disciplinary methods, about how to bake a chocolate chip cookie that costs next to nothing and survives freezing. No real chocolate is involved, only carob.
+
+You and Lettice were taste-testers.
+
+
+@destination-one
+go-to: conclusion
+on-arrival: pedagogue += 1
+
+"Perhaps there should be a puzzle or challenge," you suggest. "It would be useful because parents could use it as part of their weekly learning with their students."
+
+Father looks at you intently. "*You* should write this challenge," he says.
+
+"All right," you say. It will cost you hours of your Saturday every week to construct the challenge, and you will not be remunerated. Whether it does any good to the reputation of the newsletter, you never know.
+
+
+@destination-two
+
+"Why not one of Lettice's cartoon drawings?" you suggest. Lettice has been drawing comics lately. They involve a superheroine in a cape. The superheroine has a magic ray gun that solves math problems.
+
+"I'm not sure," Mother says, "that everyone will appreciate Lettice's drawings as much as we do."
+
+"Did someone mention me?" Lettice comes in from the other room. There are marker streaks on her fingers.
+
+- @explain: Lettice should know what you're talking about.
+- @father-no: It doesn't look like Father wants you to bring it up.
+
+
+@father-no
+go-to: conclusion
+
+"Nothing important," you say.
+
+"Okay." Lettice holds up a piece of recycled paper. One side is a discarded bill from the electric company, and on the other side she's drawn Mathina. Mathina wears a tiara with a division symbol on it. 
+
+"That's nice," says Mother. "You can put it on the fridge if you like."
+
+
+@explain
+go-to: conclusion
+
+"Father is looking for content for the newsletter," you say. 
+
+Lettice's face lights up. "Oh, let's put in my drawings, please please *please*."
+
+Father gives you a dirty look. "I'm not sure that's the kind of content we're looking for, Lettice. Though, of course, *we* all enjoy your comics and stories very much."
+
+Lettice opens her mouth. Then she remembers herself and closes her mouth again. She disappears down the hall. Her bedroom door shuts firmly.
+
+
+@conclusion
+
+Father goes away, tapping his pen against his lower lip. "Five hundred thirty-two subscribers," he says. "And counting."

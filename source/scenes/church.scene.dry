@@ -1,0 +1,160 @@
+title: Church
+subtitle: Where you spend most of the time when you're not at home.
+new-page: yes
+view-if: age > 4 and age < 8 and church-introduced = 0
+on-arrival: age += 1; church-introduced = 1
+tags: plot, top
+
+= Church
+
+You go to church at least once a week, obviously, and often more than that during certain seasons. There is special Bible study during Lent, and a lot of services around Christmas. Besides home and the Co-op, church is the place you know best in the world.
+
+- @liturgy: Your favorite thing is the flowers and stained glass.
+- @on-the-other: What's more, it's very familiar.
+- @still: Still, sometimes services get very boring.
+- @people-diverse: The parishioners are very diverse, though.
+
+
+@still
+
+Services can get dull; and they're dull with the additional complication that you are in the *wrong* to get bored. Certainly Mother and Father take the line that you aren't concentrating enough on your spiritual health, if you ever hint that you might prefer to play in the nursery during services, or that it would be a relief to be allowed to draw quietly, as some of the other children do.
+
+"You're old enough and smart enough to listen and think about what you hear," Father says. "Unless you just find it all *old hat*."
+
+- @yes-very: The services and the sermons don't change very much.
+- @read-signs: But you're not fool enough to say yes to Father after a line like that.
+- @what-idiom: Where did "old hat" come from, anyway?
+
+
+@yes-very
+on-arrival: parents  -= 1
+
+"The sermons sound the same a lot of the time," you confess. "Especially when Father Sudwell preaches."
+
+"She has you there," Mother says to Father. 
+
+Father Sudwell likes to preach about Mary Magdalene. He retells the story about how she anointed Jesus' feet with oil, and when he is telling this story he closes his eyes and speaks with deep feeling.
+
+"All right," Father says. "When Father Sudwell is preaching, you can write in a notebook instead of listening closely."
+
+You make a tiny fist pump that Father cannot see in the rearview mirror.
+
+"But I would prefer if you wrote your own meditations about the day's lessons," he adds. Still, better than the alternatives.
+
+
+@read-signs
+on-arrival: parents += 1
+
+"Of course not," you lie. 
+
+Lying about something you feel, when you know you're not supposed to be feeling it, is practically not lying at all. Or, rather, Father wasn't really asking to find out how you felt, but to see whether you knew what you were supposed to feel.
+
+Father's questions are often of that nature.
+
+
+@on-the-other
+
+There are kneelers you can pull down when it's time to pray. There's a red prayer book and a blue hymnal and a brown Bible in a rack on the back of the pew in front of you. There are white donation cards to go with your offering, and pink comment cards, where you can leave your phone number if you'd like to be contacted by a member of the Newcomers' Committee. There are short, pointed pencils, but they were not put there for children to draw with, which is why you may not use them to make stick figures in your service leaflet.
+
+All these things are as familiar as your own house, as inevitable as dinner forks in the kitchen or washcloths in the shower. 
+
+- @too-bad: Some people don't know when to use the kneeler and when to stand.
+
+
+@too-bad
+on-arrival: status += 1
+
+Some people don't know when to use the kneeler and when to stand, which must be embarrassing for them. But you've been here forever. You can do church on instinct. You don't need the bulletin insert to know the tune for the Sanctus; you don't need to read the Nicene Creed out of the prayer book. 
+
+At worst, the words are just under the surface and you have to grope around a moment, like searching for a shampoo bottle dropped in the bath.
+
+
+@liturgy
+
+The priests dress up. The choir has robes. There are flowers, incense, and stained glass. There are thick white candles on the altar, bigger than any candlestick anyone would ever use on a table at home. 
+
+A cross hangs above the altar, and two spotlights shine on it, so that it casts two additional shadow-crosses on the back wall of the church. Perhaps the shadow-crosses represent the two thieves who were crucified alongside Jesus.
+
+Everything in church is like that: pointing to something else, outside and above the church or the congregation or the Earth itself.
+
+- @must-be: It must be very expensive to keep all of that going.
+- @good-against: But it's a sign to the secular world.
+
+
+@what-idiom
+on-arrival: spelling-relief += 1
+
+"Where did the idiom *old hat* come from, anyway?" you ask.
+
+Father glances at you in the rearview mirror. "That's an excellent question," he says.
+
+"Mrs. Fundt wears an old hat," Lettice says. "The netting is ripped."
+
+"When Mrs. Fundt was a girl," Mother says, "It was the rule that ladies had to wear a hat to church, so she is still used to it. Now that she is retired, she might not be able to afford a new hat."
+
+After church, everyone does research together on the internet. You find a list of idioms to do with clothing. Lettice laughs at the phrase "birthday suit." No one says anything else about how you yawned during the sermon.
+
+
+@people-diverse
+
+Your parents go to a very mixed church. For instance, Mrs. Perry goes there, and the Perry family believes strongly in the end of days. Mrs. Perry asks Father Sudwell about the Rapture a little more often than he would prefer.
+
+On the other hand, sometimes you find cars in the parking lot with stickers for Democratic candidates. A couple of the younger parishioners occasionally have colored streaks in their hair, or too many ear-piercings.
+
+- @ask-mother: Ask Mother her opinion about this.
+- @ask-father: Ask Father his opinion.
+- @ask-mrs-p: Ask Mrs. Perry about the girl with the triple-pierced ears.
+
+
+@ask-mother
+on-arrival: status -= 1
+
+You ask Mother why it is that so many different kinds of people come to church, some of whom don't seem to believe everything you do.
+
+"When you go to the communion rail, everyone is as important as everyone else," she says. 
+
+"Even if they have funny breath?" asks Lettice. "Like Mr. Fundt?"
+
+"In Christ there is no east or west," says Mother. "Nor any halitosis."
+
+
+@ask-father
+
+"It's good to be exposed to a variety of opinions," Father says; which is not the line he takes when you and Lettice ask to take an overly grown-up book out of the library. "That way, you can learn to defend your own views against them. It's best to learn how to argue civilly with people who are mostly on your same side, at church, before you need to go out and practice those skills more broadly in a more secular environment."
+
+
+@ask-mrs-p
+on-arrival: status += 1
+view-if: status > 0
+
+You stand near Mrs. Perry one day during coffee-and-donuts time.
+
+"There was a girl in the pew ahead of me who had *three* piercings in each ear," you tell Mrs. Perry. 
+
+"Really?" says Mrs. Perry. She wipes her mouth with her little coffee napkin and starts scanning the room.
+
+"I prayed for her secretly during the Prayers of the People," you add.
+
+Mrs. Perry stops scanning and looks down at you. "Well bless your heart," she says.
+
+
+@must-be
+on-arrival: poverty += 1
+
+It must be expensive to buy all the flowers and candles all the time, and keep up the church building, and have all the plates and goblets, which look like they might be made of gold.
+
+They probably aren't. But even so, they look like they might be.
+
+"Would it be better if the money for those things went to poor people?" you ask Mother.
+
+"The church also gives money to charity," Mother says. "It doesn't have to be either-or."
+
+"But poor people could always use *more* money," you say. 
+
+Mother looks at you thoughtfully. "Yeah," she says, giving your shoulders a hug. "I'm sorry, sweetie. That's one of the not-very-nice things about the world."
+
+
+@good-against
+on-arrival: world += 1
+
+Maybe, when unchurched people come inside -- for Easter or Christmas, for example, or for weddings or funerals -- maybe all of this will say something to them. Maybe they'll look at the flowers and the shiny plates and think that something is missing from their lives.

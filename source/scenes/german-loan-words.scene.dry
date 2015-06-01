@@ -1,0 +1,69 @@
+title: German Loan Words
+subtitle: Loan words often appear in the final round of nationals.
+new-page: yes
+view-if: age > 7 and spelling > 2 and month < 24
+on-arrival: month += 1
+tags: drill, top
+frequency: 500
+
+= German Loan Words
+
+The cards are sticky from repeated use and are printed in green ink because that was the only pen of yours that Lettice hadn't "borrowed" when you wrote them out.
+
+- @dreck: DRECK, BLITZ, ERSATZ, GESTALT.
+- @schn: SCHNAPPS, SCHNITZEL, SCHNAUZER.
+- @gemutlich: GEMÜTLICH.
+- @anschluss: ANSCHLUSS, BLITZKRIEG, FÜHRER.
+- @ursprache: URSPRACHE. A word from the finals.
+
+
+@schn
+on-arrival: spelling += 1
+choose-if: age < 9
+unavailable-subtitle: You've known those for a while now.
+
+The SCHN- words make you think of having a cold. There is something clogged about them, all those consonants before you get to any vowels. Also, SCHNEEZING. When your nose is full of SCHNOT.
+
+"What are you laughing about?" Lettice asks.
+
+"Sch," you say.
+
+"Fine. You made noise first," she grumps.
+
+
+@dreck
+on-arrival: spelling += 1
+choose-if: age < 11
+unavailable-subtitle: You know all those.
+
+The -TZ words are the most entertaining to write and to say. You take up writing the Z in your notebook in the European way, with a crossbar through the middle so that it cannot be confused with the number 2. This appears to you immensely sophisticated and adds a little GLITZ to the word list.
+
+
+@gemutlich
+on-arrival: spelling += 1
+view-if: age > 8
+
+This one means cozy or comfortable or warm. It goes along with all those words for different sorts of cozy food: hamburger and strudel, knockwurst, liverwurst. 
+
+Father makes liverwurst sandwiches sometimes. The 'wurst is a grey paste that comes out of a plastic tube, the same size and shape as a tube of cookie dough. It smells peculiar, but you and Lettice both like it surprisingly much. Like all the other foods you associate with Germany, it is not pretending anything. It is heavy and straightforward.
+
+
+@anschluss
+on-arrival: spelling += 1
+view-if: age > 9
+
+No one wants to say these words or spell them or talk about them. Like the words are toxic; like the language itself is welted up by a poisonous insect bite.
+
+Even if you do not think, deliberately do not think, about the history that goes with them, they still feel wrong.
+
+
+@ursprache
+on-arrival: spelling += 1
+view-if: age > 10
+
+2006, this word was in the final round of the National Bee. 
+
+And what could be more appropriate, more desirable than this idea? URSPRACHE is an original language, the ancestor of other languages, which is no longer spoken but can only be guessed at. 
+
+A language whose fossils remain embedded in other languages; whose consonants are shell and bone; whose vowels have decayed and been filled by limestone. 
+  

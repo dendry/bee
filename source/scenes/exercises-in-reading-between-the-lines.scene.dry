@@ -1,0 +1,83 @@
+title: Exercises in Reading Between the Lines
+subtitle: A question of employment.
+new-page: yes
+view-if: english > 2 and english < 4 and month < 24
+on-arrival: month += 1; english += 1; sara += 1
+tags: plot, top
+
+= Exercises in Reading Between the Lines
+
+A conversation, overheard:
+
+"...wondering about Sara. I've noticed that she..." Something in lowered voices. "...not what I would want influencing our daughter."
+
+Father's voice: "Are you sure? Wouldn't want to fire her if it's a misunderstanding."
+
+"I can hardly ask her straight out, can I?" Mother asks. 
+
+But you can. If you can figure out what to ask her about. Perhaps at the beginning of a lesson, but after Mother has left the room.
+
+- @feminism: Is she feminist?
+- @atheism: Is she atheist?
+
+
+@feminism
+
+"Are you a feminist?" 
+
+Sara doesn't seem particularly mean to children or anti-man, for that matter. So it is a little surprising when she says, "Well, of course."
+
+- @promise-silence: Promise not to tell the parents.
+
+
+@promise-silence
+
+"I won't tell Mother," you say. "I promise. I think you shouldn't tell her either."
+
+The corners of Sara's mouth turn down. "What do you think a feminist is?"
+
+"Someone who thinks women shouldn't be allowed to be mothers and stay home with their families?" you say. You've also heard the phrase "ball-busting" in this connection, but you're pretty sure the term has testicular significance and that children shouldn't use it.
+
+"That's not what it means, and anyone who attacks feminists on those grounds is using a straw man argument."
+
+- @rhetoric: Ah, rhetorical terms. Now you're on familiar ground.
+
+
+@rhetoric
+
+Sara talks and talks, but the important thing seems to be that, whatever Mother and Father were concerned about, she isn't a feminist in that bad way.
+
+
+@atheism
+
+"Do you not believe in God?" you ask.
+
+Sara's mouth goes sideways and she pushes back the straw hair. "I don't talk to you about God," she says. "So I don't think it should matter."
+
+- @cop-out: That was a cop-out if you ever heard one.
+- @afraid-losing: Perhaps she's afraid of losing the fee for teaching you.
+
+
+@cop-out
+go-to: sags
+
+"Weren't you just saying the other day that what we believe affects how we understand what we're told, and even what we choose to read in the first place?" Confirmation bias.
+
+"Mmm, fair point." 
+
+You wait.
+
+
+@afraid-losing
+go-to: sags
+view-if: poverty > 0
+on-arrival: poverty += 1
+
+"I won't tell Mother what you say," you offer. "I'm just curious."
+
+
+@sags
+
+She sags in her chair and pulls the arms of her sweater down to cover her hands. "I think the Bible is a record of experiences people have had, and stories they've told each other, about how they understand the Divine. But I also think that about some of the Greek philosophers, and the Koran, and spiritual poetry. They're records of *human* thoughts, which might not be big enough to encompass all of the truth. I wouldn't say for sure there's no God, but I'm not convinced any religion has a unique claim to describe him."
+
+Not atheist, exactly. But agnostic? Hm. Or perhaps some other heresy. Best not to mention that, then.

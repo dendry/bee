@@ -1,0 +1,123 @@
+title: Invitation to the Salon
+subtitle: In which Mrs. Barron proposes an outing.
+new-page: yes
+view-if: age > 0 and barrons > 0 and hairdresser < 1 and month < 24 and barron-crisis < 1
+tags: plot, top
+on-arrival: barrons += 1
+
+= Invitation to the Salon
+
+Mother gives you and Lettice your haircuts once every two months or so. Your bangs are cut straight across the forehead; the rest of your hair is trimmed "for split ends." Sometimes she braids your hair into twin braids. 
+
+One of the kids at Sunday school says you look "like that girl from Little House on the Prairie."
+
+- @better-not: It's really better not to ask what that means.
+
+
+@better-not
+
+When someone might be making fun of you or might not, a dignified silence works best. Usually. 
+
+- @post-church: D I G N I F I E D.
+
+
+@post-church
+
+After church Mrs. Barron pops up at Mother's side. "I'm going to the salon Tuesday afternoon. I was wondering if I could take the girls with me."
+
+Mother looks from Mrs. Barron to you and back again. "Do you need them for something?" she asks.
+
+"Oh, just a ladies' afternoon!" Mrs. Barron exclaims. "You are very lucky, my dear, of course, you have your girls around all the time. But my household is nothing but males! I miss having girls around to... oh, you know, talk about *girl stuff*." She gives you a conspiratorial wink.
+
+- @anthropology: You've never been to a salon. Maybe in a spirit of anthropology you should go.
+- @father-no: Father would never approve.
+- @wait-to-see: Wonder what Mother will say.
+
+
+@wait-to-see
+on-arrival: hairdresser = 1; barron-crisis = 1
+
+Mother cocks her head at Mrs. Barron. "You can't want my girls' advice on how to style your hair," she says bluntly.
+
+Mrs. Barron becomes busy taking something out of her purse. It is a lipstick. She takes the cap off, studies the color, closes it again. "The thing is -- I can't really face my friends right now. My D. H. -- everybody's talking about --"
+
+"-- I was so sorry to hear --" says Mother rapidly, to cut off Mrs. Barron from whatever she was about to say about her Dear Husband. Pity. 
+
+"-- just thought -- don't want to be alone, and the girls are so *undemanding* -- you've brought them up so well --"
+
+Mother is getting more and more embarrassed. "You can take them, of course," she says.
+
+
+@anthropology
+on-arrival: hairdresser = 1
+
+On a friend's television you recently saw a movie where women at the beauty salon had enormous pink helmet-like machines that came down over their heads. It would be interesting to know whether these machines exist, and, if so, what they are meant to do. Lettice suggested that they were intended to program the women into cyberbots, but the movie did not bear out this theory.
+
+You smile at Mother. "Lettice and I could see how the haircutting is done. We'd sit very still."
+
+Mrs. Barron looks at you from the corner of her eye, but does not say anything.
+
+Mother shrugs. "It doesn't sound like it would be very thrilling for you girls, but if you want to go, I have no objection. Lettice can take her *Peoples of the World* reader and get caught up on social studies."
+
+
+@father-no
+
+"Father does not want us to acquire habits of vanity," you say. 
+
+Mrs. Barron blinks. "That's a bit extreme," she says.
+
+Mother smiles unkindly. "My daughter is perfectly right. We have not raised our daughters to be concerned with the things of the world."
+
+"Sweetheart, the occasional haircut -- I mean one not done with sewing clippers, ha ha -- it's hardly the same thing as being *vain*."
+
+- @remind-of-vanity: Remind Mrs. Barron about the anti-aging cream you found while cleaning her bathroom.
+- @apologize: Apologize.
+
+
+@apologize
+on-arrival: hairdresser = 50
+
+"Sorry," you say. "I didn't mean to be rude."
+
+Mrs. Barron gives a glittering smile. "Of course, your mother *did* mean to be rude."
+
+Mother smiles back, bright and hard. "I don't like people interfering with my girls. If I wanted that, I would put them in school."
+
+"Oh, heavens, am I being compared to a *public school teacher*?" Mrs. Barron asks. "I know when I'm defeated, girls," she says to you. "There's no coming back from that one. I'm down for the count."
+
+
+@remind-of-vanity
+view-if: housework > 0
+
+"What about the anti-aging cream?" you ask. 
+
+Mrs. Barron looks at you inquiringly.
+
+"You have four kinds of anti-aging cream," you say. "We found them when Lettice was cleaning your toilet. One of them had the price tag on. It cost one hundred and nine dollars."
+
+Mother's aghast expression suggests that she's trying to work out how much peanut butter a hundred and nine dollars could buy.
+
+"I don't know what you're talking about," Mrs. Barron lies. She absolutely does know. You can see it in her eyes and in the way she's holding her body. She's looking straight at you and just lying, plain out. 
+
+- @more-detail: Prove she's bearing false witness against you.
+- @let-her-off: Let her off the hook.
+
+
+@let-her-off
+on-arrival: hairdresser = 50
+
+"Maybe I saw it at someone else's house," you say. Though you didn't. It was absolutely Mrs. Barron's house. A couple of the jars were dried up as though they'd been unused for a while, but they hadn't been thrown away either.
+
+"Maybe," says Mrs. Barron. "In any case, it sounds like I should look somewhere else for my salon buddy, ha ha!" She hoists her purse up her shoulder and stalks off to get another donut.
+
+
+@more-detail
+on-arrival: hairdresser = 50
+
+Your voice becomes more shrill. "You know exactly what. Two of the jars had labels in French and one said pour les yeux." It's probably wrong, but you pronounce this *pore less yuks*. There are only a few French words on your spelling drills and it's hard to work out general pronunciation rules from those.
+
+Mother is looking at Mrs. Barron with an interested expression.
+
+Mrs. Barron sighs. "Okay, yes. Milk of the Orchid, and it *is* very expensive and it *doesn't* do any good. Dab it on your wrinkles every night and they'll still be wrinkles." Half-consciously she rubs at the two frown lines at the top of her nose, as though she could smooth them out again.
+
+"You know what, though, it's time for my kérastase treatment and that would be so dull for the girls to sit through! I don't know what I was thinking, inviting your girls! Ta-ta!"

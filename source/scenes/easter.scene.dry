@@ -1,0 +1,116 @@
+title: Easter
+subtitle: Vigil service.
+new-page: yes
+view-if: month = 20
+priority: 2
+on-arrival: month += 1
+tags: seasonal, religious, top
+
+= Easter
+
+The service of Easter vigil is a long one, held late at night and into the next morning. Mother and Father fast beforehand, and perhaps when you are older, you will as well. There are a lot of lessons, read by candle-light, and the best part about the service is that you get a candle of your own to hold while you listen. 
+
+- @onward: Be as still as possible.
+- @spelling-practice: Drill yourself on spelling to keep focused.
+- @origami: Make your service leaflet into a paper crane.
+- @pyromania: Indulge your pyromania to the fullest.
+
+
+@pyromania
+view-if: age > 9
+
+The service begins with the lighting of the New Fire: a pagan-seeming ritual, though it wouldn't do to comment about this to Mother and Father. The New Fire is made with twigs and scented sticks out in the courtyard before the rest of the service begins. Then everyone lights their candles and processes into the church proper, where there are no lights but the lights held by parishioners and a handful of candles on the altar.
+
+The candles drip. There is a guard made of cardboard that is supposed to protect your hand, but it is never entirely effective and sooner or later some of the wax always dribbles through onto the sensitive webbing between forefinger and thumb. 
+
+To prevent this as much as possible requires careful and prolonged tending of the candle. You turn it this way and that way so that the wax drips down different sides, forming gnarly protrusions that look like a knobby tree or an old man's face, rather than streaming straight down onto your hand. 
+
+Ahead in the darkness, the lector reads of God's promise to Israel, of the dry bones raised to life, of Noah's rainbow.
+ 
+
+@origami
+view-if: age > 10
+
+You decide to make a crane of your service leaflet. This is a stealth maneuver, and it is possible only because Father is seated at the other end of the row and the church is unusually dark this year. But if you are very careful and very quiet and do not make your paper crinkle at all, you are able to fold it: first into a square, then into a triangle, then into more and more intricate shapes. 
+
+You have the whole method down, because of making a whole mobile out of paper cranes for Girl Scouts.
+
+
+@spelling-practice
+on-arrival: spelling += 1
+
+With the service this long and the lessons the same every year, it is not easy to pay strict attention. You've devised a solution, which is to test yourself on the spellings of any interesting words as the readers come to them. ISRAELITE provides some passing interest. ZEPHANIAH is really almost a poser, and you keep yourself from glancing at your service leaflet, as a test. ABOMINATION is not difficult, but it has a angry tone to it and a lot of Ms and Ns, which makes it fun to imagine rattling off in front of judges.
+
+Unfortunately the lector stumbles and says UNCLEANNESSESSES, and this starts you thinking of other words with that many Es and Ss, such as ESSSSE, the obsolete word for ashes.
+
+Lettice jabs you with the corner of her hymnal. "We're *singing* now."
+
+
+@onward
+go-to: fire-confiscation; acolyte-envy; peaceful; flowers
+
+
+@flowers
+
+Pots of flowers are lined up on the floor at the back of the church. When the lights come on, two altar ladies will come and set the flowers on and around the altar, to represent the resurrection and the new life. But now, in the dark, they're already sitting quietly; lilies grown in advance by a man in a flower shop who knew they would be needed.
+
+- @providence: Father would say something about the providence of God.
+- @management: Seems more like clever stage management.
+
+
+@providence
+on-arrival: parents -= 1
+
+Father is fond of the idea of providence, and that God takes care of people in a parental way. 
+
+
+@management
+on-arrival: parents += 1
+
+It's a good thing no one can hear what goes on in your head.
+
+
+@peaceful
+
+You are very still inside and out. The candles all around you show just a bit of each parishioner's face. The familiar characters seem smoothed out and gentle.
+
+Perhaps this is what people will look like in heaven, you think. A little bit glowing, and ageless. Like their nicest selves.
+
+Then: will we all wear Easter hats to heaven?
+
+
+@acolyte-envy
+
+The altar boys for the service are allowed to tend the candles, lighting them at the beginning and snuffing them at the end. This is by far the most interesting thing to do in the service, but you are not allowed to do what they do. Father and Mother feel that it is not appropriate; even though there are female acolytes sometimes, some places, they prefer to keep their daughters sitting quietly in their places. 
+
+- @nice-if: It would be nice to have everyone at church respect you, if you were an acolyte.
+- @perhaps-wrong: But it is wrong to think of service in terms of how it would make others look up to you.
+
+
+@nice-if
+on-arrival: status += 1
+
+After all, they get to sit at the front, and to wear robes as though they were in the choir. And they can go in and out of the back of the church.
+
+
+@perhaps-wrong
+on-arrival: status -= 1
+
+When you look sideways at Mother, her face is turned downwards and looks as serene as the Virgin Mary's.
+
+
+@fire-confiscation
+
+Lettice is not as good as you are at sitting still. During the third lesson, she sets her service leaflet on fire. It is only a little on fire and it goes out almost immediately, but Father is angry and takes away Lettice's candle and yours as well for good measure.
+
+"But!" you begin, as he sets both extinguished candles on the pew beside him.
+
+Father gives you a very angry look. "Listen to the lessons," he says sharply.
+
+You listen.
+
+"Early the next morning, Abraham rose up and saddled his ass," says the reader gravely.
+
+Lettice giggles. She knows the giggling is wrong and she stuffs the heel of her hand into her mouth to stop it, but Father has already noticed.
+
+Somehow you know that there will be no chocolate eggs in your basket tomorrow morning.

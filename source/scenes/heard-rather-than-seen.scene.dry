@@ -1,0 +1,138 @@
+title: Heard Rather Than Seen
+subtitle: The shadow of uncertainty.
+new-page: yes
+view-if: month < 24 and barrons > 2 and barron-crisis = 1
+priority: 1
+on-arrival: month += 1; barron-crisis += 1
+tags: menace, plot, top
+go-to: william-intro if william = 0; william-continued if william > 0
+
+= Heard Rather Than Seen
+
+William Barron arrives at the door after 9 PM. Mother lets him in. 
+
+
+@william-intro
+go-to: william-continued
+on-arrival: william += 1
+
+He is Mrs. Barron's husband, but you don't see him nearly as often. He works in software engineering and wears jeans and a polo shirt at all times. Even in church. 
+
+He's told you to call him William, but since you're not allowed to call adults by their first names, this creates a bit of a dilemma. In your head he's listed by full name, WILLIAM BARRON, like a Quaker.
+
+
+@william-continued
+on-arrival: barrons += 1
+
+"I've just had a fight with *her*," he says, not caring that you're standing right there. "I can't take it any more, I have to talk to someone. Oh, hello, Lettice."
+
+"Who is *she*?" Lettice asks brightly.
+
+"This is a grown-up conversation," Mother says. "Why don't you two go get ready for bed."
+
+- @try-hearing: Try to overhear.
+
+
+@try-hearing
+
+You and Lettice brush your teeth very slowly. Slowly you take off your clothes and put on your nightgowns. You do not speak to one another, do not make any noise. Through the not-quite-closed doors come bits of William Barron's conversation.
+
+"...so I told her... you're not married to *me*, you're married to *being sad*, and I can't compete with that. I can't deal with it any longer." His voice rises at the end.
+
+You can guess what Mother will say next.
+
+- @lord-never: The LORD never gives us more than we can bear.
+- @healing-service: Mrs. Barron should go to a healing service and be cured of her problems.
+
+
+@healing-service
+go-to: lord-never
+
+
+@lord-never
+
+You wait for her to say it, but she does not. 
+
+"That sounds very hard," Mother agrees.
+
+"Sometimes I get home and everything is energetic and happy -- I mean the house is a mess, when is it not, but she's in a good mood and the kids have gotten plenty done. And other times I come in and all the lights are off and there's nothing cooking and the boys are in their bedroom playing on their XBox but with the sound turned all the way off and the subtitles on."
+
+- @mrs-perry: Mrs. Perry might say she had a demon in her.
+- @not-duty: It sounds like Father would say she didn't do her duty.
+
+
+@mrs-perry
+view-if: perry > 0
+go-to: continuation
+
+Demons do all sorts of different damage, according to Mrs. Perry. They can make you be angry, or sad, or yell too much; or forget things; or have car accidents. There's no predicting what method they'll use next.
+
+
+@not-duty
+go-to: continuation
+
+Father doesn't have a lot of time for people who won't take responsibility for their own tasks. We all have our own business in life, he says, but for some reason she's just too lazy or bored to do hers. You'd guess.
+
+
+@continuation
+
+"Hey," Lettice whispers in the dark. "Do you think Mr. and Mrs. Barron are going to get a divorce?"
+
+"Ssh." The adults are still talking.
+
+"...have to put the boys in public school. Or private. I told her she could pick whichever one she thought was best for them. We can afford it."
+
+- @shocking: Sending them back to school? Things must be very bad.
+- @cannot-afford: Your parents could not at all afford to send you and Lettice to private school.
+
+
+@cannot-afford
+on-arrival: poverty += 1
+go-to: continuation-2
+
+"Of course," says Mother, and if William Barron cannot hear it, you can; a tiny little beat of annoyance in Mother's voice.
+
+
+@shocking
+on-arrival: status += 1
+go-to: continuation-2
+
+"Of course," says Mother, and you think you hear a little tiny smoke-curl of contempt in her voice.
+
+
+@continuation-2
+
+"But she says she'll slit her wrists if she doesn't at least have the boys around."
+
+You feel very cold and still in the middle of your bed.
+
+- @surely-not: Surely Mrs Barron would not do anything really dangerous.
+- @mortal-sin: It is a very serious sin to do harm to yourself.
+- @how-bad: How bad could it possibly be?
+
+
+@surely-not
+go-to: advising
+
+Things like that happen, but they happen on the news. Like there are wars, but bombs do not drop here; or there are famines, but everyone here has enough to eat mostly; or there are plagues, but you don't expect to see Mother and Father dropping dead from Ebola. Bad things are in their place.
+
+
+@mortal-sin
+go-to: advising
+
+Surely Mrs Barron knows that. Surely someone has told her. Surely she will be more afraid of hell than of whatever it is that is bothering her in this life. 
+
+
+@how-bad
+go-to: advising
+
+How could she think of such a thing? She has food and clothing and a big fancy house and two children. And she goes to church. 
+
+
+@advising
+
+Mother's voice, when it comes after a silence, is stony. "Please tell me she didn't say that when the boys could hear her."
+
+William Barron's response is quieter, but it sounds negative.
+
+Father speaks for the first time. "I'm going to get you some numbers to call," he says. The grown-ups move away towards the computer and their voices become too distant to hear.

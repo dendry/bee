@@ -1,0 +1,54 @@
+title: Lessons for Lettice
+subtitle: Mother asks you to take on some new responsibilities in educating Lettice.
+new-page: yes
+view-if: age > 9 and lessons < 1 and month < 24
+on-arrival: lessons += 1
+tags: plot, chores, top
+
+= Lessons for Lettice
+
+on-arrival: month += 1
+
+When you are old enough, Mother asks you to take over Lettice's lessons in reading and spelling. You are certainly qualified (she says with a tiny smile) and it will bring the two of you closer together as sisters.
+
+It is not clear that Lettice feels the same way. She sits sideways in her chair and crosses her arms at you. She kicks the chair leg. 
+
+Once she licks your arm for no reason at all. 
+
+"And how are my two champion spellers getting along?" Mother asks over breakfast.
+
+- @destination-one: Lettice is very ill-behaved.
+- @destination-two: Lettice is kind of a monster, but your parents should be the ones dealing with her.
+- @destination-three: Everything is fine. Mother has enough to worry about.
+
+
+@destination-one
+on-arrival: lettice += 1;
+
+"Lettice does not apply herself," you say. "She's ill-behaved and not disciplined."
+
+Mother looks surprised. "Lettice is really one of the best-behaved children I know," she says. "Everyone at church is always impressed by it."
+
+You do not mention the time Lettice stole a donut in the parish hall without paying the two dollars for it, or the time she accepted chewing gum from a little old lady and then stuck the chewed wad under the pew, or the time she drew with marker on Hymn 712, "I Sing a Song of the Saints of God."
+
+"Listen," says Mother. "It is very common for eldest children to be the most driven. Lettice has a different temperament from you, but if you encourage her and praise her for her successes, I am sure she will make progress."
+
+
+@destination-two
+on-arrival: lettice += 1; parents +=1
+
+"I'm not sure whether she's abnormally vicious for her age," you say. "I'm really not trained in child development."
+
+Mother laughs. "Your jokes are so dry, honey," she says. 
+
+Lettice stirs her instant oatmeal. When Mother has stopped looking, Lettice deliberately drops a blob on her homework paper.
+
+
+@destination-three
+on-arrival: parents -= 1; poverty += 1
+
+"Everything is going very well," you say.
+
+Mother's face smoothes out from the anxious waiting expression it was holding. "Oh, I'm so glad," she says. Then she makes a check mark on a piece of note paper. 
+
+"That's something successfully delegated," she adds, in a lower voice.

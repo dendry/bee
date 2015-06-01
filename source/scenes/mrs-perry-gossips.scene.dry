@@ -1,0 +1,50 @@
+title: Mrs. Perry Gossips
+subtitle: Conversation in the Co-op Library
+new-page: yes
+view-if: age > 0 and barrons > 0 and month < 24 and barron-crisis < 1 and status > 0
+tags: plot, top
+on-arrival: barron-crisis += 1
+
+= Mrs. Perry Gossips
+
+You and Lettice are at the Co-op library, changing out your books. Mrs. Perry is doing a volunteer stint today as the librarian, and is on the phone when you come in; and as she is not very quiet, you are able to overhear her talking.
+
+"What I *heard*," she says into the phone, "is that William Barron was shopping around for a *private school*. It sounds as though we might be about to lose them."
+
+- @keep-listening: Wait out the silence.
+
+
+@keep-listening
+
+Lettice pulls a book entitled *Magic Tricks: Cups and Balls* off the shelf.
+
+"...of course I don't care at all about their Co-op fees. It's those poor children I'm worried about," Mrs. Perry says to the person on the other end of the line. 
+
+Lettice leafs through *Cups and Balls*, frowning at the line-drawings of an androgynous hand concealing a red marble between its third and fourth fingers.
+
+"Well, no," Mrs. Perry concedes to the person on the other end of the line. "But if the marriage is on the verge... no, certainly. Well, keep the Barrons in your prayers. Yes. God bless."
+
+She hangs up. 
+
+- @warn-lettice: Warn Lettice not to check out Cups and Balls, as Mrs. Perry might not approve.
+- @ignore-perry: Then again, who cares what she thinks?
+
+
+@warn-lettice
+on-arrival: status += 1
+
+"I don't think you should get that one," you tell Lettice in a low voice. "Mrs. Perry likes to see us get out things that are improving." And she'd likely be on the phone telling everyone else in the Co-op that Lettice had an interest in magic five minutes later.
+
+Lettice shrugs and puts it back. "I don't think those tricks would work on me," she says. "If you want to be a magician you probably need big fat fingers like sausages."
+
+This turns the discussion to the question of whether magicians have special diets, like athletes, to help them gain weight in the hands. 
+
+
+@ignore-perry
+on-arrival: status -= 1
+
+Mrs. Perry raises her eyebrows at the sight of Lettice's selection. "These are just tricks, which is why we're allowed to have it in the library," she says. "But please remember that real magic is the work of the devil, and is performed by calling on demons to intervene on our behalf. And you do not want the help of demons."
+
+"No, ma'am," Lettice says solemnly.
+
+You consider asking Mrs. Perry what sort of demon she thinks would be interested in helping to hide rubber balls under cups, and whether they're perhaps very junior demons who haven't learned to do anything impressive yet.

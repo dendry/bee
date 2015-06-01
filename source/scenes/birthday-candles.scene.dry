@@ -1,0 +1,177 @@
+title: Birthday Candles
+subtitle: A birthday party for one of the girls in the co-op.
+new-page: yes
+view-if: age > 9 and month < 24 and jerome > 2 and birthdaying = 0
+on-arrival: month += 1; birthdaying = 1
+tags: plot, top
+
+= Birthday Candles
+
+The invitation comes in the mail, which is exciting and unusual. "Don't see the need for wasting money on stamps," Mother comments, as she puts the small blue envelope on your desk. "Not like we don't have an email mailing list."
+
+- @ooh: But you don't get invitations so often.
+
+
+@ooh
+
+On the day of the party, you are dressed up in a dress, like for church, which turns out to be the wrong thing. The other girls are in jeans and sweaters that look like they came from a store. Also, your present is the smallest, and it doesn't have any ribbon on it, just the home-made paper that Lettice makes, which is decorated all over with her own drawings.
+
+Everyone is polite, but some people have different values.
+
+- @flauberta: At least Flauberta is here. If that's a comfort.
+
+
+@flauberta
+
+"Hey come on, stop hiding in the corner," says Flauberta to you. "We're doing make-overs, do you want one?" She's holding up a tiny round pot of sparkly pinkness.
+
+- @making-fun: She's making fun of you.
+- @who-knows: And the parents wouldn't approve of you trying make-up on.
+- @caught: And the other girls would notice that you know nothing about make-up.
+- @hairdressery: On the other hand, you survived the salon haircut. Why not?
+
+
+@hairdressery
+view-if: hairdresser > 2 and hairdresser < 5
+on-arrival: jerome += 2; world -= 1
+
+"Sure," you say. You push the book away onto the shelf. "But I don't really know much about make-up."
+
+"That's okay," Flauberta says. "I can put it on you so you don't really have to know anything about it, but if anyone does say anything, just say you're not used to this *brand*." 
+
+She catches a fleeting expression on you. "Which is literally true and not a lie at all. And also it totally washes off, so if you don't want to go home wearing it that's no problem." 
+
+She smiles, minx-like. "Though my parents *totally* let me experiment with make-up because I tell them concert flautists have to be dressed for the stage. It's important practice."
+
+- @really-dream: Maybe she'd be better off practicing the flute.
+
+
+@really-dream
+
+"I'd think flute practice would be more important," you say.
+
+"Mm," says Flauberta. "I might play my own unconventional compositions. I'm not sure if I hate the structure of other people's music or if..." She shakes her head. "I don't know. How would you feel if half the words you had to memorize, you thought were *spelled wrong*? And you'd rather they went a different way?"
+
+- @private: That seems like a pretty private revelation.
+- @notspeller: Probably you wouldn't be a speller.
+
+
+@notspeller
+
+"I... guess I wouldn't be a speller," you say. "But it's not like that; words are just spelled how they're spelled."
+
+"But there have been spelling reforms," Flauberta says. "Right? So not everyone actually thinks that spelling is automatically correct. So what I'm saying is, if you really, really *know what the words are*, why shouldn't you be able to spell them your own way?"
+
+"Flau!" shouts one of the other girls. It sounds like she's saying FLOW. "We need the lip gloss!"
+
+
+@private
+
+You have the sense of a shaft of sunlight in a deep mine, striking something she doesn't talk about. "I don't know," you say.
+
+"Forget it. Time for lip gloss!"
+
+
+@caught
+
+"That's okay," you say. "I'm having a good time here."
+
+Flauberta tilts her head. "You could read at home," she says. "Come on, come hang out with us! We'll make you pretty!" Another wave of the sparkly pot.
+
+- @pretty-already: Meaning you're not pretty already?
+- @unaware: Maybe she's unaware of the depth of your incompetence in these matters.
+
+
+@unaware
+
+"I haven't worn any make-up pretty much ever," you explain, your finger bookmarking the page with Florence Nightingale standing over some legless Crimean soldier. "So I don't know what I'm doing and I think the other girls would be able to tell."
+
+"*Oh.*" Flauberta drops into a crouch next to you so that she can talk without the other girls overhearing. "Look, it's okay, it's not scary and you can wash it right off," she says. "But if you're nervous we could pretend, hm, we could pretend that you're a famous aristocrat in history, and we're your serving wenches. So you aren't supposed to know what to do, you just sit and tell us what you need to have fixed."
+
+- @sounds-fair: Okay, that sounds fair.
+- @historical: Could we do a historical make-up style?
+
+
+@sounds-fair
+on-arrival: jerome += 2
+
+"Deal," you say.
+
+Flauberta smiles. "Good then! Come on over."
+
+
+@historical
+on-arrival: jerome += 1
+
+"Could we do a historical style of make-up?" you ask. "Maybe look up some portraits to research my character?" 
+
+"Um," she says.
+
+"What's taking so long?" asks one of the other girls.
+
+"Okay," says Flauberta. "I should probably start with one of the other girls and come back to you when you've found your look. Youtube has some good costume stuff." 
+
+She waves the tiny pot again. "And aim for stuff we can do using pink."
+
+
+@pretty-already
+
+"Meaning I'm not pretty already?" you say.
+
+"Gaah, *Jesus*," says Flauberta. She stalks off.
+
+- @blasphemy: Nice blasphemy there.
+
+
+@blasphemy
+
+"Thou shalt not take the LORD's name in vain," you murmur to yourself.
+
+
+@making-fun
+
+"I'm not *hiding*," you say. "I'm reading." You hold up the biography of Florence Nightingale you have in hand. It's a treacly thing written to inspire girls to the nursing profession and it was probably written when your grandmother was a girl, but it's kind of interesting all the same.
+
+Flauberta raises her eyebrows. "It's okay to not do that stuff here," she says. "A couple of the girls here even go to public school, you know?"
+
+
+@who-knows
+
+"Er. No thanks," you say.
+
+She takes out the other hand from behind her back. "I also have magnetic nail polish!" she announces, as an extra inducement. "You hold a magnet next to it and it makes stripes in the pattern. It's a manicure and a science experiment at the same time."
+
+The magnetic nail polish is shimmery purple in its bottle.
+
+- @actually: Hm. Would that work?
+- @girl-science: Girls don't need their science dressed up.
+
+
+@girl-science
+
+"Girls don't need their science dressed up," you say. "We can do real ones that aren't about make-up and girl things."
+
+"Yes, I know," says Flauberta impatiently. "I wasn't trying to pink it up for you or something, I *just thought it would be fun.*" 
+
+She goes away again.
+
+
+@actually
+on-arrival: jerome += 1
+
+When Flauberta is done, your fingernails are shiny purple. She holds a magnet beside them and they develop banded stripes on them as though you were portraying the ghost of radio frequencies past. 
+
+"Now they set with the stripes in," she says.
+
+- @no-change: What, they don't respond to magnets whenever you go by one?
+
+
+@no-change
+
+"What, they don't just react to magnets whenever I go by one from now on?" you ask.
+
+"Nope."
+
+Pity. But it is sort of interesting nonetheless. You can definitely feel the polish on your fingers, as though they couldn't breathe or something. It feels grown-up, but also as if your hands belong to someone else.
+
+"Now blow on those," she tells you. "Alicia wants Cleopatra eyes and I saw a Youtube about how to put them on."

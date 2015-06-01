@@ -1,0 +1,66 @@
+title: Snow Shoveling
+subtitle: Cleaning up the walkway.
+new-page: yes
+view-if: month > 9 and month < 17 and age > 7
+on-arrival: month += 1
+tags: chores, seasonal, top
+
+= Snow Shoveling
+
+A night of atypical snow. The sky is a strange orange-brown color, much lighter than it should be. The world is hushed, except for the occasional sound of a car slithering down the hill. 
+
+Tunnels across the yard indicate the miserable progress of the neighbors' cat.
+
+It is therefore your job to see that the driveway is clear before Father needs to drive anywhere.
+
+- @aniuk: ANIUK, clean snow for drinking.
+- @aqil: AQILLUQQAAQ, deep heavy snow.
+- @freezing: KAVISILAQ, snow hardened by rain.
+- @mingullaut: MINGULLAUT, thin powder snow that blows in through cracks and veils the floor.
+- @eskimos: These words will not be in the Bee.
+
+
+@aqil
+on-arrival: parents += 1
+
+The snow is wet and heavy and takes a long time to scoop out of the way. While you are doing this, you are free to think about everyone else in the household who is snugly still in bed, and warm. 
+
+Lettice, if she is awake, will be making frost pictures on the window so that later Mother will get angry about the dirty finger streaks left behind.
+
+
+@eskimos
+on-arrival: spelling-relief += 1
+
+There is soft heavy snow, and dry powdery snow, and rivulets of ice that form on the driveways and walkways and cannot be removed without rigorous scraping. There is thin, light ice that skins over puddles, trapping bubbles and brown leaves beneath; and ice that has frozen and broken in a craquelure.
+
+They say that Eskimos have hundreds of words for these things. That is a myth. You were only able to find 30 or so online, but you learned them off by heart. The names have the quality of incantation. 
+
+You name each type of snow as you clear it away.
+
+
+@aniuk
+on-arrival: parents -= 1
+
+Before you begin, you do what you have sometimes seen Mother do: gather a handful of very fresh-fallen snow into a bowl and drizzle it with maple syrup.
+
+Standing over the heater vent, you eat the impromptu slushy with a spoon. No one else is awake to see you, or mind.
+
+
+@freezing
+on-arrival: parents += 1
+choose-if: age > 9
+unavailable-subtitle: You are too young to have to scrape the windshields, at least.
+
+The temperature has gone up and down during the night, skirting freezing temperature. This means that the car windshield is sheathed in ice and that rivulets of run-off water have hardened on the pavement, making it slick. 
+
+None of this can be taken off without vigorous scraping, and growling. And whispering swear words that you aren't supposed to have found, despite your epic tours of the dictionary. 
+
+
+@mingullaut
+choose-if: lettice > 2
+on-arrival: lettice += 1
+unavailable-subtitle: That would make a mess for Lettice, though.
+
+When you come in from the scraping and shoveling and scooping and removing, you take your shoes off by the door. But some snow has gotten into the rolled cuffs of your pants, and it comes out a little at a time, powdering the carpet in melty whiteness.
+
+Which is Lettice's responsibility to clean. Isn't that a shame. 

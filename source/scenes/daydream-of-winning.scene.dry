@@ -1,0 +1,35 @@
+title: Daydream of Winning
+subtitle: Because sometimes a girl just has to stare out the window.
+new-page: yes
+tags: top
+view-if: age > 7 and month < 23
+frequency: 500
+
+= Daydream of Winning
+
+- @prize: Think of the prizes and glory.
+- @mastery: Think of the mastery of all those words.
+- @last-year: This is the last year you're eligible.
+
+
+@last-year
+view-if: age > 11
+on-arrival: motivation = 2
+
+If you're going to win, it has to be this year. Next year you won't be eligible. And since Lettice doesn't show much interest in the spelling contest, she isn't going to win for the family either. 
+
+So if someone is going to, it will have to be you, and it will have to be now.
+
+
+@mastery
+on-arrival: motivation = 2; spelling-relief += 1
+
+Consider what it would be like to have the active vocabulary of a champion speller. To know all those roots and spelling trends, to be set up in advance to learn all sorts of languages, to be familiar with loans from every language on the globe. To be primed with the jargon of medicine and law, so technical conversations would never befuddle you. 
+
+It's like a superpower.
+
+
+@prize
+on-arrival: motivation = 2; world += 1
+
+The winner of the national spelling bee gets a prize of $30,000. You'd be in the newspaper and on television. Other spellers would look up to you and possibly even send you mail. You'd get called up for special acknowledgement and thanks prayers at church. Your big win would go on your college application, and what college wouldn't let you in, with an achievement like that?

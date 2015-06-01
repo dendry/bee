@@ -1,0 +1,64 @@
+title: Handwashing
+subtitle: Hand-knitted things can't be washed in the machine.
+new-page: yes
+view-if: age > 7 and month < 24
+on-arrival: month += 1
+tags: chores, top
+frequency: 400
+
+= Handwashing
+
+Mother teaches you how to do the handwashing, with a capful of Woolite and cold water. However, the only place to do it is the bathroom sink, and the bathroom sink cannot be left occupied all the time. It's vital to do the washing early in the morning before anyone else is up, so that no one else will be disturbed. 
+
+The caps and scarves and so on are not so bad. 
+
+The sweaters, however, are awful. They fill up completely with water, and the rough wool scrapes your fingers when you rub it together to get the dirt out. Lettice's sweaters are inevitably stained in interesting ways, with dirt and fruit punch and the odd marker stroke. And you can't always tell which stains are going to be removable until you've had a go at all of them. 
+
+While you work you make up stories in your head.
+
+- @scrub: About how even Cinderella got away.
+- @orphan: About how you were switched at birth.
+- @sketch: About becoming a designer and making more stylish clothes.
+- @servants: About becoming so wealthy that you could have servants.
+
+
+@scrub
+on-arrival: parents += 1
+
+Even the girl who has to be a servant to the rest of the family *gets away* eventually. In your case, there will probably not be a dance or a ball involved. But at some point you will move out of the house. You will buy clothes that can go in the machine, even if you have to get them from a thrift store to be able to afford it. 
+
+You will spend your handwashing time on something more useful, such as a job, or writing a novel.
+
+
+@sketch
+choose-if: world > 0
+unavailable-subtitle: Too worldly for you.
+on-arrival: world += 1
+
+You don't have time *now*, of course, with spelling as busy as it is. But perhaps one day when you are too old to be in the bee, you could look into designing clothes. You could draw pictures and patterns for Mother, and they would be much more stylish than what she makes now. She would experience a sudden increase in sales. There would be more spending money around the house. Your designs would be discovered, and you would become famous...
+
+The rinse water is getting cold.
+
+
+@servants
+view-if: world > 1
+choose-if: world > 2
+unavailable-subtitle: People who have servants are definitely too worldly.
+on-arrival: world += 1
+
+First you would have to come into a very large amount of money -- much larger than you could win even at the National Bee. But that $30,000 would be good seed money. Perhaps you could invest it in stocks. (Can children own stocks? Maybe Father would have to buy them for you.) Then the stocks, naturally, would rise very greatly in value: this can happen.
+
+Afterwards, you would have a housekeeper to do the washing. But she wouldn't be oppressed and also would definitely not be an illegal immigrant. She would be someone who liked washing clothes and enjoyed having that for a living. She would have lost her husband and be a young widow with three -- no, maybe just two -- adorable children, who would move into a bedroom in your mansion. People at church would frequently tell you how selfless you were to have given a home to this young family.
+
+You turn on the tap and refill the sink with hotter water. It scalds your hands. But when you are rich, your housekeeper will have gloves.
+
+
+@orphan
+choose-if: parents > 0
+unavailable-subtitle: A bit hard on your parents, perhaps.
+
+In this story, your parents aren't your parents at all. You belong to a different family. They're still good people, but they are not as strict. They send you to private school. The school is on enormous grounds, with a swimming pool and a track for horses.
+
+You wear a blue and white uniform and play sports, but only with other girls. You have special time during your private school day to work on your spelling words. 
+
+In that family, no one washes their clothes in a sink.

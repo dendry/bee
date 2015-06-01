@@ -1,0 +1,168 @@
+title: Mrs. Barron Commands
+subtitle: A little light housework at the Barron household.
+new-page: yes
+view-if: age > 7 and barrons > 0 and housework < 1  and month < 24
+tags: plot, top
+on-arrival: month += 1; barrons += 1; housework = 1;
+
+= Mrs. Barron Commands
+
+"You will lend me your daughters, won't you?" Mrs. Barron has Mother buttonholed. "I need a couple of hours, really just a couple of hours of help to get the place tidy. Mr. Barron is bringing the boss over for dinner tomorrow night, and --" (a little laugh) "-- he didn't really give me much warning. Isn't that just like a man?"
+
+A strange expression crosses Mother's face, but it does not turn into words.
+
+- @absolute-no: Glare at Mother so that she'll spare you from this fate.
+- @pray: Pray.
+
+
+@absolute-no
+go-to: more-offer
+
+You stare at Mother as meaningfully as you can, but the message is not transmitted from your mind to hers.
+
+
+@pray
+go-to: more-offer
+
+You offer up a sincere request that this task might pass from you.
+
+
+@more-offer
+
+"Oh, of course," says Mother. "We'd be happy to send the girls over this afternoon, and we usually have dinner ourselves around six, so if they could be back at about five thirty...?"
+
+Mrs. Barron squeezes Mother's upper arm. "You're an angel," she says. "Truly."
+
+At the Barrons', the state of chaos is even more advanced than when you saw it last. Lettice, who hasn't been here before, turns to you with eyes the size of saucers and says under her breath, "It's just like Cinderella."
+
+Mrs. Barron is not as deaf as you might have hoped. "Well, ha ha. Perhaps a little. Now, listen, girls, what do you think is the best way to go about putting the place in order?"
+
+There's a thumping noise from upstairs, and a sound of someone making laser noises. "Pew! Pewpewpew!"
+
+"Ignore that," says Mrs. Barron. "Just the boys playing."
+
+- @washing: Propose that the boys start on the washing up.
+- @laundry: Suggest Lettice gather the dirty clothes and start the laundry.
+- @sorting: Recommend that Mrs. Barron sort out what can't be lost.
+
+
+@washing
+
+"If the boys have free time now, maybe the best thing would be to get them started washing up the dishes," you suggest, in your best imitation of Mother. "One of them could gather the messy cups and plates from here and the other could wash in the kitchen."
+
+Mrs. Barron cocks her head. "Do you think they'd be good at that?"
+
+- @what-chores: Find out what they are good at, then.
+- @agree-not: Mrs. Barron seems to mean that you shouldn't rely on the boys.
+
+
+@agree-not
+go-to: home-again
+
+"...I guess not?" you say, watching Mrs. Barron's face. This appears to be the right answer. 
+
+"They haven't really learned to be careful with things," Mrs. Barron says. "And we have some crystal stemware that was my grandmother's." 
+
+
+@what-chores
+go-to: home-again
+
+You and Lettice stare at Mrs. Barron. "What chores do they usually do?" Lettice asks.
+
+"We don't have a chore chart," says Mrs. Barron. "Giving children gold stars encourages them to rely on external reward systems."
+
+From upstairs comes the sound of an explosion as made by a tinny electronic device.
+
+
+@laundry
+go-to: home-again
+
+"It looks like if we got some of the laundry out of the way, it would be easier to see the rest of the mess," you say. "Lettice is good at laundry."
+
+Taking your nudge, she begins going around the room and picking up articles of discarded clothing and looking at them curiously: a T-shirt with a monster head on it, a flannel shirt, a pair of boys' underpants. 
+
+Lettice's nose crinkles, but she doesn't comment. Mrs. Barron looks on approvingly as Lettice rescues the hat from where it's sitting on top of the bamboo.
+
+
+@sorting
+go-to: home-again
+
+"Well -- it seems like some of these papers might be important, and Lettice and I won't know which. So perhaps if you took care of those, we could work on some of the cleaning chores."
+
+Mrs. Barron sighs. "It always starts with the papers," she says. "I just don't have the energy, girls. Will you look at them? I was hoping you could... I don't know, fix that and then I'd have a clean slate to start with. After that, maybe I can keep it up myself."
+
+"Um... okay," you say, thrown. "Well, could we maybe put the papers into a box, then?"
+
+"Yes!" says Mrs. Barron. "A box."
+
+
+@home-again
+
+You and Lettice improvise as well as you can. Mrs. Barron doesn't have stain treatment for her clothes, so Lettice tries something with baking soda paste that she thinks she saw Mother do once; but it doesn't get the red wine stain out of Mr. Barron's shirt. "Never mind," says Mrs. Barron, picking up the shirt and dropping it into the trash can. "Just do the other things."
+
+You manage to uncover enough of the floor to vacuum it, which is probably the first time this has happened in the Barron household for at least a calendar year.
+
+At 5:50, Mrs. Barron calls your mother to mention that you're going to be home late. She feeds you some cold pizza from the refrigerator instead of dinner. ("So we don't get plates dirty again, right girls?") 
+
+The pizza is a novelty, but it has spicy bits on it. Since you have no plates or napkins, Lettice spits the jalapenos straight into the trash.
+
+- @bedtime: Home at last.
+
+
+@bedtime
+
+It is nearly eleven o'clock when Mrs. Barron gets you back home. You and Lettice are drooping at this point, and climb sleepily into your beds. Your mother comes in.
+
+"Hey, kiddo," she says in the darkness. "I'm sorry I got you into that. It doesn't sound like fun. But we have to show charity and help to our neighbors."
+
+- @parent-fear: It's not that charitable to make your kids do your charity work for you.
+- @poverty-fear: Did Mrs. Barron give us something good in barter?
+- @status-fear: I don't know why you let Mrs. Barron boss you like that.
+
+
+@parent-fear
+on-arrival: parents += 1
+go-to: final
+
+"It's not that charitable to make your kids do your charity work for you," you say.
+
+"Our family is a unit," says Mother. "If your hand does something, it's not a surrogate for the work of your foot, is it? That's all work that you are doing."
+
+You don't say anything. 
+
+Mother touches your shoulder. "Mrs. Barron has a difficult life," she says.
+
+"It doesn't look that difficult to me," you respond.
+
+"I think she's depressed," Mother elaborates. "It's a kind of disease that makes it hard for you to do things you have to do. If Mrs. Barron had a broken leg, or -- or cancer, it would be our duty to help her, wouldn't it?"
+
+
+@status-fear
+on-arrival: status += 1
+go-to: final
+
+"I don't know why you let Mrs. Barron boss you like that."
+
+"She didn't *boss me*," says Mother. "She asked me for something and I gave it to her."
+
+"She asked in the kind of way where you can't say no," you say. Lying on your back, speaking to the darkness overhead. "And then she didn't bring us back when you said."
+
+"Mm," says Mother.
+
+
+@poverty-fear
+on-arrival: poverty += 1
+go-to: final
+
+"Did Mrs. Barron give us something good in barter?" you ask.
+
+"Mrs. Barron doesn't barter," says Mother. "But she gave us a check. Two hundred dollars. If she has that kind of money to throw around, I'm surprised she doesn't just hire a maid service."
+
+"Her house was really messy," you say. "Maybe she thinks maids would laugh at her."
+
+"Hm," says Mother. "Maybe. Now get some sleep. You've done good work today."
+
+
+@final
+
+Mother goes out and the door clicks shut behind her.

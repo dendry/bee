@@ -1,0 +1,143 @@
+title: Mirrors
+subtitle: We go to the salon with Mrs. Barron.
+new-page: yes
+view-if: age > 7 and barrons > 0 and hairdresser = 1 and month < 24
+priority: 2
+tags: plot, top
+
+= Mirrors
+
+It is nerve-wracking on Tuesday afternoon, riding with Mrs. Barron to the salon. Lettice has her backpack containing her social studies textbook, and she is clasping it tightly to her front as a shield. You only have a packet of spelling flashcards. You realize after you get in the car that they are the packet from last week and are already completely memorized. So you will be stuck at the salon while Mrs. Barron has her hair fixed and you will not be able to do anything useful at all.
+
+- @suggest-returning: Suggest returning home for your flashcards.
+- @ride-along: Wait and hope for the best.
+
+
+@ride-along
+on-arrival: perry += 1
+
+You turn your mind from the missing spelling cards and watch out the window.
+
+"We could listen to the radio," proposes Mrs. Barron after a couple of silent minutes. "What station do you girls like?"
+
+"Mrs. Perry listens to End Times Radio," Lettice announces from the back seat. "They have a man who tells you what is going to happen at the end of the world, and when it is prophesied to be this year, and what the four horsemen will look like and everything."
+
+"What a delight, ha ha," says Mrs. Barron distractedly. Then she gives the finger to the man in the next lane who is trying to merge into this one. Lettice doesn't see, but your cheeks feel red.
+
+- @on-to: Fortunately the salon is just ahead.
+
+
+@suggest-returning
+
+You explain the predicament. "And I don't want to be bored while you're having your hair done, Mrs. Barron," you say.
+
+"Don't worry," she says, glancing sideways at you. "If you feel like you're starting to get bored, tell me and I'll ask you a spelling question. I know lots."
+
+Mrs. Barron can't have learned the whole spelling list by grade level. But it is equally clear that she's not going back, so you settle as comfortably as you can considering that the shoulder strap cuts across you right at the neck. 
+
+As though sensing your distrust, Mrs. Barron says, "How about *scolionophobia*?"
+
+"That's not on the graded list," you say.
+
+"Mm. Pity."
+
+- @on-to: Fortunately the salon is just ahead.
+
+
+@on-to
+
+At Mrs. Barron's salon, there is a blonde lady waiting behind a desk when you come in, just like at a restaurant. 
+
+"Barron appointments for 4:15," says Mrs. Barron.
+
+The blonde lady consults her computer. "You and your daughters for Kiley, Manie, and Jolie, correct? Excellent."
+
+You and Lettice look at each other in confusion. "We aren't getting our hair cut!" Lettice says. "We're here to read about social studies!"
+
+Mrs. Barron says, "Surprise! It's my treat, girls. It won't do any harm."
+
+The salon lady gives you and Lettice each a silky little robe, and a room to change into it. 
+
+- @outcome: You must be expected to take off your shirt before putting on the robe.
+- @but-that: But that seems immodest.
+- @then-again: Then again maybe the robe is like a hospital gown.
+ 
+
+@but-that
+go-to: outcome
+
+
+@then-again
+go-to: outcome
+
+
+@outcome
+
+When you come out, Mrs. Barron is also wearing a silky robe, with no shirt beneath. She is sitting on a leather bench, drinking a cappuccino and reading a glossy magazine about houses. 
+
+"Mrs. Barron--"
+
+She raises a finger to her lips. "Salons are for quiet relaxing," she says.
+
+So you and Lettice read Lettice's social studies chapter about the native peoples of New Zealand. A salon lady brings each of you a square of dark chocolate in an individual wrapper, and a tiny bottle of water with bubbles in it. Lettice does not like hers because it's not the sweet kind of soda, so you drink it for her. Then, in whispers, you teach her to pronounce "Maori".
+
+You wonder whether Mother will be able to tell you've had your hair cut; but since haircuts usually involve taking off a couple of centimeters, and your hair is so long already, it's possible she won't notice. 
+
+- @best: That would be for the best.
+
+
+@best
+
+Manie takes you to a chair, which faces a mirror framed in lights. Mrs. Barron and Lettice each have their own chairs nearby. 
+
+"We look like we're ready for something a little bit more grown-up!" announces Manie cheerfully, pulling your bangs to one side. "We could give you a little more volume, pump up your eyes a little... here, what do you think about this?"
+
+The person looking back at you in the mirror is someone new. She looks...
+
+- @worldly: ...worldly.
+- @not-family: ...like she could be from any family. Not necessarily yours.
+
+
+@worldly
+go-to: salon-conclusion 
+
+Yes. Worldly. Like a soundtrack plays when she walks. She might wear a hat with a brim, and know how to ride in taxis. People might give her flowers. Possibly she even goes on vacation in airplanes.
+
+Manie meets your glance cheerfully in the mirror. "No? It's really cute..."
+
+
+@not-family
+go-to: salon-conclusion 
+
+...like the weirdness is gone. Like you're not marked apart from the rest of humanity. 
+
+Manie's watching for your expression in the mirror. She squeezes your shoulder. "It's up to you," she says. 
+
+
+@salon-conclusion
+
+- @go-ahead: Tell Manie to go ahead.
+- @narrow-cut: Ask her just to trim the ends, the way Mother does.
+ 
+
+@go-ahead 
+on-arrival: hairdresser = 2
+
+You nod once. Manie takes you to have your hair shampooed in a deep black sink, and then she snips, and then she blow-dries. She sprays your hair with a mist that smells like watermelons, and another one that smells like strawberries. When she is done, the worldly little woman is back in full force. Manie gives you a second mirror so that you can observe the back of your own head.
+
+- @paying: Wait for Mrs. Barron to be done and pay.
+
+
+@narrow-cut 
+on-arrival: hairdresser = 45
+
+Afterward you look almost the same, though your hair *is* glossier, and the shampooing and blow-drying takes a long time. The smell of salon lingers in your hair afterward.
+
+- @paying: Wait for Mrs. Barron to be done and pay.
+
+
+@paying
+
+When it's all over you have to take the silky robe off again and give it back. When you come out, Mrs. Barron is at the counter, tucking something into her wallet. It seems like the salon might be expensive, but you see Mrs. Barron hand Manie a twenty dollar bill. 
+
+You had been afraid it might be more, but twenty divides by 3 as 6 with a remainder of 2; so it must be $6 for each haircut and then there will be $2 in change? It could be.

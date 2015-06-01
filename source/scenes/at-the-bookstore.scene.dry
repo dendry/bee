@@ -1,0 +1,54 @@
+title: At the Bookstore
+subtitle: A moment alone.
+new-page: yes
+view-if: age > 9 and age < 14 and bookstore = 0 and month < 24
+on-arrival: month += 1; world += 1; bookstore += 1
+tags: plot, menace, one-off, top
+
+= At the Bookstore
+
+It's a quiet afternoon and you have a rare and precious sort of privacy. You are at Rainbow Books. Alone. No one to supervise you; no one to tell you which books you ought to prefer. You're browsing half-guiltily through a selection of science fiction young adult books: ones with alien romance and secular interplanetary governance and all kinds of things of which your father would not approve. On the cover of this book is an attractive young man with black hair and unnatural lavender skin.
+
+"You can always tell," says a customer voice from the front of the store.
+
+"What's that?" asks the clerk.
+
+"Those home-schooled kids," says the customer voice. "Social retards. You can always tell when you meet them."
+
+- @show-them: Show them. Win your Bee and prove the value of your kind of upbringing.
+- @rude: Then again maybe you are obvious...?
+- @listen: Keep listening.
+
+
+@show-them
+on-arrival: motivation = 2
+go-to: continuation
+
+Not that winning the National spelling bee for home-schoolers will prove that you're *socially* well adjusted, but perhaps if you wind up being interviewed on television...? Anger is only ever useful as fuel, Mother says.
+
+
+@rude
+go-to: continuation
+on-arrival: world += 1
+
+That customer asked you a question five minutes ago. You were polite. He was polite. No one was socially -- well, no one was socially maladjusted that you noticed. But what made him think of that little tirade, if it wasn't the encounter with you? Is it your fault somehow?
+
+
+@listen
+
+"I haven't noticed that," says the clerk tactfully.
+
+"My sister-in-law is home-schooling her son and let me tell you, whoa is that one little weirdo," the customer goes on. "He never looks you in the face when he talks to you. He keeps a big tank of tropical fish and he likes them more than people." 
+
+- @sounds-autistic: There's a kid at Co-op like that.
+
+
+@sounds-autistic
+go-to: continuation
+
+There's a kid at Co-op like that. His mother took him out of school because he got scared in the classroom and would scream at the other kids. He's doing better now. But it's not like being at home *made* him that way. And he's a good guy, really, if you can take him at his own rate.
+
+
+@continuation
+
+The bell rings at the front of the store and the customer is gone.

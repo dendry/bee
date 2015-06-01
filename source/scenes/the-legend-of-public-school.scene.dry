@@ -1,0 +1,165 @@
+title: The Legend of Public School
+subtitle: Mother and Father share anecdotes about what public school used to be like.
+new-page: yes
+view-if: age > 7 and age < 10  and month < 24
+tags: menace, top
+on-arrival: month += 1
+
+= The Legend of Public School
+
+Father and Mother are in a reminiscent mood about how things used to be for them. These stories have a tendency to repeat after a while, like stories told before going to bed.
+
+- @onward: Listen politely.
+- @bored: Slip out of the room to do a little more reading.
+
+
+@bored
+on-arrival: parents += 1
+
+At the first excuse, you head sideways out of the room and go in back to do a bit of reading, leaving Lettice to listen to the stories. She gives you a frowny look as you slip out of the room.
+
+- @anti-parent: Do they never realize how much they repeat themselves?
+- @anti-lettice: It won't kill Lettice to play audience for once.
+
+
+@anti-parent
+on-arrival: parents += 1
+
+"I'm behind on my science reading," you say.
+
+"Okay, you do that," says Father. "See, *you* have an appropriate amount of work to do. If you were in public school you'd be trapped in a classroom all day and then you'd have fifteen minutes of pointless busy-work at the end of the day. When my Papa, your granddad, finally pulled me out of school, we made a chart of how much time I'd been losing..."
+
+You shut the door to your room. The organization of a plant cell is riveting stuff in comparison.
+
+
+@anti-lettice
+on-arrival: lettice += 1
+
+You give Lettice a bright, "I see you frowning" smile and tiptoe off down the hall. 
+
+Your bedroom is a quiet private place and there is no nattering inside.
+
+
+@onward
+go-to: bus-smell; pledge-of; cafeteria
+
+
+@cafeteria
+
+"They have the most terrible food in school," says Mother. "It's all made in a big vat by a lunch lady. Sometimes it's chili and sometimes it's soup, but it always tastes disgusting. And there are hardly any fresh vegetables."
+
+"And they make you have chocolate milk," says Father. "It comes in little cartons, and you have to bring coins to school to buy it with. Once I couldn't have ordinary milk, even when it was Lent and I was off chocolate."
+
+- @world-our-side: The world isn't always on our side.
+- @other-kids: Bet the other kids made fun of Father.
+- @whatever: Having to drink chocolate milk is a pretty whiny thing to complain about.
+
+
+@whatever
+on-arrival: parents += 1;
+
+"I hear that Roman Christians were also forced to drink chocolate milk in the arena," you say.
+
+Father gives you a sharp look. "That's enough of you being smart, young lady."
+
+
+@world-our-side
+on-arrival: world += 1;
+
+"I don't think the people who make the system took your Lenten discipline into account," you say.
+
+"The world is sadly secular," Father agrees. He's not much for hellfire and brimstone and predicting bad things that will happen to heathens and atheists, like some of the more extreme parents you've met. 
+
+But he looks a bit gloomy, as though he feels that the clockwork of the world has somehow slipped, and it would all be so much better, if only the cogs meshed properly again.
+
+
+@other-kids
+on-arrival: status += 1;
+
+"That's too bad," you say. It makes you feel awkward to picture Father being singled out by the other kids because of his strange milk-drinking preferences.
+
+
+@pledge-of
+
+"In school, you'd spend a lot of time doing really very nonsensical things," Mother explains. "You have to say the pledge of allegiance every day, and the teacher calls roll to make sure everyone is there. After that there are school announcements, and if some of the other students misbehave, then you lose all sorts of time waiting while the teacher brings them in line."
+
+Father nods gravely. "Once most of the class was misbehaving so badly that I had to write standards even though I'd been doing nothing wrong," he says. "Just because the other students were being bad."
+
+- @students-fair: Sounds like Father might as well have misbehaved with everyone else.
+- @very-unfair: That is completely unfair.
+
+
+@very-unfair
+on-arrival: world += 1; 
+
+"Couldn't you protest to the teacher?" you ask. "Like, make some kind of formal appeal?" 
+
+"The teacher's word is the rule of the classroom," Mother says.
+
+"I would have written her a letter," Lettice says. "And I would have gotten it signed by all the other students as a protest. Like Amnesty." Lettice picked up a knowledge of Amnesty International from public radio. 
+
+"That's a very inventive solution," says Father. "And I have to admit that it didn't occur to me."
+
+
+@students-fair
+on-arrival: world += 1; parents += 1;
+
+"What were they being punished for?" you ask. "Sounds like it must have been pretty fun if the whole rest of the class got into it."
+
+"They had an ice cream fight," Father says. "They got it everywhere. Ice cream went into the heater in the cafeteria and spoiled and made everything smell disgusting."
+
+"What happened to your ice cream?" asks Lettice. 
+
+"I ate it. That's not the point." 
+
+
+@bus-smell
+
+"When I was your age," Father says, "I had to take the bus to school. It took half an hour, and the bus smelled like sour milk."
+
+"When I was your age," Mother says, "I had to *walk*. And we used to have drills for what we would do in case of a major earthquake." Mother spent part of her schooling time in southern California.
+
+- @school-scary: Public school is a place of fear and stale odors.
+- @status-of-fear: Public school sounds like Mrs. Perry's Armageddon drills.
+- @show-better: You'll show up public education by winning the Bee.
+
+
+@show-better
+on-arrival: motivation = 2; status += 1
+
+"Doesn't sound like they spent much time on learning," you say comfortably.
+
+"Not as much as we do, that's for certain," says Mother.
+
+
+@school-scary
+on-arrival: world += 1;
+
+"Sounds gross," you say.
+
+"Yeah," says Lettice. "Gross."
+
+"Gross," repeat Mother and Father in chorus.
+
+
+@status-of-fear 
+on-arrival: perry += 1
+
+"Like Mrs. Perry's Armageddon drills?" you ask. Mrs. Perry is another homeschooling mother. She is afraid that the four horsemen of the apocalypse are going to come galloping over the horizon one day while her daughters are shopping. She has special plans in place so that the family can reunite and be Raptured together, so they won't be separated on the way to the New Jerusalem. She's even written a pamphlet of guidance to other parents on how to set up similar systems for themselves.
+
+"Equally pointless if for different reasons," says Father. "But it doesn't behove us to speak ill of our acquaintances."
+
+- @people-listen: People listen more to Mrs. Perry than they do to Father.
+
+
+@people-listen
+on-arrival: status += 1
+
+"Lots of people buy Mrs. Perry's pamphlets about the end times," you say. "And also her Perry Preparation Packets."
+
+"Yeah," says Father. "Mrs. Perry has found an excellent way to make a living off of other people's faith and love of family, I'll give her that."
+
+"Sweetheart!" exclaims Mother, scandalized.
+
+"Well, what?" Father says. "Do *you* have any respect for those sorts of shenanigans? It's ludicrous. Even if you do believe that we're all literally going to be snatched up to heaven on a beam of light, then you have to figure that God knows how to sort." He's getting red and a little out of breath now. "And to be honest I wouldn't be surprised if Mrs. Perry's neurotic Preparation Packets just provoked God into putting them all in the wrong places on purpose, just for the first day or two." 
+ 

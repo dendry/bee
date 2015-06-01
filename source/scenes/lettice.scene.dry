@@ -1,0 +1,36 @@
+title: Lettice
+subtitle: Your sister's place.
+new-page: yes
+view-if: age > 4 and age < 8 and let-introduced = 0
+on-arrival: age += 1; let-introduced = 1
+tags: plot, top
+max-visits: 1
+
+= Lettice
+
+Your sister, Lettice, suffers daily from being named almost after a vegetable. Her full name is Letitia. As a little girl, she couldn't say all the syllables. She called herself Lettice, and it stuck.
+
+Lettice does not mind your parents as much as you do. This is true in both senses of the word "mind." If Father gives a direction Lettice doesn't like, she will sit under the table and draw instead. She still sucks her thumb when she feels like it. She eats what she wants to and ignores the rest of the food. Once she took a bowl of lentil soup out in the back yard and dug holes and planted little dollops of lentil every two inches.
+
+Though your family is odd, Lettice doesn't seem embarrassed when new people come to visit. She doesn't apologize for the purple drapes Mother made of remnant cloth, even though, if you look closely, the purple drapes are patterned with tiny purple aliens.
+
+Lettice is not interested in learning to spell for the Bee, either. 
+
+- @mental: Possibly Lettice is not the sharpest.
+- @ally: Then again, she's your only natural ally.
+
+
+@ally
+on-arrival: lettice -= 1
+
+Who else is there to talk to on long road trips? Who else has to wake up as early as you do for prayers? Even the other home-schooling kids you know aren't home-schooled in exactly the same way.
+
+One night you're sent to bed early. For comfort, Lettice puts a drawing on your pillow. It shows Father with a cloud of exclamation points over his head, shaking his finger, his eyebrows represented by one black V. And Mother working at the sewing machine, making a dress big enough for a giantess.
+
+
+@mental
+on-arrival: lettice += 1
+
+You ask Mother whether something is wrong with Lettice's learning ability. Might she be dyslexic? Autistic? Delayed?
+
+"Not to my knowledge," says Mother, eyes on her sewing. "Every child is different, remember. That's why we don't go to public school." 

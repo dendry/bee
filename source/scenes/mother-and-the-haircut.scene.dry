@@ -1,0 +1,164 @@
+title: Mother and the Haircut
+subtitle: Teasing Mother for another salon haircut.
+new-page: yes
+view-if: age > 7 and barrons > 0 and hairdresser = 3 and month < 24
+on-arrival: hairdresser += 1; month += 1; 
+tags: plot, top
+
+= Mother and the Haircut
+
+After a while, your new hair grows out. It frames your face in the old, straight, dull way.
+
+- @beg-back: Beg to go back to the salon.
+- @cut-yourself: Try cutting it yourself.
+
+
+@cut-yourself
+on-arrival: hairdresser = 30
+
+You get the scissors and a mirror so that you can see the back of your own head, and you spend forty-five private minutes in the bathroom while you're supposed to be studying *Wheelock's Latin Grammar* and your mother is at a quilting goods exchange.
+
+When you're done, the floor is covered with snips and your hair looks like a wild bush. You gather as many of the snips as you can and flush them down the toilet, but there's no concealing what's happened to your head.
+
+"We could clean that up with hedge trimmers," says Father, when he sees it. 
+
+- @laugh: Laugh.
+- @sulk: Sulk.
+- @like-it: Insist you like it the new way.
+
+
+@sulk
+on-arrival: parents += 1
+go-to: fixing-hair
+
+You go into your bedroom and slam the door after you, and bury your head under a pillow until Mother comes home. 
+
+
+@like-it
+on-arrival: world += 1
+go-to: fixing-hair
+
+"I like it this way," you say. "It has spirit."
+
+"Well, it's the rest of us that have to look at you," Father says. "So you're going to have a head fit for humans to look at."
+
+
+@laugh
+on-arrival: parents -= 1
+go-to: fixing-hair
+
+You manage a smile, at least, and for a moment you really don't care.
+
+
+@fixing-hair
+
+Mother tries to fix it, but she can't figure out how to undo the spiky damage you've done. There's no way to make the hair lie flat and even. Trying sends her crying after a while, especially since Father keeps coming in to comment on what a wild animal you've become.
+
+"I can't take her to church like this," Mother says. "What will people say!"
+
+"Here," says Father, producing a pair of electric clippers he uses for his beard. "Shave it down to a quarter inch. Everyone will assume she got lice."
+
+"From playing with public school children," Mother sobs. 
+
+"Better than thinking we can't control our own," he replies grimly. So Mother shaves down your head, and puts the hair clippings in the compost pile. And Lettice reads you a Chinese folk tale from her *Stories of the World's People* book, in which a monk's soul is stolen by a mouse that eats his fingernails. 
+
+- @father-horrid: Father is the most horrible.
+- @mother-horrid: No, Mother.
+- @lettice-worst: They were both trying to fix it, but Lettice was just gloating.
+
+
+@father-horrid
+on-arrival: parents += 1
+
+It's not as though Father's beard is any masterpiece of foliage-sculpting.
+
+
+@mother-horrid
+on-arrival: parents += 1
+
+If she didn't mind how you looked at church, you could have gone on with your hair as it was.
+
+
+@lettice-worst
+on-arrival: lettice += 1
+
+Maybe someone will steal Lettice's soul. 
+
+Maybe someone already has.
+
+
+@beg-back
+
+You place your request.
+
+"I don't think we could afford it," Mother says. "Mrs. Barron has more money than we do."
+
+"She only paid the salon lady twenty dollars for the three of us," you say. "I saw her."
+
+Mother looks uncertainly at Father. "Darling, do you think, for her birthday, we might...?"
+
+- @plea-succeeds: Look pleadingly at Father.
+
+
+@plea-succeeds
+on-arrival: parents -= 1
+
+So Mother takes you to the salon, and sits on the benches waiting while you get your hair redone by Manie. You had not realized until you came how out of place Mother would be in this environment, sitting upright in her homemade blouse and skirt, doing a bit of hand-sewing from her big craft bag, while other ladies sip coffee and read magazines. 
+
+- @better: Maybe it's for the best Mother doesn't realize how out of place she is.
+- @worse: Then again, maybe if she realized, she might change something.
+
+
+@better
+on-arrival: world += 1
+go-to: paying
+
+Yes. Best not to dwell on that.
+
+
+@worse
+on-arrival: parents += 1
+go-to: paying
+
+Yes. Best not to dwell on that.
+
+
+@paying
+
+Manie washes and fluffs and cuts and blow-dries, and it is all as good as last time. Better, really, because you know what to expect, and can be a woman of the world about it all, and not surprised by the black sink with a notch for your neck, or by the fruit-scented mists.
+
+When it comes time to pay, Mother goes to the front desk with a twenty clutched in her hand that she brought from the savings jar at home. It is wrinkled. And then the cashier announces the price: *seventy-three dollars*.
+
+Mother turns towards you with eyes wide and shocked.
+
+- @assure-her: Will she think you lied about the price?
+
+
+@assure-her
+
+"I saw Mrs. Barron paying with a twenty-dollar bill," you hiss urgently.
+
+Manie and the cashier exchange glances. 
+
+"Oh, honey," Manie says. "That was the tip."
+
+In the end Mother has to get out the debit card she carries for emergencies, and pay with that. Her hands are shaking as she signs the receipt.
+
+- @shaking: That was far too much money to spend on hair.
+- @distract: Perhaps you'd better be quiet and do your spelling until she feels better.
+
+
+@distract
+on-arrival: spelling += 1; spelling-relief += 1; poverty += 1
+
+On the car ride home Mother is totally silent, and you are silent too, shuffling through your pack of spelling cards. You're doing better on words with funny French endings; that should come in handy later, right?
+
+But you avoid the sight of your reflection in any window or mirror. 
+
+
+@shaking
+on-arrival: poverty += 3
+
+"Are you okay?" you ask Mother, when you get back in the car.
+
+She rests her head on the steering wheel. "It's my fault," she says, over and over. She talks all the way home about vanity, and pride in one's off-spring, and living on bartered red beans for the coming month.

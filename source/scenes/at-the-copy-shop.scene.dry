@@ -1,0 +1,41 @@
+title: At the Copy Shop
+subtitle: Father's newsletter runs into certain inconveniences.
+new-page: yes
+view-if: newslettering > 0 and newslettering < 3 and month < 24 and copy-error = 0
+tags: plot, menace, top
+on-arrival: newslettering += 1; month += 1; copy-error = 1
+
+= At the Copy Shop
+
+Father does not ordinarily curse at all, but he curses today when he gets back the run of his newsletter from the copy shop. "The copy shop put in the Hamilton advertisement *upside down*," he tells Mother. "They'll never let us hear the end of this. They'll take it as a personal insult. You know how Mrs. Hamilton is."
+
+Mother looks up from washing the dishes. Her hands are wrist-deep in suds. "Perhaps you could copy the run again?" she suggests.
+
+"That would cost me as much as we earned from having the advertisement in the first place," Father grumbles.
+
+- @status-fear: If you send it out unfixed, people won't buy more advertisements in the future.
+- @free-run: Maybe if it's the copy shop's fault, they'll do a new run for free.
+
+
+@status-fear
+on-arrival: status += 1
+
+"If you send it out unfixed, people won't buy more advertisements," you say. "It will look bad."
+
+Father's shoulders slump. "You're right," he says. "I don't know why I thought this newsletter would be a good idea."
+
+"Don't be silly," says Mother, kissing him. "You know sometimes I have to reset a seam. It just happens."
+
+Father goes out again and you watch him climbing into the old car. Sometimes you have a frightening feeling that he doesn't really know how the world works.
+
+
+@free-run
+on-arrival: poverty += 1
+
+"Maybe if it's the copy shop's fault, they'll do a new run for free."
+
+"I doubt it," Father says. "People these days never take responsibility for their own actions." He flips again through the stack of papers and glares at the unruly advertisement.
+
+"You can hardly distribute the newsletter like that," Mother says. "It wouldn't be appropriate. Our striving for perfection is the gift we give to God."
+
+Father mutters something about the gift he gives to Mrs. Hamilton; but he goes back out into the rain clutching the cardboard box of bad copies. 

@@ -1,0 +1,32 @@
+title: Lawn Mowing
+subtitle: Time to mow.
+new-page: yes
+view-if: month < 6 and age > 7
+on-arrival: month += 1
+tags: chores, seasonal, top
+
+= Lawn Mowing
+
+Summertime. Since there are no boys in the house, you and Lettice get to take turns with the lawn mowing, for the patch of lawn that isn't used for gardening. 
+
+The hardest part is mowing around and under the picnic table. Mother and Father refuse to put it someplace more convenient than on the grass. The lawnmower, naturally, doesn't slide underneath; so the table, with its two attached benches, must be moved out of place, then moved back afterwards. It's like vacuuming under the ottoman, only much, much slower and more annoying.
+
+- @snip: Snip the GRAMINOIDS down to size.
+- @dig-out: It's unfair asking a small person to move a table every time the grass needs trimming.
+
+
+@snip
+view-if: spelling > 3
+on-arrival: spelling-relief += 1
+
+You work in stripes, listening to past spelling bees in your headphones. It's not a perfect drill method, but it means the time under the hot sun isn't totally wasted. When it comes to the picnic bench, you slide it sideways in great heaves that correspond to the rhythm of the letters being pronounced. 
+
+
+@dig-out
+on-arrival: parents += 1
+
+There is an alternate possibility: get down on your knees and clip the grass around the feet of the picnic bench with a pair of hand clippers.
+
+It's hot, slow, sticky work, even when you're in the shade of the picnic table. Your hands get blistered and covered with the milk of slaughtered dandelions. 
+
+Nature. It isn't as nice as the calendars make it out to be.

@@ -1,0 +1,38 @@
+title: Latin Root Studies
+subtitle: Practical Latin work.
+new-page: yes
+view-if: age > 7 and spelling > 1 and month < 24 and latin-study < 2
+on-arrival: month += 1; spelling += 2; latin-study += 1
+tags: drill, top
+frequency: 500
+
+= Latin Root Studies
+
+Latin vocabulary work begins with...
+
+- @lights: IGN-. LUC-. LUMIN-.
+- @fer: FER-. TUL-. LAT-.
+- @number: UNI-. BI-.
+
+
+@number
+
+There are singles, uniques. There are things that come naturally or necessarily in pairs, like binoculars, and bimetallic strips. 
+
+And then there are things that are in pairs arbitrarily (BIATHLON, BIENNIUM).
+
+Finally things that are single unnaturally (UNICORN, UNICYCLE), and things that are doubled incorrectly or wrongfully (BIGAMY).
+
+Why is there nothing in the language to flag whether things are paired by design, or just by accident?
+
+
+@fer
+
+So many forms for carrying, bearing, moving from place to place. *Wheelock's Latin* covers all this eventually, but you're not there yet. 
+
+For now it must just be memorized, carried, or borne.
+
+
+@lights
+
+Words of light and fire flicker through your notebook. Physics words, chemistry words. If you learn all the science words, will you know science? What is there that doesn't come down to a vocabulary problem?

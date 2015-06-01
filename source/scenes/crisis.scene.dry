@@ -1,0 +1,74 @@
+title: Crisis
+subtitle: A phone call from Mrs. Barron.
+new-page: yes
+view-if: barron-crisis = 2 and month < 24 and barrons > 2
+priority: 2
+on-arrival: month += 1; barron-crisis += 1
+tags: menace, plot, top
+
+= Crisis
+
+The phone rings and rings. 
+
+"Ignore it," Father says. "They can learn not to call during dinner time."
+
+But the phone just starts ringing again.
+
+"It might be an emergency," Mother says, and she and Father look at each other as though something has jumped into their heads at the same time. "I'd better--" "-- yes, go ahead this once."
+
+You and Lettice and Father sit silent at the table. No one even pretends not to be listening to Mother's half of the conversation.
+
+"Yes, it's true, he did come over... no, of course... I'm sorry to hear that. I didn't -- no, of course we didn't tell him to file for *divorce*" -- Mother's voice is angry. "You know we believe in the sanctity of -- I'm sure he's not seeing anyone, no! Maybe you should talk with Father Mayhew about this."
+
+- @hold: A pause.
+
+
+@hold
+
+"...please breathe. Calm down. Yes, yes... okay. Mrs. Barron, where are the boys right now? Oh, he did? Okay. All right, then I imagine they're fine there... No, no don't. I really don't think that's going to happen..." 
+
+Mother appears in the doorway, holding the phone, and signals urgently to Father. 
+
+"Here," says Mother to the phone. "Would you like to talk to my husband? I know he talked with William more than I did..." 
+
+She shoves the phone into Father's hands. She goes to the closet and with shaking hands opens it and pulls on her coat. She puts her shoes on without socks and walks out the door.
+
+Father stays on the phone talking to Mrs. Barron. You and Lettice sit at your places, not eating. Outside, Mother pulls the car out into the street and is gone. 
+
+- @later: Later.
+
+
+@later
+
+Mother does not come home again until the next day. When she does, there are circles under her eyes. She goes to sleep on the sofa still wearing her coat and even her shoes. 
+
+Mrs. Barron will be all right, is all she will tell you. A long night of the soul, she says. 
+
+- @aftermath: Aftermath.
+
+
+@aftermath
+
+A few days later there is a big gift basket on the front porch, wrapped in pink cellophane. It contains boxes of biscotti and bags of chocolate-dipped cherries, white truffle oil in a bottle, smoked oysters in a tin. Mother pulls out all the things and sets them on the dining table, half laughing and half crying.
+
+"Honey," she says to Father, "do you think the girls would like Aztec Chipotle Cacao?"
+
+"Only one way to find out," says Father, and the grin on his face says he thinks you wouldn't.
+
+Many of the things stay in their containers and some are bartered away for other, more useful food. But Mother opens the smoked oysters before dinner one night and serves them on crackers.
+
+- @how-grown: How grown up.
+- @how-wasteful: How wasteful.
+
+
+@how-grown
+on-arrival: world += 1
+
+They taste strange and the texture is sort of chewy and mushy at the same time, but the sensation that you ought to like them is stronger than the sensation of how they actually taste. You find yourself having seconds, and thirds.
+
+
+@how-wasteful
+on-arrival: poverty += 1
+
+But what else were you to do with them?
+

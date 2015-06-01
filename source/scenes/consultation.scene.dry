@@ -1,0 +1,107 @@
+title: Consultation
+subtitle: Jerome asks an opinion.
+new-page: yes
+tags: top
+view-if: age > 7 and jerome > 1 and child-led < 2 and month < 24
+on-arrival: child-led = 2; jerome += 1
+
+= Consultation
+
+Rather surprisingly, Jerome corners you in the hallway at church when you're coming out of the girls' room.
+
+"Were you waiting for me?" you ask.
+
+"Yeah, actually." He lifts his chin in challenge. "Do you know anything about child-led learning?"
+
+- @your-learning: Your learning is mostly pretty parent-led.
+
+
+@your-learning
+
+"You mean *unschooling*?" 
+
+Jerome looks frustrated. "Not exactly," he says. "I want to do something sort of project based, but where we get to pick curriculum topics. We've been doing this workbook series for years and I'm about ready to gouge my eyes out if we have to do it again."
+
+At this point he gets out a set of notecards from his pocket. "Look, can I practice my presentation on you?"
+
+- @yes: Well, okay.
+- @no: Why? It's not like he's been particularly friendly to you.
+
+
+@no
+on-arrival: jerome -= 1
+
+"Why are you asking me? It's not like we're buddies."
+
+He crams the notecards back. "I thought you might get it, that's all," he says. "Never mind."
+
+
+@yes
+go-to: objections
+
+So you go up to one of the unused Sunday School rooms and Jerome gives a short speech with the aid of the notecards. There's an introduction and three supporting paragraphs and a conclusion. The gist is that the workbooks are boring and have sapped his desire to continue home-schooling, and that he feels a different method would be preferable. 
+
+He then lays out a rather utopian future in which he'll be able to study whatever topics interest him at the moment, resulting in greater engagement with learning and even the possible development of genius-level intelligence in some particular area.
+
+
+@objections
+
+You contemplate possible objections.
+
+- @is-he: Is he a genius at anything?
+- @what-about: What about yearly assessments?
+- @how-will: How will you know if the projects are really getting done?
+- @sounds-great: Sounds terrific.
+- @sounds-dumb: This will never work.
+
+
+@how-will
+view-if: projects = 0
+on-arrival: projects += 1
+go-to: objections
+
+"Are the projects graded at all? How will you know if they're done?"
+
+"I'm not sure," says Jerome. "What I'm picturing is this. We have a big board covered in Post-Its. Each one is a project proposal, something we want to find out or do. But it seems like different tasks would have to be graded in different ways, right? Like if one project was to come up with a new meatloaf recipe and another project was to build a shed in the back yard, you'd test those different ways."
+
+"So maybe part of thinking of the project is to think up how it's going to be tested?"
+
+"Good. Good." Jerome takes out one of the notecards and writes an addition.
+
+
+@what-about
+view-if: assessments = 0
+on-arrival: assessments += 1
+go-to: objections
+
+"What about your yearly assessments?" you ask. The state requires some yearly evaluations by a teacher to discover the grade level at which a home-schooled student is working. It's not clear how Jerome's project-based curriculum would address that.
+
+"We're pretty far ahead of grade level already," he replies. "I think even if we didn't make any progress for a couple of years in a given subject, it would be okay. But I'm figuring that projects will include a variety of tasks."
+
+
+@sounds-dumb
+on-arrival: jerome -= 1
+
+"You can try, I guess," you say. "But I don't think it's going to work out for you. It's too out there. Students need clear supervision and discipline."
+
+Jerome sticks the cards back in his pocket. "You've got a real hard-on for authority, don't you?" he asks. 
+
+"I just know what's worked for me with spelling," you say.
+
+
+@sounds-great
+
+"That's terrific," you say. "It sounds like you've thought of everything."
+
+Jerome grins. "We'll see whether the parental units agree," he says. "But I'm not just doing this for me. I need to liberate Flauberta too."
+
+
+@is-he
+view-if: genius = 0
+on-arrival: genius += 1
+go-to: objections
+
+"*Are* you a genius at anything?" you ask.
+
+"I'm not really sure," he says. "I haven't had a chance to discover a real vocation. Flauberta has her flute music, but I just have a hatred of the workbooks. It's something I'm eager to find out."  
+

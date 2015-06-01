@@ -1,0 +1,85 @@
+title: Mr. Barron Intervenes
+subtitle: A friend of your parents tries to intervene.
+new-page: yes
+view-if: age > 7 and parents > 4 and month < 24 and barrons > 0 and william-intervention = 0
+priority: 2
+on-arrival: month += 1; william-intervention = 1
+tags: menace, plot, top
+go-to: william-intro if william = 0; william-continued if william > 0
+
+= Mr. Barron Intervenes
+
+William Barron comes into the laundry room when you're moving a fresh load into the dryer. 
+
+
+@william-intro
+go-to: william-continued
+on-arrival: william = 1
+
+He is Mrs. Barron's husband, but you don't see him nearly as often. He works in software engineering and wears jeans and a polo shirt at all times. Even in church. 
+
+He's told you to call him William, but since you're not allowed to call adults by their first names, this creates a bit of a dilemma. In your head he's listed by full name, WILLIAM BARRON, like a Quaker.
+
+
+@william-continued
+
+"Hey," he says, not looking at what's in your hands.
+
+You shove your mother's bra into the darkness. It's stiff and starchy and damp.
+
+"Hey," you say.
+
+"So, look," he says. "Some of us are a little worried that maybe your parents are putting too much pressure on you guys. You know, with all the school stuff. One of us could talk to them for you. If you want."
+
+- @do-you-look: Do you *look* pitiful from the outside? What's making him ask?
+- @its-not-as-though: It's not as though that would help.
+- @say-yes: Say yes. It might not help, but it shouldn't make things worse.
+
+
+@say-yes
+
+When you agree, he just nods and goes away again. You don't hear anything more of it until a couple of days later.
+
+"Did you complain to the Barrons that we *work you too hard*?" Mother demands over a bowl of too-cooked peas.
+
+"Mr. Barron asked whether I had too much to do," you say.
+
+"I'd like to think that if you have concerns, you can come directly to us," Mother says. "But we don't ask more of you than you can do."
+
+"I hope you haven't been going around saying the same to everyone else," Father observes. "Mrs. Perry does relish spreading gossip about families she thinks aren't doing home-schooling right. And there's the newsletter to think about."
+
+- @lovely: Lovely to know that the newsletter is the top concern.
+- @apologize: Apologize. Don't mean it.
+
+
+@apologize
+on-arrival: parents += 2
+
+"I'm sorry," you say. "I didn't mean to cause a scandal." (SCANDAL: etymology Greek via Latin. Literally a trap; metaphorically, a stumbling block.)
+
+"In the future, you don't have to answer questions like that," Mother says. "I don't know what Mr. Barron was thinking even asking you."
+
+"He doesn't have a very good sense of the appropriate," Father remarks. "Look how he runs his family. And wanting you to call him William."
+
+
+@lovely
+on-arrival: parents += 1; status += 1
+
+"It's great to know that you care more about the newsletter than you do about me being happy," you say.
+
+Lettice looks back and forth between you and your parents, then shovels another spoonful of mashed potatoes into her mouth.
+
+"Sweetheart, you're *fine*," says Mother. "You get your work done. Or you could, if you applied yourself. God never demands more of us than we can perform, remember."
+
+
+@its-not-as-though
+go-to: do-you-look
+
+
+@do-you-look
+
+You pull a damp skirt out of the washer and shove it into the dryer. 
+
+"Everything is fine," you say. You close the dryer and twist the knob to permanent press and then you turn it on.
+
+"Okay," says William Barron. "If you ever change your mind, though."  

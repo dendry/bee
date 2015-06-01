@@ -1,0 +1,60 @@
+title: Snow Day
+subtitle: How studying happens when there is snow on the ground.
+new-page: yes
+view-if: month > 10 and month < 17 and age > 7
+on-arrival: month += 1;
+tags: seasonal, drill, top
+
+= Snow Day
+
+You have gotten up at 5:30 in the morning. You have said your morning prayer alone, with a red tea-light candle. You have made a cup of peppermint tea and taken it into the study, where your word list waits.
+
+These are the words that are matched to holes in your brain. You can study them every day and still not remember them. Somehow these particular words are just hard to remember when all the others slot neatly and easily into place.
+
+- @try-backwards: Try learning the letters backwards.
+- @try-visualizing: Try visualization tricks.
+
+
+@try-backwards
+go-to: onward-snow
+
+You sit turning over the flashcards, sipping your tea. For variety you try learning the words backwards rather than forwards. But this just fills you with anxiety that you will freeze up at the bee, and go the wrong way, ruining everything.
+
+
+@try-visualizing
+go-to: onward-snow
+
+P H I L A T E L Y. Have you seen Phil lately? He's working on his stamp collection...
+
+...but that's a bad idea, of course, because it will make you think there are two Ls. It should really be *phi* lately, and that doesn't lend itself to such a good mnemonic.
+
+
+@onward-snow
+
+Outside the sliding glass doors give onto the patio, and on the patio is a fresh snow falling. It is the first this winter. The sky is a very faint pale blue, and so is the snow. 
+
+- @easy-sleep: It would be easy to fall asleep until the others wake up.
+- @snow-reverie: Or just to stare out into the snow.
+- @focus: But it is important to focus.
+
+
+@snow-reverie
+
+The gradually accumulating snow is sort of soft and meditative. Just occasionally a small animal runs through a drift, looking for shelter. Or the snow builds up too much on a branch of a droopy pine, and then all sloughs off at once, mounding up below.
+
+
+@easy-sleep
+
+You curl up by the vent of the heater and put a throw blanket over your legs, so the hot air flows up into the tent and makes everything warm and tranquil. The spelling cue cards are set aside, and your last waking thought is that you made a mistake color-coding the cards by language family. The edge of the MALIHINI card should be crimson for "Native language," and instead it's goldenrod like the words taken from Slavic languages.
+
+But you can fix it later.
+
+
+@focus
+on-arrival: spelling += 1; motivation -= 1
+choose-if: motivation > 0
+unavailable-subtitle: You can't bring yourself to do so.
+
+When you can't concentrate any more and your tea bag is huddled against the bottom of your mug, you get up and open the door. You step out barefoot into the snow. It is cold. It is terribly cold. The terrible cold wakes you.
+
+Up and down you walk in the snow, in neat rows like a soldier, 'til you've covered the whole patio. Only then you come back inside to start again with the word list.

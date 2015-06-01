@@ -1,0 +1,57 @@
+title: Ironing
+subtitle: In which you help with the chores.
+new-page: yes
+view-if: age > 7  and month < 24
+tags: chores, top
+frequency: 400
+on-arrival: month += 1
+
+= Ironing
+
+Mother is at her sewing machine. You are at the ironing board. When you're not needed, you're allowed to read your book. The rest of the time, you're a well-oiled part of Mother's operation: getting the creases out of newly-sewn items, ironing on facings and setting pleats. Not having to get up and do these steps herself saves Mother a great deal of time.
+
+- @noticing: Pay attention to what Mother is doing.
+- @make-pleats: Give extra attention to the pleated skirt.
+- @martyred: Work longer than necessary. Possibly burn yourself. No one notices anyway.
+- @spell-through: Set up your spelling list so you can see it while you iron.
+
+
+@spell-through
+on-arrival: parents -= 1; spelling-relief += 1; spelling += 1
+
+If you prop the book on a clipboard opposite the iron, you can see it while you work, and recite off letters with each stroke of the iron. XANTHOSIS gets you through Father's collar and cuffs.
+
+"You don't need that much steam, darling," says Mother absently. So you stop using the steam every time you hit a PH. But you think it anyway, all through your Greek root list.
+
+
+@make-pleats
+view-if: parents < 3
+on-arrival: parents -= 1
+
+The pleated skirt is tricky work, and you give it your full attention, and many squirts with the water bottle. Hot steam rises from the cloth. 
+
+There is rain on the windows and Father and Lettice are out shopping, but the room feels cozy, just because of the hot steam and the smell of clean cloth.
+
+
+@martyred
+view-if: parents > 2
+on-arrival: parents += 1
+
+You iron with terrific focus and diligence. Your folds are crisp and flawless. The steam rises into your face and you start to feel a little bit faint, but who cares about that?
+
+Mother doesn't notice your heavy sighs. 
+
+Afterwards she says, "I'm glad you're so fond of ironing, sweetheart. If you're good, I can find more for you tomorrow."
+
+
+@noticing
+view-if: age > 8
+on-arrival: poverty += 1
+
+The colors of the cloth this year are brighter than they were last year, and there is more binding tape and more interesting buttons. One of the children's shirts has pink plastic buttons shaped like the heads of kitty cats. 
+
+Mother catches you looking at the line of kitty heads. "Those buttons were barter," she says. "From Susan at church. They're a bit loud, but I didn't like to complain. She and her family are on such hard times."
+
+Mother smiles at you and goes back to her stitching. 
+
+You smooth the pink heads down with one hand.

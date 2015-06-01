@@ -1,0 +1,89 @@
+title: A Call to Arms
+subtitle: Taking action with the legislature.
+new-page: yes
+view-if: status > 1 and status < 4 and month < 24
+frequency: 100
+tags: menace, plot, top
+on-arrival: perry += 1
+
+= A Call to Arms
+
+Calls from Mrs. Perry come in the middle of the afternoon. 
+
+- @who-is: What can that be?
+- @aha: Ah. Again.
+
+
+@who-is
+go-to: summary
+view-if: perry < 3
+
+Mrs. Perry is a home-schooling *activist*. She doesn't just school her own children. She runs classes for the co-op. She speaks at the State Fair and at home-schooling conventions. She has a website and a blog. She reviews textbook materials. She has her children give ratings to everything they read or study, to identify for other home-schoolers how thorough, correct, and Godly those materials are.
+
+Mrs. Perry's children gave a 3.5 out of 10 possible points to the Merriam-Webster dictionary, entirely for thoroughness. The definition of evolution did not meet with their approval.
+
+
+@aha
+go-to: summary
+view-if: perry > 2
+
+Mother has a slightly suffering expression but she takes careful notes from the phone call and says "mhm" and "oh no" and "yes, I can't imagine what they're thinking" at a number of intervals. When at last she hangs up, she is able to explain.
+
+
+@summary
+
+This afternoon Mrs. Perry has a task for you and your family, to write to your state representatives to protest a change in the laws about school assessment that would add anti-bullying lessons to the common curriculum, going so far as to specify particular curriculum materials to be used.
+
+Mother gives you and Lettice each a turn at the computer to compose your own letters.
+
+- @what-about-1: The curriculum would pose an extra cost on home-schooling students.
+- @what-about-2: It's not the job of the state legislature to specify particular curriculum materials.
+- @what-about-3: Home-schooling students don't suffer so much from bullying.
+- @what-about-4: And anyway, attitudinal education is repulsive and un-free.
+- @complain: On the other hand, Lettice is like a little bully.
+
+
+@complain
+view-if: lettice > 3
+on-arrival: lettice += 1
+
+"I don't know," you say to Mother. "I think Lettice could benefit from anti-bullying lessons."
+
+"Lettice doesn't bully you," says Mother. "She's smaller than you are."
+
+Behind Mother's back, Lettice sticks out her tongue.
+
+
+@what-about-1
+on-arrival: status += 1
+go-to: smug; assignment
+
+You stare into the blank face of Microsoft Word and then begin to type. Starting from a rough outline, it takes you about two and a half hours to come up with something you're happy with. When you're done, Mother prints your letter; you sign it and put it into an envelope she has waiting.
+
+
+@what-about-2
+go-to: what-about-1
+
+
+@what-about-3
+go-to: what-about-1
+
+
+@what-about-4
+go-to: what-about-1
+
+
+@assignment
+
+"Paper mail is always better than email when you want to reach a legislator," she reminds you. "Anyone can fill out a form online."
+
+You and Lettice solemnly lick your stamps and affix them. In Mother's schooling record book, she records "civic action" and "writing" assignments for each of you. 
+
+
+@smug
+
+"When you see Mrs. Perry, you can tell her how many pages you each wrote," she says. "I think it would make her very happy."
+
+"I bet we wrote more pages than the little Perry children," says Lettice.
+
+"Yes," says Mother. "I think maybe you did."

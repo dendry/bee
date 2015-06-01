@@ -1,0 +1,173 @@
+title: Moodiness
+subtitle: Questions of "attitude."
+new-page: yes
+view-if: parents > 5 and month < 24
+priority: 2
+tags: menace, top
+go-to: cyanosis; hyalithic; psittacotic
+
+= Moodiness
+
+
+@psittacotic
+go-to: explanation
+on-arrival: psitta += 1
+
+Father interrupts your studying while you're copying the definition of PSITTACOSIS onto a notecard.
+
+"Mother says you haven't taken out the trash," he says. "And that you've shown a bad attitude towards your homework recently as well."
+
+You wait.
+
+
+@hyalithic
+go-to: explanation
+on-arrival: hyalithe += 1
+
+Father comes into your bedroom. You're on HYALITHE. Father plucks the card out of your hand. 
+
+"Mother asked me to talk to you about your attitude lately. She says you've shown a lot of sullenness when you're asked to help out around the house."
+
+From the kitchen comes the sound of dishes being done angrily.
+
+
+@cyanosis
+go-to: explanation
+on-arrival: cyan += 1
+
+"Your Mother has noticed a great deal of attitude from you lately," says Father, sitting down at the foot of your bed. His presence disorders the piles of flash cards, so that a small heap of medical terms goes sliding off onto the floor. CYANOTIC lands face up.
+
+
+@explanation
+
+"Do you have an explanation to offer?"
+
+- @unfairness: You have way too many chores.
+- @unfairness-2: You have way too many chores.
+- @lettice-gets-away: Lettice gets away with everything.
+- @worldly: You want to see more of the world.
+- @poor: You're being unreasonable. It's hard on everyone, not having enough money.
+- @cyanotic: CYANOTIC means turning blue.
+- @hyalithe: HYALITHE is an opaque glass.
+- @psittacosis: PSITTACOSIS, with a silent P.
+
+
+@poor
+view-if: poverty > 0
+on-arrival: parents -= 4; poverty += 2; hyalithe = 0; psitta = 0; cyan = 0
+
+"I get mad about having so many chores and no allowance," you say. "But that's not really fair, I guess."
+
+"Your mother works extremely hard," he says. "And so do I. I know it's not easy, but we've chosen to live our lives a certain way."
+
+- @versus-what: Instead of what?
+
+
+@versus-what
+
+Father puts his hand on your shoulder in what is possibly meant to be a comforting gesture. "Your mother could work outside the house," he says. "She wouldn't be home, and you and Lettice would have to go to school. We'd have more money, but less time together. That's a choice."
+
+
+@worldly
+view-if: world > 2
+on-arrival: world += 2; parents -= 4; hyalithe = 0; psitta = 0; cyan = 0
+
+"I never get to go and do anything," you say. "Other kids' families go places. They have field trips to other parts of the country."
+
+"I know," says Father. "But we've chosen a different path for our family. We live a life that leaves the smallest possible mark. We earn little and we spend little. We don't consume more resources than we have to. We pay very little tax, so we're not supporting foreign wars. All that's for the good of the world too, you know."
+
+Into your silence, he adds, "And we've always said that if you get into the National, we'll see that you can go to the Bee. All the way to Washington, D. C."
+
+
+@lettice-gets-away
+view-if: lettice > 2
+on-arrival: lettice += 2; parents -= 4; hyalithe = 0; psitta = 0; cyan = 0
+
+"Lettice is *spoiled*," you say. "When I was her age I had to do the laundry and the dishes. She only has to help dry things, and then only sometimes. And she gets more toys than I did, and you don't punish her as much."
+
+"Maybe," he says. "But Lettice has more needs than you did. Everyone matures at different rates, and it's very common for an older sibling to advance more quickly than the younger siblings."
+
+
+@unfairness
+view-if: newslettering < 1
+on-arrival: parents += 1; hyalithe = 0; psitta = 0; cyan = 0
+
+"I have more chores than any kid I know," you say. "Even the home-schooled ones."
+
+"Our family is like one body," Father says. "What needs to be done, will be done, and it doesn't matter by which part of the body."
+
+
+@unfairness-2
+view-if: newslettering > 0
+on-arrival: parents += 1; hyalithe = 0; psitta = 0; cyan = 0
+
+"I have more chores than any kid I know," you say. "Even the home-schooled ones."
+
+"Some of the families who get our newsletter own farms," says Father. "You can't tell me you work harder than those kids who get up at 4 in the morning to milk their cows and gather eggs from their chickens."
+
+"But —"
+
+"You do what needs to be done in the place where you find yourself," Father says. "And you do it with a smile." He pushes himself up off the bed.
+
+
+@psittacosis
+go-to: whatever
+view-if: psitta = 1
+on-arrival: spelling-relief += 1; parents -= 2; psitta = 0
+
+"PSITTACOSIS is a disease transmitted by birds," you say. "I didn't know that."
+
+"That's not an answer to my question," Father says.
+
+
+@cyanotic
+go-to: whatever
+view-if: cyan = 1
+on-arrival: spelling-relief += 1; parents -= 2; cyan = 0
+
+"Cyanotic means turning blue," you say. "Often due to a lack of oxygen."
+
+Father sighs. "You don't really listen these days, do you?" But it is not as though he'd get it if you put it more plainly.
+
+
+@hyalithe
+go-to: whatever
+view-if: hyalithe = 1
+on-arrival: spelling-relief += 1; parents -= 2; hyalithe = 0
+
+"Hyalithe is an opaque glass," you say conversationally.
+
+"Is that supposed to be an answer?" 
+
+
+@whatever
+on-arrival: hyalithe = 0; psitta = 0; cyan = 0
+
+- @whatever-1: Whatever.
+- @whatever-2: Whatever.
+- @whatever-3: Whatever.
+
+
+@whatever-1
+view-if: not-talking = 0
+on-arrival: not-talking += 1
+
+When you don't reply, Father says, "I have a Greek word for you. DEMOCRACY, as in, what this household is not. I am in charge, then your mother, then you and Lettice. And when someone who is in charge tells you to do something, you are to do it, in a civil and cooperative spirit."
+
+He goes out and you push the door shut behind him.
+
+
+@whatever-2
+view-if: not-talking = 1
+on-arrival: not-talking += 1
+
+"The language of origin is Greek," you say.
+
+"Yeah," he says. "I guess it is." He gets up and goes out.
+
+
+@whatever-3
+view-if: not-talking > 1
+on-arrival: not-talking += 1
+
+"Civil discourse," Father grumbles. "I thought we'd taught you to be capable of it, but I guess not."

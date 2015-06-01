@@ -1,0 +1,142 @@
+title: It's All Happening At the Zoo
+subtitle: Your co-op's yearly trip to the Zoo.
+new-page: yes
+tags: top
+view-if: age > 7 and month = 7
+on-arrival: month += 1
+priority: 2
+
+= It's All Happening At the Zoo
+
+"Well," says Mother brightly, "you and Lettice will have to manage without me, because I am completely swamped with orders this year." She's been selling children's shirts online to supplement her income, and her sewing desk is covered with brightly colored fabrics. So it's up to you to carpool with other families and find proper chaperonage.
+
+- @hang-perrys: Go to the South American exhibit with the Perry family.
+- @hang-jerome: Do the reptile house with Jerome and Flauberta.
+- @hang-barrons: Accompany Mrs. Barron and the Barron boys to see the lions.
+- @hang-lettice: Take a drawing expedition with Lettice.
+- @whatever: Wander solo.
+
+
+@hang-perrys
+view-if: perry > 0
+on-arrival: status += 1; perry += 1
+
+Mrs. Perry is wearing an A-line skirt and pearls, and holds her daughters by the hand. Mr. Perry is not along because he works days at a factory that puts custom upholstery on furniture.
+
+You and Mrs. Perry and Mrs. Perry's children work your way through the South America exhibit, taking in llama and capybaras and other curiosities. The scenes are arranged from north to south, so that the penguins are reserved for last.
+
+Mrs. Perry stops frequently and hands you the family camera. "Here, could you just get a snap of us here?" 
+
+She poses with the two girls. "Honey, point towards that bush as though you're noticing something behind it... yes, like that. Now you... okay. Do we look too posed? Very good. Snap now!"
+
+- @snap: Snap obediently.
+- @candid: Wait for an awkwardly candid moment.
+
+
+@snap
+
+You press the shutter.
+
+"Thank you, dear," says Mrs. Perry, retrieving the camera from you. "It's such a pity that your mother wasn't able to make time to escort you to the zoo herself."
+
+
+@candid
+
+You snap just when the wind blows Mrs. Perry's skirt up and shows the top of her stockings.
+
+When you return the camera, she frowns at its little screen. Frowns more. Zooms the camera in. "No, that won't do," she says. "This is for publication, so try to make it look a bit more wholesome, if you would."
+
+She gives the camera back to you and you have another go.
+
+
+@hang-jerome
+view-if: jerome > 0 and child-led > 1
+choose-if: jerome > 3
+unavailable-subtitle: Jerome doesn't seem keen for your company.
+on-arrival: jerome += 1
+
+Jerome and Flauberta are old enough to be allowed to go around *without parental accompaniment*. Their father drops the three of you off at the front gate of the zoo with sixty dollars in cash and an instruction not to get too sunburned.
+
+"Are we supposed to deflect ultraviolet radiation by an act of will?" Flauberta asks pertly. This is the sort of remark that your parents would never welcome from you, but Jerome and Flauberta's father grins and tells them to buy matching hats if they start to get too hot. 
+
+"Reptiles?" Jerome asks.
+
+"Reptiles," Flauberta agrees.
+
+- @reptiles: What's so great about reptiles?
+
+
+@reptiles
+
+In the company of Jerome and Flauberta, reptiles turn out to be a highly interesting subject. Flauberta is keen on the way that snakes unhinge their jaws. Jerome is interested in the regulation of blood flow in the reptile body. Both are constantly scribbling things down on Post-It notes for later.
+
+- @sneak-jerome: Peek at Jerome's Post-It.
+- @sneak-flauberta: Peek at Flauberta's Post-It.
+
+
+@sneak-flauberta
+
+The top note on Flauberta's pile says, "Tune for charming a rattlesnake." Then there are some notations that you are not able to read.
+
+"It's for the flute," Flauberta explains when she sees you looking. "I'm letting the reptiles be my Muse."
+
+
+@sneak-jerome
+
+The top note on Jerome's pile says, "Investigate reptile hearts. Dissect? Reptile heart from biological supply?"
+
+"I'm curious how it compares with the structure in other cold- and warm-blooded animals. I've already done a frog," Jerome explains. "But I'm not sure we'll be able to get the supplies."
+
+
+@hang-barrons
+view-if: barrons > 0
+on-arrival: barrons += 1
+
+The two Barron boys are a bit younger than you and Lettice. Currently the boys are working on a unit on big cats. So you see the lions, and then tigers and jaguars; then take in a puma and a leopard. 
+
+Mrs. Barron has made worksheets for them, which they fill in from information on the placards and from personal observation. Which are the largest cats? Which the smallest? What are their ranges? What do they all eat? The worksheets are vastly detailed. Mrs. Barron must have been in an energetic mood.
+
+You get a copy of the worksheets and do them as well. It feels more like a spelling exercise than any previous zoo trip you've taken.
+
+
+@hang-lettice
+view-if: age > 10
+choose-if: lettice < 4
+unavailable-subtitle: A whole day with Lettice? As if.
+on-arrival: lettice -= 1; parents += 1
+
+Seeing the zoo with Lettice is a curiously relaxing experience. She is interested in biology chiefly as a component of anatomical drawing, and she takes a great interest in the plaques that show animal skeletons and other similar details. 
+
+She sketches the baby elephant repeatedly, from a bench under a tree, while all sorts of other zoo visitors come and go. Sometimes she draws no more than the curve of its trunk as it explores picking something up. Sometimes it's the flap of the ears. By the end of the day she has her sketchbook completely full of meditations on the concept of elephant youth.
+
+"I don't think it's been a very educational day for you," she remarks, as she tucks away her pencils. "I don't know what you're going to tell Mother when she asks." 
+
+
+@whatever
+go-to: polar; night; tortoises
+
+You wander the zoo in solitary splendor, stopping whenever the mood takes you, accountable for nothing but being back at the main gate at the end of the afternoon. There's no one to buy you lunch or ice cream, so you are getting a little light-headed by 3 PM or so. 
+
+On the other hand! 
+
+
+@polar 
+
+There's also no one to drag you away from the polar bears before you want to go. There's nothing to stop you just standing there and observing them minutely, the way their fur grows and the way their faces are arranged, and the length and power of their limbs. 
+
+Having other people around makes it very hard to see things properly, because you are always conscious of also being watched.
+
+
+@night
+
+There's no one to stop you from resting in the Night House for fifteen minutes, watching the koalas and the owls until your eyes have really adjusted and you can see them *properly*. 
+
+It is quiet in there, like a chapel during prayer time before the service begins.
+
+
+@tortoises
+
+There's no one to direct your attention away from the mating tortoises, so you're able to watch them "doing behavior," as your mother would say. 
+
+It is all extremely informative. 
+

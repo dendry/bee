@@ -1,0 +1,69 @@
+title: Reflections
+subtitle: Going home with the new haircut.
+new-page: yes
+view-if: age > 7 and barrons > 0 and hairdresser = 2 and month < 24
+priority: 2
+on-arrival: hairdresser += 1; month += 1; 
+tags: plot, top
+
+= Reflections
+
+When you and Lettice come home with your haircuts, Mother looks at you both narrowly, but she says nothing about how you look. "You're late for dinner," she says. To Mrs. Barron, she adds, "I hope they were not too much trouble."
+
+"It was a pleasure," Mrs. Barron says. She is positively glowing, whether from the new cut or in a spirit of mischief.
+
+"I won't keep you," Mother adds. "I'm sure you're eager to be home and cooking for your family."
+
+"Actually," says Mrs. Barron, "I was planning to make the D. H. bring home some Chinese take-away."
+
+- @no-wonder: No wonder Mrs. Barron was not in a hurry.
+
+
+@no-wonder
+
+With Mrs. Barron gone, Mother ushers you and Lettice into the house. Father is already seated at the table. He observes the swoop and fluff of the haircut for a long moment. 
+
+- @wait-for: Wait for the lecture on the Things of the World.
+- @then-again: Then again, he might just make some kind of cutting joke.
+
+
+@then-again
+go-to: wait-for
+
+
+@wait-for
+
+You brace yourself.
+
+"Your Mother got some brussels sprouts," he says, finally. "They're a little expensive, but since they're your favorites..."
+
+Lettice is already serving herself buttered sprouts from the bowl. There are also chicken pieces. Everyone eats in silence.
+
+"It is good of you," says Father heavily, near the end of the meal, "to offer your company to Mrs. Barron. I know that going to the salon with her did not appeal to you, but your duty towards a lonely fellow Christian was more important than demonstrating your distance from the Things of the World."
+
+- @gotaway: Seems that you've gotten away with your new haircut.
+- @perryhat: ...Perhaps it's not as stylish as you hoped, if Father doesn't mind it.
+
+
+@gotaway
+on-arrival: parents -= 1; world += 1
+
+In the morning, you can't get your hair to fluff out after your shower as much as it did at the salon. 
+
+"I think you have to blow dry it," Lettice explains in a whisper. "We don't have a blow-dryer."
+
+"Humpf." You pluck at the hair in the mirror. It still looks infinitely cuter than the old flat hair, even if it's not blow-dried.
+
+
+@perryhat
+on-arrival: parents += 1; world += 1
+
+"What if," Lettice asks, "Mrs. Perry says something bad about our new haircuts?"
+
+He and Mother exchange looks.
+
+"I have made you and your sister hats for your birthdays," says Mother. "I was going to keep them for a surprise, but under the circumstances, you can have them early." 
+
+So after dinner, she produces for you and Lettice knitted caps that cover your ears with flaps, and tie under the chin. It is impossible to see your hair at all. The knitting is from grey-brown wool.
+
+"I look like a nun," says Lettice to the mirror, not entirely displeased.

@@ -1,0 +1,36 @@
+title: Middle School English
+subtitle: A hired tutor for you.
+new-page: yes
+view-if: english = 0 and age > 7 and month < 24
+on-arrival: month += 1; english += 1
+tags: plot, top
+
+= Middle School English
+
+After a certain point, you stop gaining anything from workbooks. Your parents put up an advertisement at a local college. "English student wanted," it says. "$20/lesson. To teach *extremely talented* middle schooler literature and composition. High school level reading materials would be appropriate."
+
+There are applicants. College students are always poor. There are a series of interviews that you are not encouraged to attend. Sometimes, stopping outside the living room door during these interviews, you hear snippets of conversation. "Academically advanced," says your mother's voice firmly. "Spelling champion... Superb grammar... Very disciplined... No disobedience."
+
+At the end of each interview, Mother leads the student to the door of the study and lets the interviewee look in at you as though you were a creature at the zoo. No words are exchanged and the student is led away again.
+
+- @look-interesting: Look interesting.
+- @ignore: Ignore them and keep working.
+
+
+@ignore
+go-to: sara
+on-arrival: spelling += 1
+
+Whether they open the door or not, you keep working your way through a stack of words ending in -CEOUS.
+
+
+@look-interesting
+go-to: sara
+on-arrival: world += 1
+
+You contrive to be diligently reading a young person's Homer translation when they look in. It conveys the right sort of image, you think. Though there are only so many times you can read about the Cyclops and his cheese. 
+
+
+@sara
+
+The teacher your parents choose is Sara, a skinny girl with thatch-colored hair who bites her nails. She always looks cold in your house. After the first lesson, she always wears a lumpy woolen sweater knitted with pictures of sheep.

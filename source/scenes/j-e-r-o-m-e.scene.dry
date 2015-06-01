@@ -1,0 +1,102 @@
+title: J E R O M E
+subtitle: In which Jerome speaks.
+new-page: yes
+on-arrival: month += 1; jerome += 1
+view-if: jerome > 0 and jerome < 3  and month < 24 and age > 7
+tags: plot, top
+
+= J E R O M E
+
+Jerome is the only student in Sunday School class when you walk in. Even the teacher is not there yet.
+
+"Hi," you say.
+
+Jerome does not answer. 
+
+- @spell-things: Forget it and work on spelling.
+- @draw-out: Try to draw him out.
+- @draw-out-2: Try to draw him out.
+
+
+@draw-out-2
+view-if: jerome > 1
+
+"Nice to see you again," you say.
+
+Jerome twists in his seat. "Look, what is it? Do you have a crush on me or something?"
+
+- @deny-all: Deny all knowledge.
+- @laugh: Laugh.
+- @admit: Cop to some earlier curiosity.
+
+
+@admit
+
+"I was curious about you," you say. "All my previous crushes have had names that started with J."
+
+"So I'm the latest J in your collection?"
+
+"No, I was curious, but then I actually met you. Now I'm holding out for a Jedediah." 
+
+"Yeah? I hear there might be a Japheth in this Sunday School lesson," he says. "Could be a very big day for you." He goes back to staring out the window.
+
+
+@deny-all
+
+"No, Father says I'm much too young to date," you say.
+
+He sits back in his chair. "Well, when you're ready, you should identify people who are at your own level," he says. "Don't date beneath yourself."
+
+"What does that mean?"
+
+But he has gone back to not answering questions.
+
+
+@laugh
+
+You laugh. You laugh really hard. You laugh like that's the punchline of the funniest joke you ever heard. So hard you have to go to the bathroom and put water on your face and not come back until there are a bunch of other students in the room. It's possible Jerome thinks you wet your pants laughing at his comedy.
+
+When you come back into the room, late for the start of class, he's giving you a funny look. 
+
+
+@draw-out
+view-if: jerome = 1
+
+"It was interesting seeing your house," you volunteer. "What are you studying this week?"
+
+"Whatever," says Jerome. "I'm not studying anything. I'm trying to see how long it will take before my parents give up and let me go back to public school."
+
+- @ask-why: What? Why?
+- @sympathize: Anyone would want to escape the Château of Mold.
+
+
+@ask-why
+
+"What? Why?"
+
+"You wouldn't get it," says Jerome, twisting in his seat so that he's not looking at you. "We all got to hear how *exceptionable* you are at spelling."
+
+"I think you mean exceptional," you say. "Exceptionable is something else, it means—"
+
+"Exceptionable, causing disapproval or offense? I got the right one."
+
+
+@sympathize
+view-if: child-led < 1
+on-arrival: child-led = 1
+
+"I can see that," you say. "Uh, how's it working out for you so far?"
+
+"It's not." Jerome kicks the leg of his chair. "I did nothing but lie on the floor in my bedroom all day on Friday and they didn't do anything. Aren't they supposed to be worried by things like that?"
+
+It's hard to imagine your parents putting up with *you* lying on the bedroom floor all day, that's for sure.
+
+
+@spell-things
+on-arrival: spelling += 1; spelling-relief += 1
+
+On Sundays, the spelling cards you bring with you to church are the ones of Greek origin, to honor the Greek of the New Testament. Today's stack brings you GYNARCHY and PERISCOPE. It makes you think of a submarine piloted by a crew of Amazons.
+
+"What are you smiling about?" Jerome demands.
+
+You duck and shake your head.

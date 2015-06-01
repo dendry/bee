@@ -1,0 +1,100 @@
+title: Isolation 
+subtitle: Longing for the opening of the lid.
+new-page: yes
+view-if: world > 4 and month < 24 and age > 7
+on-arrival: month += 1
+priority: 2
+tags: menace, top
+
+= Isolation 
+
+Lying face-down on the carpet in the study. It is early in the morning. No one else is awake. You are printing off your worksheets for the day. The printer works, and while it works, you can get an extra moment or two of lying down, almost as though you were sleeping in.
+
+The carpet is very close to your nose. Like everything. The thought that comes is like a stranger speaking in your head.
+
+*If I ever killed myself, it would be from boredom.*
+
+- @everyone: Everyone has odd half-asleep thoughts. It's nothing.
+- @nationals: If you go to Nationals, you'll get to make a trip cross-country.
+- @text: Text Jerome.
+- @text-2: Text Jerome.
+- @romance: You'd be less bored if you had a boyfriend.
+
+
+@text
+view-if: jerome > 2 and child-led > 0 and jerome-texted = 0
+choose-if: jerome > 4
+unavailable-subtitle: Hm. Too weird?
+on-arrival: world -= 2; jerome += 1; jerome-texted = 1
+
+You: Hey Jerome. Are you up?
+
+Jerome: u r going to typ everythg out arent u
+
+You: I just like to be correct.
+
+Jerome: use autocorrect
+
+You: If I did, my phone would call you Jerry.
+
+Jerome: good pt. sup
+
+You: Bored. Very very bored.
+
+Jerome: [Photograph of a brown and pink knitted... thing.]
+
+Jerome: check out flau's latest project
+
+Jerome: it is a flute cozy
+
+Jerome: do not ask me what I think it looks liek
+
+
+@text-2
+view-if: jerome > 2 and child-led > 0 and jerome-texted = 1
+choose-if: jerome > 4
+unavailable-subtitle: Hm. Too weird?
+on-arrival: world -= 2; jerome += 1; jerome-texted = 2
+
+You: Hi Jerome. What are you doing right now?
+
+Jerome: um flau is watching mean girls again
+
+Jerome: she is a ltl in luv w it
+
+You: Why?
+
+Jerome: linsy lohan is homeschooled in it duh
+
+Jerome: srsly u havnt seen it?
+
+You: My parents don't really encourage that kind of thing.
+
+Jerome: figures
+
+Jerome: time for breakfast ttyl
+
+
+@romance
+view-if: age > 10
+on-arrival: world += 2
+
+Your parents would never permit you to date at your age. Obviously. But having someone to talk things over with, someone who would reliably be around to chat with you online and maybe even text you on a regular basis — that would make things feel less solitary, wouldn't it?
+
+
+@everyone
+on-arrival: world += 1
+
+Like a dream of falling that wakes you in a panic.
+
+But the feeling means something, even if it's not a sinful intention to harm yourself. All those words on your lists are like tokens of a life outside, beyond these walls; of a variety and diversity of human life; and you are not allowed to know any of it. 
+
+For now. You'll get out. Eventually. It has to get better.
+
+
+@nationals
+on-arrival: spelling-relief += 1; world -= 1; motivation = 2
+
+You could go to Washington, D.C. You could see the important buildings. Father would come along, and he would have a lot to say about the politics, and about how you were in the worst school district in the country, about the district as a locus of failure and folly and wrong.
+
+But. The architecture of the White House. The Washington Monument, which looks so pointy. The Capitol Building. The Smithsonian. The moon rock in its glass case. (OLIVINE BASALT, supplies your mind's word list unnecessarily.) All that... *aspiration*. Scientific, philosophical, moral. 

@@ -1,0 +1,62 @@
+title: Pentecost
+subtitle: The feast of the Holy Spirit at church.
+new-page: yes
+view-if: month = 22 and age > 7
+priority: 2
+on-arrival: month += 1
+tags: seasonal, religious, top
+
+= Pentecost
+
+Pentecost is celebrated in church with bagpipe musicians, and acolytes carrying gold and orange streamers, and people who read the Bible lesson aloud in tongues, which is to say all the languages that they happen to know. 
+
+Ms. Chang reads in Mandarin, and Mr. Harrison in German because he did a college year in Germany; and the pastor in Ancient Greek, and Mother in Latin. And you hear words of your own, and think of...
+
+- @flambeaux: FLAMBEAUX.
+- @crucible: CRUCIBLE.
+- @pyroclast: PYROCLAST.
+- @ignis: IGNIS FATUUS.
+
+
+@flambeaux
+view-if: world > 0
+go-to: final
+on-arrival: world -= 1
+
+  *flambeaux, lighted torches*
+
+Something ephemeral, leaping, distant and timeless, unlike electric light. That which belongs to marriage torches, to Venetian carnival, to dungeons where martyrs died. The whole broad sweep of human experience that you have so little access to.
+
+
+@ignis
+view-if: perry > 0
+go-to: final
+on-arrival: status -= 1
+
+  *ignis fatuus, a light seen floating over the marshes; a delusion*
+
+Mrs. Perry's public prayers. The shiniest car in the parking lot. The shine on a trophy. All gleam without heat.
+
+
+@crucible
+go-to: final
+on-arrival: motivation = 2
+
+  *crucible, a container in which substances may be subjected to high temperatures; a place of severe trial*
+
+The Bee is a crucible. The work you have to do. Maybe even the love of words themselves.
+
+
+@pyroclast
+view-if: parents > 1
+go-to: final
+on-arrival: parents -= 1
+
+  *pyroclast, denoting fragments of rock ejected by a volcano*
+
+Father's anger. Scenes from Lettice. The river of anger that runs under the surface of you.
+
+
+@final
+
+Pentecost is the most beautiful and frightening of services because it makes a fire of God, and fire is unpredictable, joyful and destructive.

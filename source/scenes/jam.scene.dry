@@ -1,0 +1,169 @@
+title: Jam
+subtitle: Your family makes its yearly jam.
+new-page: yes
+view-if: age > 7 and month = 2
+priority: 2
+tags: chores, seasonal, top
+on-arrival: month += 1
+
+= Jam
+
+Time has come for making jam and other fruit products to use in barter.
+
+- @destination-one: Help pick fruit.
+- @destination-three: Help dump in the sugar.
+- @destination-four: Help clean.
+- @destination-five: Help label the jars.
+
+
+@destination-one
+choose-if: age < 9
+unavailable-subtitle: You're old enough to do something harder.
+
+Outside the house there is a blackberry vine, and inside the house there are blackberries. Every container in the kitchen has been dragooned into service. There are blackberries in bowls, blackberries in pie tins, blackberries in the bread box.
+
+"Can I eat some now?" asks Lettice, looking into her basket.
+
+"After you have helped wash them all," says Mother from the other room.
+
+Lettice makes a face at you. Then, lightning-fast, she sticks one of the blackberries unwashed into her mouth and swallows it down.
+
+"Good?" you whisper.
+
+Lettice says, "I think there was a bug on it."
+
+- @serves-right: Serves her right.
+- @protein-bugs: Bugs are just protein.
+
+
+@protein-bugs
+view-if: lettice < 2
+on-arrival: lettice -=1
+
+"Don't worry about it," you say. "Bugs are just protein."
+
+"Like chicken?" she says.
+
+"Right. There are tribes in Africa that eat bugs on purpose for lunch."
+
+Lettice looks impressed and eats another blackberry.
+
+
+@serves-right
+on-arrival: lettice += 1; parents -= 1
+
+"Did you know," you say, "that if you swallow a bug, it will lay eggs in your stomach, and then the bug babies will hatch in there?"
+
+Lettice makes a disbelieving face.
+
+"It's true," you say. "The bugs come out when you poo."
+
+"MOOOOOM," Lettice screams. Stupid cheating Lettice, she's broken the rules: if you were the first person to do something wrong, you *can't tattle* about anything that happens after that. 
+
+Fortunately Mother is too busy with a box pleat in tweed to answer the call. "Settle it yourselves like ladies," she says from the other room.
+
+"Watch your poo for carapaces," you say. "C A R..."
+
+Lettice is gone before you get to the last letter.
+
+
+@destination-three
+choose-if: age > 9
+unavailable-subtitle: Mother thinks you might spill. Maybe when you're older.
+
+On the counter is a large bowl containing seven measured cups of white sugar. The crystals gleam. It almost looks magic.
+
+"Can I?" asks Lettice, looking avidly into the bowl.
+
+"No," says Mother. "You might spill."
+
+- @your-turn: Sounds like this one's for you, then.
+- @lettice-really: Lettice really is a klutz.
+
+
+@your-turn
+
+You do the honors, upending the whole bowl into the seething blackberry goo.
+
+Lettice takes the empty bowl and licks out the remaining sugar grains.
+
+"Now *stir*," says Mother. So you stir, while Lettice watches. Half-way through she gets bored and leaves.
+
+
+@lettice-really
+on-arrival: lettice += 1
+
+"Yeah, Lettice," you say. "If you weren't such a klutz --"
+
+Mother comes into the kitchen. "*I* will pour in the sugar," she says. "And *you* will do the dishes."
+
+
+@destination-four
+choose-if: age > 10
+unavailable-subtitle: You'd have to be up past bed-time for that chore.
+
+Every surface in the kitchen is covered in a dark purple sticky goo that smells like blackberries. Every container, every pot, every strainer, every wooden spoon and every plastic spatula. The jam has been put up, and so has syrup, essence, juice.
+
+"Lettice needs to help me dry," you tell Mother. "There's way too much here for one person to do."
+
+"It is past Lettice's bedtime," Mother replies. "When your grandmother was a girl, she had to get up at four in the morning and milk cows." Mother herself is busy setting a sleeve in a new work blouse for someone at church. More barter.
+
+- @help-would: Mother expects too much out of you.
+- @sewing-still: It's late for Mother still to be sewing.
+
+
+@help-would
+go-to: kitchen-clean
+on-arrival: parents +=1
+
+You look sideways at Mother. She is humming to herself and running the cloth through the machine again.
+
+Maybe grandmother had to milk cows, but you don't know anyone your age who has nearly as many chores as you. And Lettice doesn't have to do as much as you did when you were her age, either. And it's also not your fault that Mother and Father decided to make enough blackberry preserves to float the Titanic.
+
+You submerge another pot in the water so hard that soapy water slops all over your front.
+
+"Don't forget to wear an apron, dear," says Mother dreamily from the far side of the sewing machine.
+
+
+@sewing-still
+go-to: kitchen-clean
+on-arrival: poverty +=1
+
+"It's late for you still to be sewing," you say to Mother.
+
+She sighs. "I know," she says. "But we had to spend most of our ready budget this month for the heater repair, so we need to be able to eat more barter. Or there's always a lot of blackberry jam."
+
+"I don't think I can face any more blackberries ever again," you say.
+
+"We'll get some of the Willis' zucchini bread," Mother says, turning the sleeve under the foot of the sewing machine. "You like that."
+
+
+@kitchen-clean
+
+It is past one in the morning when the kitchen is finally clean. The smell of blackberries clings to your skin and sticks with you even into your dreams.
+
+
+@destination-five
+
+Father has designed the labels on the computer and printed them off onto stickers. It is up to you and Lettice to apply the stickers to the various jars and bottles. "Blackberry Jam, 12 oz" read some of the stickers, with your family name and the date. Or "Blackberry Syrup, Best for Pancakes." 
+
+- @home-grown: Father's very proud of them, but the stickers still look awfully... home-grown.
+- @bartering: These'll make good barter material.
+
+
+@home-grown
+on-arrival: status += 1;
+
+"I think we need a logo," you say, turning a jar thoughtfully in your hands as though this idea had just suddenly come to you rather than bugging you for a day and a half. "I read an article online about branding. We could make one."
+
+"I think it has homespun charm," says Mother. "There is such a thing as trying too hard, you know, sweetie."
+
+You frown and put the jar in the box with the others. 
+
+
+@bartering
+on-arrival: poverty += 1;
+
+Mother oversees the operation. "Put the stickers on straight," she says, after you've done an especially wobbly one that doesn't neatly fit over the smooth space on the jam jar. "We don't want to look careless."
+
+When you and Lettice are done, Mother packs the jam jars into a cardboard box for safe-keeping. A few jars are enough to serve your family for the year, and the rest will go on trades, or be given as Christmas gifts.  

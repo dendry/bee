@@ -1,0 +1,94 @@
+title: The Family with All the Stuff
+subtitle: An introduction to Mrs. Barron, who also homeschools her children.
+new-page: yes
+view-if: age > 7 and barrons < 1 and month < 24
+tags: plot, top
+on-arrival: month += 1; barrons += 1
+
+= The Family with All the Stuff
+
+There are things piled everywhere. College-ruled pages with Latin declensions written out on them. Graph paper with quadratic equations. Physics problem sets. Clippings from a local newspaper, mostly the crosswords and logic puzzles, but sometimes also stories about scientific advances. 
+
+"Just shove over some of that," says Mrs. Barron, pointing at a sofa covered with textbooks. "I've got a pineapple upside down cake in the oven. Do you like pineapple upside down cake?"
+
+You don't, but this doesn't seem the moment to say so.
+
+"I was hoping you and my sons could be friends," says Mrs. Barron. She talks with her hands, and the bright red nail polish has you mesmerized. Your mother would not approve of nail polish like that. 
+
+- @homely-virtues: What sort of Jezebel paints her nails and doesn't clean house?
+- @certain-intrigue: It's chaotic, but it has a certain compelling quality.
+
+
+@homely-virtues
+
+go-to: much-visiting
+on-arrival: world += 1
+
+You gather the papers on the sofa into a sheaf and set them and several textbooks on top of the coffee table. It's precarious, and several of the pages slide off. You stoop to pick them up.
+
+"Oh, don't bother," says Mrs. Barron, with a generous sweep of the painted talons.  "The boys won't mind if I don't get to those. They're not graded yet, but I have strongly the impression that they won't have done very well."
+
+
+@certain-intrigue
+go-to: much-visiting
+on-arrival: world += 2
+
+Everything is chaos. There's a potted bamboo in the corner and someone has stuck a hat on it. A plate of sandwich crumbs is underneath a geography worksheet bearing the vital statistics of Kazakhstan. 
+
+The cuckoo clock on the wall is broken and doesn't tell the time, and the bird is sticking out as though he's come to visit and can't take the hint to go home again.
+
+But, but but but, there's something about this place that feels -- no, you don't have a word for it.
+
+
+@much-visiting
+
+"Listen, sweetheart, I've got the sense that your parents don't let you do much visiting," says Mrs. Barron. "Our house is on the extreme end --" (she laughs here) "-- but I think you'll find that very few mothers are quite as house-proud as yours."
+
+- @let-lie: What does she expect you to say to that, exactly?
+- @mother-does: Mother does her best.
+- @strange-then: Yes, even the crazy woman thinks your parents are strange.
+
+
+@strange-then
+on-arrival: parents +=1; 
+go-to: boys-your
+
+"Yeah, they're... kind of strange," you agree. There doesn't really seem to be much point in denying it.
+
+"Don't worry, sweetie," says Mrs. Barron, patting the back of your hand. "I know it feels very uncomfortable where you are now, but you'll be grown up sooner than you realize, and then -- well, it's not like you wear your parents around your neck."
+
+"I'm sorry?"
+
+"I mean, when you're grown up you can be different from them. No one will ever have to know what you came from. It's *okay*." 
+
+You swallow, not comforted.
+
+
+@mother-does
+on-arrival: status += 1;
+go-to: boys-your
+
+"Mother likes the floor to be clean enough to eat off, she says. She does what she can for us, even if there isn't always a lot of money."
+
+"Oh, sweetheart. Your parents do have plates...?"
+
+"Of course they *have plates*." You feel the blood coming into your cheeks. You have the same troubled sense you get when you've just played a bad set of tiles in Scrabble and opened the triple letter score to Father.
+
+
+@let-lie
+go-to: boys-your
+
+You say nothing.
+
+
+@boys-your
+
+"Do you get to meet very many boys your age?" Mrs. Barron asks.
+
+"Sometimes at church."
+
+"You'll like mine," says Mrs. Barron confidently.
+
+The oven dings.
+
+"Stay here," she says. "That'll be the cake. I so rarely get a chance to have anyone over to tea! But with the boys camping..." And so the prattle goes on, and Mrs. Barron serves you adult tea with caffeine in it, and pineapple cake that is too sweet. However, it is the first time you can remember that you've been a guest at an adult's house, just you, by yourself. 

@@ -1,0 +1,30 @@
+title: Afrikaans Loan Words
+subtitle: A short list but strange.
+new-page: yes
+view-if: age > 7 and spelling > 1 and month < 24
+on-arrival: month += 1; spelling += 2
+frequency: 500
+tags: drill, top
+
+= Afrikaans Loan Words
+
+You shuffle through a few cards picked up from a source list online. There aren't too many of these that have made it into English, but you never know.
+
+- @rooibos: ROOIBOS
+- @bergwind: BERGWIND
+
+
+@rooibos
+
+Rooibos is... yes, you thought it sounded familiar. Some sort of plant, used like herbal tea. "A broom-like member of the legume family." 
+
+It's the pronunciation you can't guess at, but the internet puts that straight. ROY-bos, it sounds like, as though there were only one O. 
+
+So you'll just have to be on your guard for a canny-looking pronouncer who is trying to trick you out of a vowel.
+
+
+@bergwind
+
+A hot, dry wind from the mountains. Which is not so surprising, considering the meaning of *berg* in other Germanic languages.
+
+Still. It's one of those words that says more about the place it came from than anything. Not everyone has a need to name the types of wind that blow over their land. Only when the wind is too fast or too hot or too cold or too dry, or too electric: sirocco, xaloc, mistral. Santa Ana. Khamsin. Chergui.

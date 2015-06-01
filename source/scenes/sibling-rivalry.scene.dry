@@ -1,0 +1,85 @@
+title: Sibling Rivalry
+subtitle: Struggles with Lettice are coming to a head.
+new-page: yes
+view-if: lettice > 4 and lettice < 20 and month < 24
+priority: 2
+on-arrival: month += 1
+tags: menace , top
+
+= Sibling Rivalry
+
+Lettice is intolerable lately.
+
+- @plan-downfall: Spike her food with something spicy.
+- @baby-lie: Lie to her about where babies come from.
+- @steal-toys: Hide her colored pencil set.
+
+
+@baby-lie
+choose-if: age < 9 
+unavailable-subtitle: She wouldn't fall for that any more.
+on-arrival: lettice += 1
+
+All it takes is an advertisement for "realistic baby dolls," artfully cut out of the newspaper, to support your story that Lettice was bought at Target and activated with a bicycle pump. 
+
+"You know in Genesis how God brings Adam and Eve to life with his breath?" you ask. "Well, you were like that, only we had to put this nozzle in your mouth to make you breathe."
+
+Poor Lettice. It takes Mother fully twenty minutes to calm her down from her screaming hysterics.
+
+
+
+@plan-downfall
+choose-if: age < 10 
+unavailable-subtitle: Too obvious these days.
+on-arrival: lettice += 1
+
+You rummage around in the cupboard until you find the bottles of Mrs. Perry's Habanero Dash Sauce, which she traded to your family a year ago and that no one can stand. "It would set a yak's eyeballs on fire," was Father's pronouncement.
+
+A few secretive drops of the H. D. S. on Lettice's supper burrito produces an immensely satisfying result. She leaps from the table and runs to the bathroom. There's a sound of running water. 
+
+"Come back to the table, Lettice!" Father shouts. "You aren't done with your meal and you didn't ask to be excused."
+
+"Can't," warbles Lettice.
+
+"NOW," says Father.
+
+Lettice returns to the table, carrying a washcloth. She dips the washcloth into her water glass and holds it to her tongue. She is crying. Father and Mother look at one another.
+
+"Lettice," Mother says, "what are you doing?"
+
+"My buwwito ith too hot to eat," Lettice says, around a mouthful of terry cloth.
+
+"It's perfectly fine!" says Father. "Look, we've all eaten ours."
+
+- @beam: Beam at Lettice over your clean plate.
+
+
+@beam
+
+You smile innocently over your clean plate.
+
+Then Father picks up Lettice's burrito and takes a bite of it. His eyes bulge and he spits the offending morsel into a napkin. "What the dickens!" he says.
+
+You get punished without dessert for a week, but you feel like an Italian poisoner.
+
+
+@steal-toys
+view-if: age > 8
+on-arrival: lettice += 1
+go-to: grateful; suspicious
+
+She isn't able to find it for a week, which makes her surprisingly mopey and difficult, even for Lettice. Mother and Father don't give much of an ear to her complaints, telling her it's her own fault if she can't keep track of her possessions. 
+
+In the end, however, her fussing becomes so irritating that you "find" the pencils again yourself. 
+
+
+@grateful
+
+Mother makes Lettice draw you a thank-you card for finding the pencils. The card has a sunflower on the front. A sunflower with eyes, and vampire teeth. 
+
+
+@suspicious
+
+Lettice gives you a nasty sidelong look that says she has a pretty good idea how you "found" the pencils, but she says, "Thank you so much."
+
+"My daughters," sighs Father, from his study. "Such a support to one another." 

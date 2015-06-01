@@ -1,0 +1,117 @@
+title: The Co-op
+subtitle: Shared resources with other home-schooling families.
+new-page: yes
+view-if: age > 4 and age < 8 and friends-introduced = 0
+on-arrival: age += 1; friends-introduced = 1; perry += 1
+tags: plot, top
+
+= The Co-op
+
+Your local home-schooling co-op is one of the biggest in the state. 
+
+The co-op has its own resource center, a rented storefront in a strip mall surrounded by pine trees. Inside there are shelves of used textbooks, parent guides, and inspirational literature, donated by families who have already been through them. 
+
+- @saxon-math: Sometimes the books supplement when families are on a low income.
+- @creation-myth: Or introduce them to new ideas.
+- @dictionary: Also, there's a much bigger dictionary than most families have at home.
+
+
+@saxon-math
+go-to: continuation
+on-arrival: poverty += 1
+
+The battered set of Saxon Math books has been in circulation since possibly the 1990s. "Help me virgen mary" is written several times in pen in the margin of *Algebra 1/2*. This caused a bit of a ruckus when the book was returned. Mrs. Perry put a warning sticker on the front that said "please note marks on page 34" so that no Protestant parents would be taken by surprise. 
+
+People still keep checking them out anyway.
+
+
+@creation-myth
+go-to: continuation
+on-arrival: world += 1
+
+Someone last year anonymously donated a big glossy illustrated book of creation myths from around the world. This made Mrs. Perry uncomfortable, especially since it included the story of Genesis without clarifying that that one was true and all the others were false. 
+
+But the book stays and sometimes it is used for read-alouds, and you have the fun of being the only one who can pronounce AMATERASU.
+
+
+@dictionary
+go-to: continuation
+on-arrival: spelling-relief += 1
+
+The dictionary has its own pedestal and is so big that you can hardly lift it. It is useful for those occasions when there's a spelling word so obscure that you can't find good sourcing on the internet. It is also just pleasing to turn over the big thin sheets of paper.
+
+
+@continuation
+
+Sometimes one of the parents with special skills will run a class for the whole co-op: how to count in French, for instance, or how to dye yarn. 
+
+These classes are held in the back room of the resource center. Inside it always smells like something sweet and brown and sickly, wafting from the home-brewing supply shop next door. 
+
+- @not-often: Mercifully, your parents don't sign you up often.
+- @wish-more: Actually, it might be nice to have more classes with other kids.
+- @more-status: Or maybe your parents would get more respect from other families if they taught more joint classes themselves.
+
+
+@not-often
+go-to: bulletin
+on-arrival: parents -= 1
+
+It's a mercy your parents don't sign you up often. The class on introductory Spanish, for instance. You thought it might help you with spelling words that are related to Spain, but most of the class was devoted to learning to say "hello" and "thank you" in Spanish. 
+
+Then there was fifteen minutes for coloring in the flag of Mexico with big fat crayons. It's hard coloring in the crest of Mexico, with the snake and the cactus and all of the tiny details, when a broken jumbo Sunshine Yellow is the only crayon not currently being chewed by another student.
+
+After the first session, you declined to go back.
+
+
+@wish-more
+go-to: bulletin
+on-arrival: world += 1
+
+Maybe the classes you've been to weren't that challenging, but it's nice sometimes to know what other students are working on. It's so hard to tell how you compare with everyone else when you're just doing home-planned curricula in your own living room.
+
+
+@bulletin
+
+The Co-op also has a bulletin board, where parents can announce field trips and projects that they're offering jointly. Your parents typically do not organize these things, but just wait for Mrs. Perry to call and invite you. Mrs. Perry organizes *everything*. 
+
+- @it-would: Maybe it would be better to be one of the Perry kids.
+- @then-again: Then again, nothing could replace your own parents.
+
+
+@then-again
+on-arrival: parents -= 1
+
+Mother and Father are entirely dedicated to you and your education. Father once told you that if he didn't have to earn something, he'd like to stay home all day too, like Mother, and the two of them would do nothing but teach your classes and work on their own projects.
+
+
+@it-would
+on-arrival: status += 1
+
+Other parents are always talking about Mrs Perry and the Perry kids. Her picture appears on the front of homeschooling magazines, and she gives interviews about how to raise Godly children. 
+
+They're like an example in a textbook; you overheard Mother saying so to Father once. "A textbook example," she said, and she looked annoyed. Maybe she was jealous too.
+
+
+@more-status
+on-arrival: status += 1
+
+Sometimes you suggest possible courses your own parents could teach: Mother could bring in her sewing machine and do a few classes on how to make simple home things. 
+
+This would impress Mrs. Perry. You have sometimes overheard her saying good things about other parents who teach classes. Things like "So-and-so really pulls her weight around here" or "Such-and-so is always a big help." 
+
+Then she'll cut her eyes towards someone she thinks is *not* a big help, and though she doesn't say anything else, everyone knows what she means.
+
+Father and Mother always say that they are too busy, however. "Our dues will have to be enough for now," Mother says.
+
+- @maybe-you: Maybe you could teach your own class.
+- @bulletin: For now you'll have to make do with field trips with other kids.
+
+
+@maybe-you
+on-arrival: spelling-relief += 1
+
+"Do you think *I* could teach a class?" you ask Mother. "We could do spelling words."
+
+"Maybe when you're older," she says. "It's usually the teenagers who are allowed to teach classes." 
+
+When she notices your expression, she adds, "It's not because you don't have anything you could teach them, sweetie. It's just that when you're not very old yourself, it can be hard to make students who are your own age, or even older than you are, follow your instructions. But maybe you could start designing the curriculum you'll use when you're older; how about that?"

@@ -1,0 +1,34 @@
+title: Seeking Inspiration
+subtitle: Looking for something to recharge your will to spell.
+new-page: yes
+tags: top
+view-if: motivation = 0 and age > 7 and month < 23
+
+= Seeking Inspiration
+
+The piles of cards are becoming unmanageable. You discover you've forgotten half a dozen Spanish loan words you learned last week. The weather outside is more interesting than the dining room table. And it feels like there will never be an end of this.
+
+- @discuss: Discuss the Bee with Mother.
+- @ask-lettice: Ask Lettice for help.
+
+
+@ask-lettice
+on-arrival: motivation = 2; lettice -= 1
+choose-if: lettice < 4
+unavailable-subtitle: You're not on good enough terms just now.
+
+With a bit of cajoling, Lettice agrees to help you color-code your cards by etymology. She gets out her best pencils and marker sets, and gets to work on the corners of each card, striping the French words blue and white and red. 
+
+The tip of her tongue sticks out while she works.
+
+
+@discuss
+on-arrival: motivation = 2; parents -= 1; perry += 1
+choose-if: parents < 4
+unavailable-subtitle: You're not on good enough terms just now.
+
+Mother looks up from the neat hem she is setting in a gown for Mrs. Perry. 
+
+"Striving for perfection is the gift we can give to our Maker," she says. "He has given you talents; what does it say in reply if you don't use them?"
+
+Yes. Yes, there is that, perhaps. 

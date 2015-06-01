@@ -1,0 +1,118 @@
+title: Lessons from Sara
+subtitle: English lessons begin.
+new-page: yes
+view-if: english = 1 and age > 0 and month < 24
+on-arrival: english += 2; month += 1; sara += 1
+tags: plot, top
+go-to: othello; henry
+
+= Lessons from Sara
+
+English lessons with Sara are awkward and mysterious. She sits with her legs tucked under her and asks you questions about the book you've read that week. They are not factual questions, such as "Whom did Natasha love?" They are not questions of faith or morality, like "What sin caused Oedipus' downfall?" 
+
+They're vague questions, plushy questions. 
+
+
+@othello
+
+"What does the color black represent?" she asks earnestly after you read *Othello*.
+
+- @devil: The Devil? Black is often for the devil.
+
+
+@devil
+go-to: disappointment
+
+"The Devil is the bad guy, and bad guys wear black."
+
+
+@henry
+
+Cradling a used paperback of *Henry V*, she asks, "Do you think we are meant to accept Henry's excuses for why a king is not responsible for the death of his men?"
+
+- @yes: They seem logically argued.
+
+
+@yes
+go-to: disappointment
+
+"They seem logically argued," you say. "Henry displays a good command of rhetoric throughout. I think we are supposed to accept his argument."
+
+
+@disappointment
+
+"Well..." She pushes her curtain of straw-textured hair behind one ear. "It might be something subtler than that."
+
+The neckline of her woolen sweater slips down and you get a glimpse of a magenta bra-strap peeking out. The color scandalizes and electrifies. 
+
+- @magenta: What does magenta represent?
+- @spelling-time: It's time for spelling now, anyway.
+- @study-would: Study questions would help.
+
+
+@spelling-time
+on-arrival: spelling-relief += 1
+
+You see Sara out with relief and get back to making progress on your cards.
+
+
+@magenta
+on-arrival: world += 1
+
+She catches you looking, and adjusts her sweater over the bra strap again. She doesn't seem embarrassed, though. "My lucky bra," she explains. "I have an econ exam later."
+
+- @spelling-time: It's time for spelling now, anyway.
+- @study-would: Study questions would help.
+
+
+@study-would
+
+"Maybe if you gave me some study questions I would be better at this," you offer hesitantly. It is lesson ten. Sara is sitting in the scruffy porridge-colored armchair. In the next room your mother is bartering with Celia Hopgood to exchange a car battery and a sack of dry peas for some home tailoring.
+
+"They're not questions with one answer," Sara says, knee bouncing against the arm of the chair. "You should say whatever you think. It won't be wrong." 
+
+- @if-cant: If it can't be wrong, what's the point of learning it?
+- @spelling-time: It's time for spelling now, anyway.
+
+
+@if-cant
+
+"If it can't be wrong, what's the point of learning it?"
+
+"Hmm. That's an excellent question." Sara seems more pleased by this impertinence than by any of the hesitating answers you've given before. She looks around the room and a thought occurs to her. "Why do you reread Bible stories?"
+
+"To make sure we understand them?" You stick your hands under your legs to prevent yourself from biting the nails, as you sometimes want to do when asked questions like this.
+
+"Do you understand them the same way every time?"
+
+- @no: That story about Ruth and Boaz seemed more innocent a couple years ago.
+- @spelling-time: It's time for spelling now, anyway.
+
+
+@no
+
+"We might get them wrong at first," you say. "So I guess maybe no." 
+
+Sara slumps in her chair. "Okay, look," she says. "Every time you read something, you're building a bridge between you, the person you are now and the time you're in, to the author, the person she was and the time she belonged to."
+
+"Or he."
+
+"Or he," Sara agrees amiably. "So what the story means, that's partly about you and partly about the author. It doesn't just, just *mean* in the abstract. It means something *to* someone. Meaning exists in relationship."
+
+- @except: Except the Bible.
+- @spelled-wrong: Except if you don't know the right meanings of words.
+- @spelling-time: It's time for spelling now, anyway.
+
+
+@spelled-wrong
+
+"Yes," you say. "But what if I don't know what all the words mean? Maybe I think 'handkerchief' is a word for a kind of goat. Then the story won't mean the right thing."
+
+"Fortunately you are very good at vocabulary," says Sara, with a mild smile. "I don't think you will be having that kind of misinterpretation."
+
+
+@except
+
+"Except the Bible," you say. "Because that comes from God, so it means what He wants it to mean. And sometimes we read it wrong, but that is why there are sermons and pastors, to tell us what God meant."
+
+Sara glances towards the door, towards where Mother is still negotiating barter prices. "I think it might be more complicated than that," she says. "But I'm here for English, so we'll focus on that for now, shall we?"

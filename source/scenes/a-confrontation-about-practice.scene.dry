@@ -1,0 +1,81 @@
+title: A Confrontation About Practice
+subtitle: Father has some questions for you.
+new-page: yes
+view-if: age > 7 and month > 20 and warned = 0 and month < 24 and spelling < 11
+priority: 2
+tags: menace, top
+on-arrival: warned += 1
+
+= A Confrontation About Practice
+
+Father stands in the doorway of your room. "I wanted to ask you whether you're serious about your spelling this year, or whether we should just skip the Bee and spare ourselves the embarrassment."
+
+- @ask-what: Pretend not to know what he means.
+- @admit-low: Admit you've been low on motivation lately.
+- @ask-how: Ask where embarrassment comes into it.
+
+
+@ask-how
+on-arrival: status += 1; parents += 1
+
+"I don't see what there is that's embarrassing here," you say. "Either I succeed or I don't succeed. It's nothing to do with the rest of the family."
+
+"You know that is not true," Father says. "The family is like a body; what happens to one part happens to all the parts. And your academic achievements reflect on us as homeschooling parents."
+
+"So you'd rather I didn't compete if I'm not going to win," you say.
+
+"I'd rather you didn't compete if you're not going to honestly *try* to win," Father says. "That's an insult to your competitors and to yourself. Think about it."
+
+
+@admit-low
+view-if: motivation = 0
+
+"I'm having a hard time getting motivated," you admit. "I don't know why."
+
+"Maybe that's something you should spend some prayer time on," Father suggests. "If you pray for the will to do something, I find sooner or later God either gives you the will, or you get tired and it gets easier to just do that thing than to keep asking for the will to do it."
+
+- @recognize-point: Try his method.
+- @ignore: Smile and nod.
+
+
+@ignore
+
+"Okay, that's an idea. Thank you, Father."
+
+He goes out, and you go back to what you were doing.
+
+
+@recognize-point
+on-arrival: motivation = 2
+
+You try this method, and it does indeed seem to work, after a fashion. At least, you're spending a lot more time thinking about your spelling cards.
+
+
+@ask-what
+
+"What do you mean?"
+
+"I've hardly seen you doing your word drills at all," Father says. "You're always working on something else, and to be frank, I don't think your skills are where they need to be if you want to win. You only have another month of study ahead of you."
+
+- @promise-to: Promise to do better.
+- @leave-alone: Tell him to leave you alone.
+
+
+@leave-alone
+on-arrival: parents += 1
+
+"Leave me alone," you say.
+
+Father stares at you.
+
+"Sorry, it's just... I don't think it helps to be put under a lot of pressure about it," you add weakly.
+
+He nods. "Well, if you decide you don't want to be a spelling champion and don't want to cultivate the talents that God has given to you, be honest with yourself and us about that. Just say so. Don't tell everyone you're studying when you're not, because that's the coward's path."
+
+
+@promise-to
+on-arrival: motivation = 2
+
+"I'll do better," you say. "I promise."
+
+He nods. "You do that," he says, and closes the door behind him.

@@ -1,0 +1,44 @@
+title: Greek Root Studies
+subtitle: Studying your Greek roots.
+new-page: yes
+view-if: age > 7 and spelling > 1 and month < 24 and greekletters = 0
+on-arrival: month += 1; spelling += 1
+tags: drill, top
+frequency: 500
+
+= Greek Root Studies
+
+In a faded brown pen on a pile of old note cards, you copy out root forms from your etymological list.
+
+
+- @body-parts: CERAT-, DERM-.
+- @rhi: RHIG-, RHIN-, RHIZ-.
+- @what-curious: What curious lettering they used.
+
+
+@rhi
+view-if: age > 8
+
+Rhig for chill or cold, rhin for nose as in rhinoplasty and rhinocerous. Rhiz for roots, as in rhizome from biology.
+
+But how does one really pronounce an R with an h sound in it? RR Hinocerous? What were they up to, inventing these letters? 
+
+
+@what-curious
+view-if: greekletters = 0
+choose-if: motivation > 0
+on-arrival: spelling += 1; greekletters = 1; motivation -= 1
+unavailable-subtitle: You're not motivated enough to learn them.
+
+The Greek vocabulary comes in squiggly, accented letters. You take a few hours off to learn them, so that you can write yourself notes that Lettice will not be able to read. 
+
+The rules for putting accents on are hard to follow. You give yourself a pass here and just make accent marks wherever they will look prettiest. 
+
+But it is useful knowing the letters. It helps explain why certain forms always combine and others never do.
+
+
+@body-parts
+
+Cerat- for horn, derm- for skin, osteo- bone. Mening- for membrane. All separate and distinct, as though they were substances kept in neat-labeled wooden drawers in a mad scientist's laboratory. 
+
+

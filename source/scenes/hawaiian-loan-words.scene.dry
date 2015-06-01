@@ -1,0 +1,26 @@
+title: Hawaiian Loan Words
+subtitle: A short list but strange.
+new-page: yes
+view-if: age > 7 and spelling > 1 and month < 24 and hawaiian = 0
+on-arrival: month += 1; spelling += 2; hawaiian += 1
+frequency: 100
+tags: drill, top
+
+= Hawaiian Loan Words
+
+You shuffle through a few cards picked up from a source list online. There aren't too many of these that have made it into English, but you never know.
+
+- @humu: HUMUHUMUNUKUNUKUAPUA'A
+
+
+@humu
+
+The trick with a word like this is the same as the trick of MISSISSIPPI. If you try to think it through while you're on stage, there's a good risk of getting lost and speaking one consonant too many. 
+
+What you need to do is just repeat the chant enough times that the spelling is its own performance.
+
+"What are you muttering?" Lettice asks.
+
+"AITCH YOU EM YOU," you tell her.
+
+"That's not nice."

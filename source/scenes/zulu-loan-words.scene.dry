@@ -1,0 +1,68 @@
+title: Zulu Loan Words
+subtitle: A short list but strange.
+new-page: yes
+view-if: age > 7 and spelling > 2 and month < 24
+on-arrival: month += 1; spelling += 2
+frequency: 100
+tags: drill, top
+
+= Zulu Loan Words
+
+You shuffle through a few cards picked up from a source list online. There aren't too many of these that have made it into English, but you never know.
+
+- @impala: IMPALA
+- @indaba: INDABA
+- @mbaqanga: MBAQANGA
+
+
+@mbaqanga
+view-if: spelling > 4
+
+  *Mbaqanga, a style of South African music; of plebeian origins, it takes its name from a common kind of cornmeal porridge... Scholars of mbaqanga see it as a cross of marabi and kwela.* 
+
+- @kwela: What's kwela, then?
+- @this-will: This will do for now.
+
+
+@this-will
+
+Yes, best not to ruin your schedule by haring off after even more words than are on your list for today.
+
+
+@kwela
+on-arrival: spelling += 1; motivation -= 1
+choose-if: motivation > 0
+unavailable-subtitle: You're not motivated to look that up.
+
+  *Kwela, southern African penny-whistle based music with skiffle-like beat.*
+
+- @skiffle: SKIFFLE?
+- @this-will: This will do for now.
+
+
+@skiffle
+on-arrival: spelling += 1; motivation -= 1
+choose-if: motivation > 1
+unavailable-subtitle: You're not motivated enough to follow up there.
+
+  *Skiffle: a popular American music form possibly derived from New Orleans jazz and played on homemade instruments.*
+
+Time to make a comb-and-paper kazoo of your very own. 
+
+
+@impala
+
+  *impala, a medium-sized African antelope.*
+
+Or, of course, a sort of car. But that would be the wrong association to have, so you Google image search a range of animal impalas until you have that notion firmly into your head.
+
+"You have safe search on, I trust," says Mother, looking over your shoulder.
+
+Yes. Always. Though if there are unsafe images of impalas out there in the world, you doubt they would tempt you to lustful thoughts.
+
+
+@indaba
+
+  *indaba, an important conference held by the head men of the Zulu people.*
+
+The dictionary is vague on whether this is formal, like a Parliament, or something a bit looser and less focused. 

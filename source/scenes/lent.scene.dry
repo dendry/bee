@@ -1,0 +1,139 @@
+title: Lent
+subtitle: You and the family practice Lenten disciplines.
+new-page: yes
+view-if: month > 16 and month < 20 and age > 7
+priority: 2
+tags: seasonal, religious, top
+on-arrival: month += 1;
+
+= Lent
+
+Where does one begin?
+
+- @silence-discipline: The discipline of silence.
+- @wednesday: The discipline of Wednesday night Bible study.
+- @wednesday-two: Try Bible study a second time.
+- @moderation-food: The discipline of moderation in food.
+- @friday-fasting: The discipline of fasting on Fridays.
+
+
+@friday-fasting
+choose-if: age > 9
+unavailable-subtitle: You're too young to fast.
+
+On days of fasting, you eat no solid food. Mother and Father have only water, but you are allowed juice or milk. Orange juice makes your stomach hurt if you drink too much by itself, though, so you stick to apple. 
+
+The effect is floaty and dreamy. You don't concentrate well. You spend the day lying on your bed, reading a book for English, and having fantastical reveries about scrambled eggs. With mushrooms. Sliced mushrooms sauteed in olive oil.
+
+
+@wednesday
+on-arrival: wednesday-done += 1
+view-if: wednesday-done = 0
+
+Every Wednesday night during Lent, there is adult Bible study at church. Most of the other children play in the nursery, if they attend this session at all. The lucky little Barrons stay home with a baby-sitter.
+
+Father insists that you are adult enough to understand the adult Bible study, and therefore you will attend it; though you will sit in the back and not say anything. You are allowed a notepad for recording your thoughts, however, so that you can share these thoughts with Father privately after study.
+
+Mostly you do not have any of the kinds of thoughts that Father would like to discuss with you. Instead you use the notepad for writing down things you observe about the adults. Mr Harrison has a single black curly hair that grows out of the end of his nose. Why doesn't he pluck it out? Is that what it means to be *an hairy man*? 
+
+
+@silence-discipline
+view-if: lettice-monster = 0
+on-arrival: lettice-monster = 1
+
+Your household exercises the discipline of silence during Lent: no word spoken aloud from dinner until bed time. This means also no audio programs on the computer, no games or television, and no read-alouds; just quietness and contemplation.
+
+When Lettice was younger, the Silence bothered her very much. Lettice needs attention.
+
+Recently she has taken to rolling out a sheet of butcher paper on the floor, or taping together smaller sheets of paper to make a display as grand as a screen. She sprawls across it and draws dramatic things. It is getting harder to ignore Lettice's drawings.
+
+Tonight she's made an image as though you're looking down from the edge of a pit. In the pit are monster arms reaching out to grab the unwary.
+
+Mother hops over the pit on the way to the bathroom. She makes a terrified face. Lettice laughs silently.
+
+
+@moderation-food
+
+During Lent, the family goes off sweets and meat. "Good for the budget as well as the soul," Mother likes to say. 
+
+Instead there are a variety of other meals that, perversely, you quite like. There is pea soup, and not the nasty kind with ham, but smooth pea soup with no fatty bits in it. There is rice served with red beans over. There is brown bread, which comes out of a can. There is lentil porridge and oatmeal. There are cheese sandwiches and cheese cauliflower and breaded cheese sticks.
+
+The food in Lent sticks to the insides and makes you feel well-anchored, like a ship safely at harbor.
+
+
+@wednesday-two
+on-arrival: wednesday-done += 1
+view-if: wednesday-done = 1
+
+This time Father gives you more specific instructions about the notes you're to take. "Start by summarizing the discussion," he says. "When Abraham Lincoln was a boy, he could sit through a two-hour sermon and then come home from church and tell the whole thing verbatim to his mother."
+
+"His mother didn't go to church?" you ask.
+
+"Perhaps she was housebound," Father says. "Anyway, your job will be easier because you can write notes, which Abraham could not."
+
+- @literacy: Ask if he means Abraham Lincoln was illiterate at a young age.
+- @no-notes: Do your summary without notes too. As a point.
+
+
+@literacy
+
+"Abraham Lincoln couldn't write?"
+
+"He *didn't* write. He committed the entire sermon to memory as it was spoken," Father says. 
+
+- @doubt: Privately doubt the accuracy of this anecdote.
+- @ask: Ask how that could be possible.
+
+
+@doubt
+on-arrival: parents += 1
+
+"*Citation needed*," you grumble to yourself as you get in the car. But you don't speak loudly enough to be heard.
+
+
+@ask
+
+"How would it be possible for anyone to memorize that much at once?" you ask.
+
+"You memorize your spelling letters," Father replies.
+
+"True, but..." Hm. It seems different. Your spelling words stay put on their cards until you get them into your head. How much harder would it be if the words were just washing over you in a single stream, too fast to review?
+
+But Mother knows more than Father about ancient rhetoric techniques, and she spends the car ride telling you and Lettice about Memory Palaces and how you could imagine the parts of a speech being associated with things in a house.
+
+
+@no-notes
+on-arrival: parents += 1
+
+You sit in the back and listen, and the task of mentally summarizing and then memorizing the summary makes the whole process a lot less boring than usual. 
+
+Mrs. Barron sees the struggle between Jacob and the Angel as representing difficulties we have with our own personality, with "strong but potentially dangerous parts of ourselves." Mrs. Perry thinks it's very important that there was a literal angel. 
+
+"That's not bad at all," Father says, when you've rendered your report. "Let's see your notepad, then."
+
+- @refuse: Erm, best if Father doesn't see; you weren't entirely respectful.
+- @show: It's blank, so why not?
+
+
+@show
+
+"No notes?" Father says, a little surprised.
+
+"I memorized my summary," you reply proudly.
+
+"Not bad," Father says, returning the notepad to you. "But next time do go ahead and write things down. I'd like you to be able to keep these notes for your future reference."
+
+
+@refuse
+on-arrival: parents += 1
+choose-if: parents > 2
+
+"You don't need the notes," you say.
+
+"Young lady, I told you to show me the notepad."
+
+You hand it across. 
+
+"SUCK IT, ABE LINCOLN," Father reads.
+
+After that you don't go to Bible study again for two weeks; or anywhere else for that matter.

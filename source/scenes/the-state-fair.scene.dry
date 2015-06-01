@@ -1,0 +1,99 @@
+title: The State Fair
+subtitle: In which you attend the State Fair and have the opportunity to examine the exhibits there.
+new-page: yes
+view-if: month > 2 and month < 5 and age > 7
+on-arrival: month += 1
+tags: seasonal, top
+
+= The State Fair
+
+There is too much of the State Fair to see all of in a single visit. With atypical lenience, however, Father and Mother permit you to pick what you'd like to see and do, assuming that you have enough pocket money to pay for it yourself.
+ 
+- @candy: Buy cotton candy.
+- @livestock: Look at the competition livestock.
+- @cake: Go to the cake exhibition hall.
+- @quilts: Check out the prize-winning quilts.
+- @booths: Go to the home-schooling booths.
+ 
+
+@booths
+on-arrival: status += 1
+
+The home-schooling booths display textbooks and curriculum materials, science lab materials, sign-ups for cooperatives, that sort of thing.
+
+You leaf through a textbook idly. There are line drawings. Roman children are speaking to one another in very elementary Latin. Their slave stands beside them, carrying their bags and looking harassed.
+
+"Is your mother with you?" asks the woman minding the booth. She is wearing a pink t-shirt that says MY FETUS IS A PERSON TOO.
+
+You take the hint and close the book again, backing away. "I was just looking," you say. "Sorry. Valete."
+
+"That's all right, dear," she says. But she keeps an eye on you until you have walked all the way away.
+
+
+@quilts
+
+The prize-winning quilts are in their own auditorium. They're hung from bars on the wall, and there is a cordon to keep visitors from getting too close or touching them. They've been judged in categories. Hand- or machine-quilted, traditional pattern or art pattern.
+
+- @artistry: Admire the artistry.
+- @prizes: Admire the prize bows.
+
+
+@prizes
+on-arrival: motivation = 2
+
+There is a kind of glowing allure about the ones with the blue ribbons for first place. The mystique of having no superior. It leaves you with a glowing ambition about the Bee.
+
+
+@artistry
+
+The art pattern pieces don't always look like quilts at all. One looks like a stained-glass tree, pieced together out of different swatches of fine brown corduroy and even velvet, so the bark looks nobbly and textured all the way out to the fine branches. The leaves are a subtle green, but each one has been quilted in a pattern of veins.
+
+Later when you mention it to Mother, she says, "Yes, I saw that one."
+
+You wait.
+
+She says, "If you use those sorts of materials, it won't wear well. I doubt you could even wash it."
+
+It had not occurred to you that the tree quilt might ever need washing.
+
+
+@candy
+
+With the last of your pocket money for this week, you buy a wad of pink cotton candy spun around a paper cone. It is not as satisfying to eat as to look at. As soon as it gets into your mouth, it dissolves into insubstantial goo. 
+
+- @candy-poverty: That was a waste of money.
+- @at-least: At least you got a taste of the fair.
+
+
+@candy-poverty
+on-arrival: poverty += 1
+
+How foolish. You could have spent that pocket money on something worth while. You pinch the cotton together viciously with your fingers, forming it into wads. It is ruined.
+
+After a few minutes you throw away the rest.
+
+
+@at-least
+on-arrival: world += 1
+
+Well, perhaps it wasn't a useful purchase, but at least you got a taste of the fair. It's worthwhile knowing something of the world beyond, isn't it? Surely.
+
+You hold up the cotton candy and the sunlight shines through the outer edges of it like a pink halo.
+ 
+
+@livestock
+view-if: age > 9
+
+There are large pigs and somewhat larger pigs and black pigs and pink pigs and white pigs. There are cows of various types. All this animal flesh, so warm and smelly, packed so close together, makes you almost feel a little ill.
+
+Healthy-looking 4H types stand around the stalls. You imagine what it would be like living on a farm with animals around all the time, and big open fields of land. It sounds exciting. There might even be horses.
+
+
+@cake
+view-if: age > 10
+
+The exhibition cakes have been inside their glass cases for weeks now. This is an unnatural life-span for a cake, and a few of them appear to be showing the strain, with cracks appearing in their frosting or a noticeable drying effect. 
+
+But even in their slightly over-the-hill condition, they are still very impressive -- decorated typically for a reception, white flowers on white frosting, lacy drizzles of chocolate, lakes of ganache with white chocolate swans gliding over the surface.
+
+It looks like the remains of a thousand canceled weddings.

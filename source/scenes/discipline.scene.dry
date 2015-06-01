@@ -1,0 +1,88 @@
+title: Discipline
+subtitle: Questions of "discipline."
+new-page: yes
+view-if: parents > 6 and month < 24 and age > 7
+priority: 2
+tags: menace, top
+on-arrival: month += 1
+
+= Discipline
+
+Father likes his shirts to be hung so that, if the shirt were lying face up on a table, the hanger hook would resemble a question mark. That way, all the shirts are facing the same direction in the closet. 
+
+- @maybe: Maybe ordering his shirts is Father's way of coping with more uncontrollable things.
+- @perhaps: Perhaps this creates a feeling of shirt solidarity.
+- @occasionally: Occasionally you hang shirts backward on purpose.
+- @but-mostly: But mostly you hang them the right way and grumble to yourself.
+
+
+@but-mostly
+on-arrival: parents += 1
+
+It isn't worth the aggravation of arguing with him about it, but that doesn't mean it's *fair*, either, that he treats you like some kind of personal valet. 
+
+And when you get older, and get out of here, you will never again have to worry about this completely pointless nonsense. Never. Again.
+
+
+@maybe
+view-if: age > 10
+
+"I guess it might be comforting to have all your things lined up exactly the way you want them," you allow.
+
+A funny look comes over Father's face. "Don't you derive some pleasure from doing a flawless job?" he asks.
+
+- @promise: Promise to do better and get back to work.
+- @in-this: Well, sometimes. But mostly you prefer to put that energy into your spelling.
+
+
+@in-this
+on-arrival: parents -= 1
+
+"Flawlessness takes a lot of focus," you say. With a little half smile, you hold up a spelling card. "Mostly I like to put it into this instead."
+
+"Hm. Well, if you can spare a thought occasionally from your Hindi loan words, maybe you can come up with a system to make sure the shirts are hung the right way. Say, make a stack of the hangers facing the right direction, and then they'll always be the right way when you pick one up to put a shirt on it."
+
+Which actually kind of has a logic.
+
+
+@promise
+on-arrival: spelling += 1; spelling-relief += 1; parents -= 2
+
+"I'll try to do better with that next time," you say, turning back to your pile of preparation cards. TRICHOTILLOMANIA, reads the top one. An impulse control disorder characterized by the pulling out of hair...
+
+
+@occasionally
+on-arrival: parents += 1
+
+Father has come to your room holding the latest culprit. It is a blue striped Oxford and it is backward, and for good measure the top button is not buttoned, only the second button. He shakes it on its hanger. "The issue here is not whether you understand the instruction. The issue is whether you *obey*."
+
+- @point: Point out the annoyance value of following arbitrary instructions.
+- @mention: Mention that shirt-sorting cuts into your spelling practice time.
+
+
+@perhaps
+view-if: age > 9
+
+"Have you considered speaking with a therapist about this shirt compulsion?" you ask Father when he confronts you about it.
+
+"We're not here to talk  about my preferences," Father says. "You have clear instructions, and you know how to follow them."
+
+- @point: Point out the annoyance value of following arbitrary instructions.
+- @mention: Mention that shirt-sorting cuts into your spelling practice time.
+
+
+@mention
+on-arrival: spelling-relief += 1; motivation = 2
+
+You explain the spelling time situation. "Spelling practice also takes discipline."
+
+"That argument works best if you actually win," Father says a bit ungraciously. But he takes the shirt and goes out.
+
+
+@point
+
+"It's arbitrary," you say.
+
+"Not at all," he says. "If you learn to be disciplined from without, you will learn also to be disciplined from within. And true freedom comes from self-discipline. Otherwise, you're a prey to your sins, your appetites, your sloth, and you never accomplish what you mean to accomplish."
+
+Not accomplishing things is the ultimate horror, with Father. 
