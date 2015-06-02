@@ -10,15 +10,22 @@ The only question is when you fail, and why.
 
 ## About Bee and Dendry
 
-[Bee](http://varytale.com/books/book/short-bee/) was written by Emily Short
-using the [Varytale](http://varytale.com) format for interactive books.
-Dendry has a similar model for how interactive fiction works, so it is a
-natural choice for a port of Bee.
+[Bee](http://dendry.github.io/bee/) was written by Emily Short using the
+[Varytale](http://varytale.com) format for interactive books (original
+playable book [here](http://varytale.com/books/book/short-bee/)). Dendry has
+a similar model for how interactive fiction works, so it is a natural choice
+for a port of Bee.
 
 The code for the book is shared here as an example of writing a complete and
 complex story using Dendry. The text of the story itself is copyright,
 however, and cannot be duplicated or shared without the author's permission.
 See the [License](LICENSE) file for more details.
+
+
+## Play Bee
+
+A version of Bee built with a default Dendry template is available
+[here](http://dendry.github.io/bee/).
 
 
 ## Make Bee
